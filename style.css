@@ -1265,9 +1265,14 @@ nav {
     }
 
     header {
+        position: sticky;
+        top:0;
+        z-index: 1000;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: #fff;
+        box-shadow: 4px 0 5px rgba(0,0,0,0.3);
     }
 
     .menu-toggle {
@@ -1298,14 +1303,14 @@ nav {
         border: none;
         cursor: pointer;
         align-self: flex-end;
-        margin:8px 1.5rem 0 0;
+        margin:10px 0.8rem 0 0;
     }
 
     .menu-toggle.hide {
         display: none;
     }
     .logo img {
-        width: 150px;
+        width: 135px;
         height: 40px;
     }
     
@@ -1318,6 +1323,7 @@ nav {
         align-items: center;
     }
     .hero-content{
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1327,10 +1333,11 @@ nav {
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
-        font-size: 25px;
+        font-size: 22px;
     }
     
     .hero-description{
+        text-align: justify;
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 10px;
@@ -1352,7 +1359,22 @@ nav {
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
     }
-    
+    .hero-gif-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        max-width: 100%;
+        max-height: 100%; /* Optional: Adds some padding around the image */
+        box-sizing: border-box;
+    }
+    .hero-responsive-gif {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto; /* Maintain aspect ratio */
+        width: auto;  /* Maintain aspect ratio */
+    }
     .about{
         width: 100%;
         height: auto;
@@ -1360,6 +1382,24 @@ nav {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+    .about-image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px 0 10px;
+        max-width: 100%;
+        max-height: 100%; /* Optional: Adds some padding around the image */
+        box-sizing: border-box; /* Ensures padding is included in the total width and height */
+    }
+    
+    /* Responsive image styling */
+    .about-responsive-image {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto; /* Maintain aspect ratio */
+        width: auto;  /* Maintain aspect ratio */
     }
     .about-content{
         display: flex;
@@ -1383,7 +1423,8 @@ nav {
         text-align: center;
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 11px;
+        font-size: 10px;
+        width: 98%;
     
     }
     .about-button{
@@ -1412,6 +1453,25 @@ nav {
         justify-content: space-between;
         align-items: center;
         
+    }
+
+    .why-us-image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px 0 10px;
+        max-width: 100%;
+        max-height: 100%; /* Optional: Adds some padding around the image */
+        box-sizing: border-box; /* Ensures padding is included in the total width and height */
+    }
+    
+    /* Responsive image styling */
+    .why-us-responsive-image {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto; /* Maintain aspect ratio */
+        width: auto;  /* Maintain aspect ratio */
     }
     
     .why-choose-us-content{
@@ -1855,6 +1915,7 @@ nav {
         font-weight: 300;
         font-size: 10px;
         color: #fff;
+        line-height: 1rem;
     }
     .work-together-button{
         margin-top: 10px;
