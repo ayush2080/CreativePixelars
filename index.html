@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <header>
+    <header id="header">
         <div class="logo">
             <img src="images/Creative Pixelars Logo.png" alt="logo">
         </div>
@@ -25,11 +25,12 @@
                 <span class="bar"></span>
             </div>
             <ul class="navbar-content" id="navbarContent">
-                <li class="nav-item close-menu" id="closeMenu">&times;</li>
+                <li class="nav-item1 close-menu" id="closeMenu">&times;</li>
                 <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Our Work</a></li>
+                
                 
             </ul>
         </nav>
@@ -60,7 +61,7 @@
         </div>
 
         <div class="hero-gif-container">
-            <img src="images/hero-section-gif.gif" alt="Hero Gif" style="width:500px;height:500px;" class="hero-responsive-gif">
+            <img src="images/hero-section-gif.gif" alt="Hero Gif" class="hero-responsive-gif">
 
         </div>
 
@@ -72,7 +73,6 @@
             <img src="images/about-img.png" alt="About Us Image" class="about-responsive-image">
 
         </div>
-
         <div class="about-content">
             <h3 class="about-heading">
                 About Us
@@ -89,10 +89,15 @@
                 Show More
                 <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span>
             </button>
-        </div>    
+        </div>   
     </section>
 
     <section class="why-choose-us">
+        
+        <div class="why-us-image-container">
+            <img src="images/Why Choose Us-img.png" alt="Why Choose Us Image" class="why-us-responsive-image">
+
+        </div>
 
         <div class="why-choose-us-content">
             <h3 class="why-choose-us-heading">
@@ -112,65 +117,89 @@
 
         </div>
 
-        <div class="why-us-image-container">
-            <img src="images/Why Choose Us-img.png" alt="Why Choose Us Image" class="why-us-responsive-image">
-
-        </div>
+        
 
     </section>
 
     <section class="reasons">
-        <div class="reason-content-img">
+        <div class="reason-content-circle">
           <div class="reason-line">
-            <img class="line" src="images/Line.png" alt="Line">
+            <img class="line" src="images/Line demo.png" alt="Line">
           </div>
-          <div class="reason-img">
-            <img class="four-reason-img" src="images/Experience Circle.png" alt="Reason 1">
-            <img class="four-reason-img four-reason-img1" src="images/Quality Circle.png" alt="Reason 2">
-            <img class="four-reason-img four-reason-img1" src="images/Timely Delivery Circle.png" alt="Reason 3">
-            <img class="four-reason-img four-reason-img1" src="images/Affordable Pricing Circle.png" alt="Reason 4">
+          <div class="reason-circle-container">
+            <div class="reason-circle">
+                <div class="reason-no">
+                    <div class="reason-no-text">1</div>
+                </div>
+                <img class="reason-icon" src="icons/Empathize icon.png" alt="Experience Icon"> 
+            </div>
+            <div class="reason-circle reason-circle1">
+                <div class="reason-no">
+                    <div class="reason-no-text">2</div>
+                </div>
+                <img class="reason-icon" src="icons/Quality icon.png" alt="Experience Icon"> 
+            </div>
+            <div class="reason-circle reason-circle1">
+                <div class="reason-no">
+                    <div class="reason-no-text">3</div>
+                </div> 
+                <img class="reason-icon" src="icons/fast-delivery icon.png" alt="Experience Icon">
+            </div>
+            <div class="reason-circle reason-circle1">
+                <div class="reason-no">
+                    <div class="reason-no-text">4</div>
+                </div>
+                <img class="reason-icon" src="icons/Pricing icon.png" alt="Experience Icon"> 
+            </div>
           </div>
         
         </div>
-        <div class="reason-icon-container">
-            <img class="reason-icon" src="icons/Empathize icon.png" alt="Experience Icon">
-            <img class="reason-icon1" src="icons/Quality icon.png" alt="Experience Icon">
-            <img class="reason-icon1" src="icons/fast-delivery icon.png" alt="Experience Icon">
-            <img class="reason-icon1" src="icons/Pricing icon.png" alt="Experience Icon">
+        <div class="reason-heading-container">
+        <div class="reason-text-heading1">
+            
+            <h3 class="reason-heading">
+            Experience
+            </h3>
         </div>
-        <div class="reason-content-container">
-        <div class="reason-content-text">
-            
-                <h3 class="reason-heading">
-                Experience
-                </h3>
-                <h3 class="reason-heading1">
-                Quality
-                </h3>
-                <h3 class="reason-heading1">
-                Timely Delivery
-                </h3>
-                <h3 class="reason-heading1">
-                InExpensive
-                </h3>
-            
-        </div> 
-        <div class="reason-content-text">
+        <div class="reason-text-heading234">
+            <h3 class="reason-heading">
+            Quality
+            </h3>
+        </div>
+        <div class="reason-text-heading234">
+            <h3 class="reason-heading">
+            Timely Delivery
+            </h3>
+        </div>
+        <div class="reason-text-heading234">
+            <h3 class="reason-heading">
+            Affordable Pricing
+            </h3>
+
+        </div>
+        </div>
+        <div class="reason-description-container">
+        <div class="reason-text-description1">
             
                 <p class="reason-description">
                     With years of experience in<br>the industry, we have honed <br> our skills and perfected our<br>craft.
                 </p>
-                <p class="reason-description1">
+        </div>
+        <div class="reason-text-description234">
+                <p class="reason-description">
                     We are committed to<br> delivering high-quality designs<br> that make a lasting<br> impression.
                 </p>
-                <p class="reason-description1">
+        </div>
+        <div class="reason-text-description234">
+                <p class="reason-description">
                     We understand the importance<br> of deadlines and strive to<br> deliver projects on time,<br> every time.
                 </p>
-                <p class="reason-description1">
+        </div>
+        <div class="reason-text-description234">        
+                <p class="reason-description">
                     Our services are competitively<br> priced to provide you with<br> excellent value for your<br> investment.
                 </p>
-
-            
+        </div>    
         </div>
     
     </div>
@@ -207,7 +236,7 @@
         </div> 
         
         <div class="services-container">
-            <div class="services-bg-container">
+            <div class="services-bg-container services-bg-container-left">
             <div class="services-bg-1">
                 <div class="services-container-content">
 
@@ -231,7 +260,7 @@
             </div>
             </div>
 
-            <div class="services-bg-container">
+            <div class="services-bg-container services-bg-container-right">
             <div class="services-bg-3">
                 <div class="services-container-content">
 
@@ -308,7 +337,7 @@
         </div>
         <button class="services-button1">
             Show More
-            <img class="arrow-right-icon" src="icons/Arrow right.png" alt="Button Icon">
+            <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span>
         </button>
     </section>
     <section class="work-together">
@@ -323,7 +352,7 @@
 
         <div class="work-together-content-right">
             <p>
-                We are design agency that helps businesses develop immersive and engaging <br> user experiences
+                We are design agency that helps businesses develop immersive and engaging <br> user experiences.
             </p>
             <button class="work-together-button">
                 Get Quote
@@ -345,7 +374,9 @@
          <div class="work-tile-bg1">
 
          <div class="work-tile-1">
-            <img src="images/Banner Web Design final.jpg" alt="Web Design" class="work-tile-1-responsive-image">
+            <div class="responsive-image-container">
+            <img src="images/Banner Web Design final.jpg" alt="Web Design">
+            </div>
             <div class="work-tile-1-overlay"></div>
             <div class="work-heading-webdesign">
             <h3>
@@ -360,7 +391,9 @@
          </div>
 
          <div class="work-tile-2">
-            <img src="images/UI UX Design.jpg" alt="User Interface Design" style="width:460px;height:300px;" class="work-tile-2-responsive-image">
+            <div class="responsive-image-container">
+            <img src="images/UI UX Design.jpg" alt="User Interface Design">
+            </div>
             <div class="work-tile-2-overlay"></div> 
         <div class="work-heading-UI-UX">
             <h3>
@@ -378,10 +411,12 @@
 
         <div class="work-tile-bg2">
         <div class="work-tile-3">
+            <div class="video-container">
         
-            <video muted autoplay loop width="460px" height="300px">
-            <source src="images/Video Editing.mp4" type="Video/mp4">
+            <video muted autoplay loop>
+            <source src="images/Video Demo.mp4" type="Video/mp4">
             </video>
+            </div>
         <div class="work-tile-3-overlay"></div>
         <div class="work-heading-video">
             <h3>
@@ -396,7 +431,9 @@
         </div>
 
         <div class="work-tile-4">
-            <img src="images/Graphic Design.jpg" alt="Graphic Design" style="width:460px;height:300px;" class="work-tile-4-responsive-image">
+            <div class="responsive-image-container">
+            <img src="images/Graphic Design.jpg" alt="Graphic Design">
+            </div>
             <div class="work-tile-4-overlay"></div> 
         <div class="work-heading-graphic">
             <h3>
@@ -412,7 +449,9 @@
 
 
         <div class="work-tile-5">
-            <img src="images/Motion Graphics.gif" alt="Motion Graphics" style="width:460px;height:300px;" class="work-tile-5-responsive-image"> 
+            <div class="responsive-image-container">
+            <img src="images/Motion Graphics.gif" alt="Motion Graphics"> 
+            </div>
                 <div class="work-heading-motion">
                     <h3>
                     Motion Graphic Design
@@ -433,7 +472,8 @@
         
     </section>
     <footer class="footer">
-        <div class="footer-main-content">
+        <div class="footer-main">
+        <div class="footer-content-container">
             <div class="footer-left-content">
             <div class="footer-logo">
                 <img src="images/Creative Pixelars Logo White.png" alt="Creative Pixelars Logo">
@@ -513,8 +553,32 @@
                 
             </div>
         </div>
+        <hr>
+        <div class="copyright-text">
+            <p>
+            &#169 Copyright 2024 Creative Pixelars. All Rights Reserved.
+            </p>
+        </div>
+    </div>
     </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <span class="material-symbols-outlined"> arrow_upward </span>
+    </button>
+
 </body>
 <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 <script src="script.js"></script>
+<script>
+window.onscroll = function() {
+  const header = document.getElementById("header");
+  const sticky = header.offsetTop;
+
+  if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+  } else {
+      header.classList.remove("sticky");
+  }
+}
+</script>
 </html>
