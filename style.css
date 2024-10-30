@@ -5,12 +5,25 @@ body {
 }
 
 header {
+    position: fixed; /* Fix the header */
+    top: 0; /* Stick to the top */
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: top 0.3s;
+    transition: top 0.6s;
+    z-index: 100000; /* Ensure it’s on top */
+   
+   
+    
+}
+header.sticky {
+    background-color: #fff;
+    box-shadow: 4px 0 5px rgba(0,0,0,0.3);
 }
 .logo{
+    width: 20%;
     display:flex;
 }
 .logo img {
@@ -20,16 +33,9 @@ header {
 .menu-toggle{
     display: none;
 }
-.sticky {
-    position: fixed; /* Fix the header */
-    top: 0; /* Stick to the top */
-    left: 0;
-    right: 0;
-    z-index: 1000; /* Ensure it’s on top */
-    background-color: #fff;
-    box-shadow: 4px 0 5px rgba(0,0,0,0.3);
-}
+
 nav {
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,7 +131,7 @@ nav {
 .lets-talk {
     display: flex;
     align-items: center;
-    width: 11%;
+    width: 20%;
 }
 
 .lets-talk-button {
@@ -792,7 +798,7 @@ nav {
 }
 .work-tile-bg1{
     margin-top: -15px;
-    width: 1500px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -801,7 +807,7 @@ nav {
 }
 .work-tile-bg2{
     margin-top: -34px;
-    width: 1500px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -1392,21 +1398,22 @@ html{
     }
 
     header {
-        width: 100%;
-        height: 55px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: top 0.3s;
-    }
-    .sticky {
         position: fixed; /* Fix the header */
         top: 0; /* Stick to the top */
         left: 0;
         right: 0;
         z-index: 1000; /* Ensure it’s on top */
+        width: 100%;
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: top 0.6s;
+    }
+    header.sticky {
         background-color: #fff;
         box-shadow: 4px 0 5px rgba(0,0,0,0.3);
+        
     }
 
     .menu-toggle {
@@ -1450,7 +1457,7 @@ html{
     
     }
     .logo img {
-        width:25%;
+        max-width:120px;
         height: auto;
         
     }
@@ -1458,6 +1465,7 @@ html{
     .hero-section{
         width: 100vw;
         height: 100%;
+        margin: 3rem 0 0 0;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -1508,14 +1516,14 @@ html{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 1rem;
-        max-width: 95%;
+        margin-top: 0.7rem;
+        width: 100%;
         height: 50%; /* Optional: Adds some padding around the image */
         box-sizing: border-box;
     }
     .hero-responsive-gif {
-        max-width: 80%;
-        height: 50%;
+        max-width: 350px;
+        max-height: 350px;
         height: auto; /* Maintain aspect ratio */
         width: auto;  /* Maintain aspect ratio */
     }
@@ -2592,21 +2600,22 @@ html{
     }
 
     header {
-        width: 100%;
-        height: 55px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: top 0.3s;
-    }
-    .sticky {
         position: fixed; /* Fix the header */
         top: 0; /* Stick to the top */
         left: 0;
         right: 0;
         z-index: 1000; /* Ensure it’s on top */
+        width: 100%;
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: top 0.6s;
+    }
+    header.sticky {
         background-color: #fff;
         box-shadow: 4px 0 5px rgba(0,0,0,0.3);
+        
     }
 
     .menu-toggle {
@@ -2650,12 +2659,13 @@ html{
     
     }
     .logo img {
-        width:25%;
+        max-width:120px;
         height: auto;
         
     }
     
     .hero-section{
+        margin: 3rem 0 0 0;
         width: 100vw;
         height: 100%;
         display: flex;
@@ -2708,14 +2718,14 @@ html{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 1rem;
-        max-width: 95%;
+        margin-top: 0.7rem;
+        width: 100%;
         height: 50%; /* Optional: Adds some padding around the image */
         box-sizing: border-box;
     }
     .hero-responsive-gif {
-        max-width: 80%;
-        height: 50%;
+        max-width: 350px;
+        max-height: 350px;
         height: auto; /* Maintain aspect ratio */
         width: auto;  /* Maintain aspect ratio */
     }
@@ -3783,19 +3793,21 @@ html{
             display: none;
         }
 
-        header {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100vw;
-            transition: top 0.3s;
-        }
-        .sticky {
+        .header {
             position: fixed; /* Fix the header */
             top: 0; /* Stick to the top */
             left: 0;
             right: 0;
             z-index: 1000; /* Ensure it’s on top */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            transition: top 0.6s;
+        
+        }
+        .header.sticky {
+            
             background-color: #fff;
             box-shadow: 4px 0 5px rgba(0,0,0,0.3);
         }
@@ -3806,7 +3818,7 @@ html{
             justify-content: center;
         }
         .logo img {
-            width: 95%;
+            max-width: 120px;
             height: auto;
         }
         .menu-toggle{
@@ -3822,7 +3834,7 @@ html{
         }
         
         .navbar-content {
-            width: 90%;
+            max-width: 90%;
             height: 50px;
             display: flex;
             justify-content: space-evenly;
@@ -3898,7 +3910,7 @@ html{
         }
         
         .lets-talk-button {
-            width: 100%;
+            max-width: 125px;
             height: 40px;
             display: flex;
             flex-direction: row;
@@ -3918,7 +3930,7 @@ html{
         }
         .hero-section{
             width: 100vw;
-            height: 380px;
+            height: 600px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -5135,20 +5147,23 @@ html{
     }
 
     header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100vw;
-        transition: top 0.3s;
-    }
-    .sticky {
         position: fixed; /* Fix the header */
         top: 0; /* Stick to the top */
         left: 0;
         right: 0;
         z-index: 1000; /* Ensure it’s on top */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        transition: top 0.6s;
+    
+    }
+    header.sticky {
+        
         background-color: #fff;
         box-shadow: 4px 0 5px rgba(0,0,0,0.3);
+        
     }
     .logo{
         width: 15%;
@@ -5157,7 +5172,7 @@ html{
         justify-content: center;
     }
     .logo img {
-        width: 75%;
+        max-width: 135px;
         height: auto;
     }
     .menu-toggle{
@@ -5173,7 +5188,7 @@ html{
     }
     
     .navbar-content {
-        width: 90%;
+        max-width: 90%;
         height: 50px;
         display: flex;
         justify-content: space-evenly;
@@ -5249,7 +5264,7 @@ html{
     }
     
     .lets-talk-button {
-        width: 75%;
+        width: 125px;
         height: 40px;
         display: flex;
         flex-direction: row;
@@ -5269,7 +5284,7 @@ html{
     }
     .hero-section{
         width: 100vw;
-        height: 380px;
+        height: 600px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -6471,27 +6486,33 @@ html{
 /*Extra Large Desktops*/
 
 @media only screen and (min-width: 1200px){
+    html{
+        scroll-behavior: smooth;
+    }
      
     .close-menu {
         display: none;
     }
 
     header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100vw;
-        transition: top 0.3s;
-    }
-    .sticky {
         position: fixed; /* Fix the header */
         top: 0; /* Stick to the top */
         left: 0;
-        right: 0;
-        z-index: 1000; /* Ensure it’s on top */
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: top 0.6s;
+        z-index: 100000; /* Ensure it’s on top */
+       
+       
+        
+    }
+    header.sticky {
         background-color: #fff;
         box-shadow: 4px 0 5px rgba(0,0,0,0.3);
     }
+   
     .logo{
         width: 15%;
         display: flex;
@@ -6499,7 +6520,7 @@ html{
         justify-content: center;
     }
     .logo img {
-        width: 75%;
+        max-width: 135px;
         height: auto;
     }
     .menu-toggle{
@@ -6515,7 +6536,7 @@ html{
     }
     
     .navbar-content {
-        width: 90%;
+        max-width: 90%;
         height: 50px;
         display: flex;
         justify-content: space-evenly;
@@ -6591,7 +6612,7 @@ html{
     }
     
     .lets-talk-button {
-        width: 75%;
+        max-width: 135px;
         height: 40px;
         display: flex;
         flex-direction: row;
@@ -6610,17 +6631,19 @@ html{
         margin-left: 13px;
     }
     .hero-section{
-        width: 100vw;
-        height: 380px;
+        width: 100%;
+        margin: 82px 0 0 0;
+        height: 600px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         
         
     }
     .hero-content{
-        width: 60%;
+        width: 50%;
+        max-width: 45%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -6631,13 +6654,13 @@ html{
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
-        font-size: 32px;
+        font-size: 34px;
     }
     
     .hero-description{
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 13px;
+        font-size: 14px;
     }
     .hero-button{
         margin-top: 20px;
@@ -6645,7 +6668,7 @@ html{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 140px;
+        width: 150px;
         height: 40px;
         border-radius: 25px;
         background-image: linear-gradient(to right,#FB8500,#FFB703);
@@ -6656,29 +6679,21 @@ html{
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
     }
-    .hero-video{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 500px;
-        height: 500px;
-        
-    }
     .hero-gif-container{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
+        width: 50%;
         max-width: 40%;
-        height: 80%; /* Optional: Adds some padding around the image */
+        height: 100%;
         box-sizing: border-box;
         padding-right: 10px;
     }
     .hero-responsive-gif {
         width: 100%;
-        max-width: 350px;
-        height: auto;
+        max-width: 450px;
+        max-height: 450px;
     }
     .about{
         width: 100vw;
@@ -6709,11 +6724,18 @@ html{
         height: auto;
     }
     .about-content{
-        width: 50%;
+        width: 65%;
         display: flex;
         flex-direction: column;
         align-items: start;
         padding: 0 10px 0 20px;
+    }
+    .about-content-container-1200px-above{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
     }
     .about-heading{
         font-family: "Montserrat";
@@ -6757,6 +6779,7 @@ html{
         flex-direction: row-reverse;
         justify-content: space-evenly;
         align-items: center;
+        margin: 2rem 0 0 0;
         
     }
     
@@ -7260,8 +7283,8 @@ html{
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
     }
     .Work{
-        width: 100vw;
-        height: 900px;
+        width: 100%;
+        height: 950px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -7287,9 +7310,9 @@ html{
         font-size: 14px;
     }
     .work-tile-bg1{
-        margin-top: -50px;
-        width: 100%;
-        height: 280px;
+        margin: -50px 0 0 0;
+        width: 95%;
+        height: 300px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -7298,9 +7321,9 @@ html{
         
     }
     .work-tile-bg2{
-        margin-top: -80px;
-        width: 100%;
-        height: 280px;
+        margin: -68px 0 0 0;
+        width: 95%;
+        height: 300px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -7310,15 +7333,16 @@ html{
     }
     .work-tile-1{
         position: relative;
-        width: 67.5%;
-        height: 250px;
-        margin: 0 20px;
+        width: 66.5%;
+        height: 280px;
+        margin: 0 20px 0 0;
         background-color:#2A2A2A;
+        
     }
     .work-tile-1-overlay{
         position: absolute;
         width: 100%;
-        height: 250px;
+        height: 280px;
         background-color: rgba(0,0,0,0.4);
         z-index: 2;
         
@@ -7343,15 +7367,15 @@ html{
     .work-tile-2{
         position: relative;
         width: 32.5%;
-        height: 250px;
-        margin: 0 20px 0 0;
+        height: 280px;
+        margin: 0 0 0 0;
         background-color: #2A2A2A;
         
     }
     .work-tile-2-overlay{
         position: absolute;
         width: 100%;
-        height: 250px;
+        height: 280px;
         background-color: rgba(0,0,0,0.4);
         z-index: 2;
         
@@ -7369,8 +7393,8 @@ html{
     .work-tile-3{
         position: relative;
         width: 33%;
-        height: 250px;
-        margin: 20px 20px 0 20px;
+        height: 280px;
+        margin: 20px 20px 0 0;
         background-color: #2A2A2A;
         
     }
@@ -7394,7 +7418,7 @@ html{
     .work-tile-3-overlay{
         position: absolute;
         width: 100%;
-        height: 250px;
+        height: 280px;
         background-color: rgba(0,0,0,0.4);
         z-index: 2;
         
@@ -7405,7 +7429,7 @@ html{
     .work-tile-4{
         position: relative;
         width: 33%;
-        height: 250px;
+        height: 280px;
         margin: 20px 20px 0 0;
         background-color: #2A2A2A;
     }
@@ -7413,7 +7437,7 @@ html{
     .work-tile-4-overlay{
         position: absolute;
         width: 100%;
-        height: 250px;
+        height: 280px;
         background-color: rgba(0,0,0,0.4);
         z-index: 2;
         
@@ -7421,9 +7445,8 @@ html{
     .work-tile-5{
         position: relative;
         width: 33%;
-        height: 250px;
-        height: 250px;
-        margin: 20px 20px 0 0;
+        height: 280px;
+        margin: 20px 0 0 0;
         background-color: #2A2A2A;
     }
     
