@@ -3532,14 +3532,14 @@ html{
     color: #1e1e1e;
 }
 .what-we-do-service-description{
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Montserrat";
-    font-size: 13px;
+    font-size: 11.7px;
     font-weight: 400;
-    line-height: 1.1rem;
+    line-height: 1.2rem;
     color: #1e1e1e;
     text-align: center;
 }
@@ -5395,14 +5395,14 @@ html{
     color: #1e1e1e;
 }
 .what-we-do-service-description{
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Montserrat";
-    font-size: 13px;
+    font-size: 11.7px;
     font-weight: 400;
-    line-height: 1.1rem;
+    line-height: 1.2rem;
     color: #1e1e1e;
     text-align: center;
 }
@@ -5817,39 +5817,39 @@ html{
             margin-left: 13px;
         }
         .hero-section{
-            width: 100vw;
-            height: 600px;
+            width: 100%;
+            height: 100vh;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             
             
         }
         .hero-content{
-            width: 60%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-left: 10px;
             
         
         }    
         .hero-heading{
             font-family: "Montserrat";
             font-weight: 800;
-            font-size: 27px;
+            font-size: 24px;
         }
         
         .hero-description{
             font-family: "Montserrat";
             font-weight: 300;
-            font-size: 11px;
+            font-size: 10px;
+            line-height: 1rem;
         }
         .hero-text-italic{
             font-family: "Montserrat";
             font-weight: 700;
-            font-size: 27px;
+            font-size: 24px;
         }
         .hero-button{
             margin-top: 20px;
@@ -5882,23 +5882,22 @@ html{
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 40%;
-            height: 80%; /* Optional: Adds some padding around the image */
+            width: 50%;
+            max-width: 40%;
+            height: auto; /* Optional: Adds some padding around the image */
             box-sizing: border-box;
-            padding-right: 10px;
         }
         .hero-responsive-gif {
-            width: 40%;
-            height: 80%;
-            height: auto; /* Maintain aspect ratio */
-            width: auto;  /* Maintain aspect ratio */
+            width: 100%;
+            max-width: 300px;
+            height: auto;
         }
         .about{
-            width: 100vw;
+            width: 100%;
             height: 380px;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
         
             
@@ -5906,34 +5905,33 @@ html{
         .about-image-container {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
             width: 50%;
-            height: 90%; /* Optional: Adds some padding around the image */
+            height: auto; /* Optional: Adds some padding around the image */
             box-sizing: border-box; /* Ensures padding is included in the total width and height */
-            padding-left: 10px;
             
         }
         
         /* Responsive image styling */
         .about-responsive-image {
             width: 100%;
-            max-width: 450px;
+            max-width: 350px;
             height: auto;
         }
         .about-content{
-            max-width: 95%;
+            width: 100%;
+            max-width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: start;
-            padding: 0 10px 0 20px;
+            align-items: center;
         }
         .about-content-container-1200px-above{
             width: 50%;
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: end;
+            justify-content: center;
         }
         .about-heading{
             font-family: "Montserrat";
@@ -5941,15 +5939,18 @@ html{
             font-size: 17px;
         }
         .about-Subheading{
+            text-align: center;
             margin-top: 5px;
             font-family: "Montserrat";
             font-weight: 700;
             font-size: 18px;
         }
         .about-description{
+            text-align: center;
             font-family: "Montserrat";
             font-weight: 300;
             font-size: 10px;
+            line-height: 0.9rem;
         
         }
         .about-button{
@@ -5971,11 +5972,11 @@ html{
         }
         
         .why-choose-us{
-            width: 100vw;
+            width: 100%;
             height: 380px;
             display: flex;
             flex-direction: row-reverse;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
             
         }
@@ -5984,9 +5985,8 @@ html{
             width: 50%;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            padding-left: 10px;
-          
+            align-items: center;
+            justify-content: center;
         }
         
         .why-choose-us-heading{
@@ -5997,33 +5997,35 @@ html{
         
         .why-choose-us-Subheading{
             margin-top: 5px;
+            text-align: center;
             font-family: "Montserrat";
             font-weight: 700;
             font-size: 18px;
         }
         
         .why-choose-us-description{
+            text-align: center;
             font-family: "Montserrat";
             font-weight: 300;
             font-size: 10px;
+            line-height: 0.9rem;
         }
         
         .why-us-image-container {
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            align-items: center;
             justify-content: center;
             width: 50%;
-            height: 90%; /* Optional: Adds some padding around the image */
+            height: auto; /* Optional: Adds some padding around the image */
             box-sizing: border-box; /* Ensures padding is included in the total width and height */
-            padding-right: 10px;
             
         }
         
         /* Responsive image styling */
         .why-us-responsive-image {
             width: 100%;
-            max-width: 450px;
+            max-width: 350px;
             height: auto;
         }
         .reasons{
@@ -7794,39 +7796,38 @@ html{
         margin-left: 13px;
     }
     .hero-section{
-        width: 100vw;
-        height: 600px;
+        width: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         
         
     }
     .hero-content{
-        width: 60%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 10px;
-        
     
     }    
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
-        font-size: 32px;
+        font-size: 31px;
     }
     
     .hero-description{
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 13px;
+        line-height: 1.2rem;
     }
     .hero-text-italic{
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 32px;
+        font-size: 31px;
     }
     .hero-button{
         margin-top: 20px;
@@ -7859,10 +7860,10 @@ html{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 50%;
         max-width: 40%;
-        height: 80%; /* Optional: Adds some padding around the image */
+        height: auto; /* Optional: Adds some padding around the image */
         box-sizing: border-box;
-        padding-right: 10px;
     }
     .hero-responsive-gif {
         width: 100%;
@@ -7870,11 +7871,11 @@ html{
         height: auto;
     }
     .about{
-        width: 100vw;
+        width: 100%;
         height: 380px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     
         
@@ -7882,12 +7883,12 @@ html{
     .about-image-container {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
+        width: 50%;
         max-width: 50%;
-        height: 90%; /* Optional: Adds some padding around the image */
+        height: auto; /* Optional: Adds some padding around the image */
         box-sizing: border-box; /* Ensures padding is included in the total width and height */
-        padding-left: 15px;
         
     }
     
@@ -7898,18 +7899,18 @@ html{
         height: auto;
     }
     .about-content{
-        max-width: 91%;
+        width: 100%;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: start;
-        padding: 0 10px 0 20px;
+        align-items: center;
     }
     .about-content-container-1200px-above{
         width: 50%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: end;
+        justify-content: center;
     }
     .about-heading{
         font-family: "Montserrat";
@@ -7918,14 +7919,17 @@ html{
     }
     .about-Subheading{
         margin-top: 5px;
+        text-align: center;
         font-family: "Montserrat";
         font-weight: 700;
         font-size: 24px;
     }
     .about-description{
+        text-align: center;
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 12px;
+        line-height: 1.1rem;
     
     }
     .about-button{
@@ -7947,11 +7951,11 @@ html{
     }
     
     .why-choose-us{
-        width: 100vw;
+        width: 100%;
         height: 380px;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         
     }
@@ -7960,9 +7964,7 @@ html{
         width: 50%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding-left: 15px;
-      
+        align-items: center;
     }
     
     .why-choose-us-heading{
@@ -7973,26 +7975,29 @@ html{
     
     .why-choose-us-Subheading{
         margin-top: 5px;
+        text-align: center;
         font-family: "Montserrat";
         font-weight: 700;
         font-size: 24px;
     }
     
     .why-choose-us-description{
+        text-align: center;
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 12px;
+        line-height: 1.1rem;
     }
     
     .why-us-image-container {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
+        width: 50%;
         max-width: 50%;
-        height: 90%; /* Optional: Adds some padding around the image */
+        height: auto; /* Optional: Adds some padding around the image */
         box-sizing: border-box; /* Ensures padding is included in the total width and height */
-        padding-right: 15px;
         
     }
     
@@ -8003,7 +8008,7 @@ html{
         height: auto;
     }
     .reasons{
-        width: 100vw;
+        width: 100%;
         height: auto;
         
         
@@ -9764,22 +9769,20 @@ html{
     }
     .hero-section{
         width: 100%;
-        margin: 82px 0 0 0;
-        height: 600px;
+        height: 100vh;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         
         
     }
     .hero-content{
         width: 50%;
-        max-width: 45%;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 10px;
         
     
     }    
@@ -9793,6 +9796,7 @@ html{
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 14px;
+        line-height: 1.2rem;
     }
     .hero-text-italic{
         font-family: "Montserrat";
@@ -9823,36 +9827,33 @@ html{
         justify-content: center;
         width: 50%;
         max-width: 40%;
-        height: 100%;
+        height: auto;
         box-sizing: border-box;
-        padding-right: 10px;
     }
     .hero-responsive-gif {
         width: 100%;
         max-width: 450px;
-        max-height: 450px;
+        max-height: auto;
     }
     .about{
         width: 100%;
         height: 400px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     
         
     }
     .about-image-container {
-        width: 50%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        max-width: 36%;
-        height: 90%; /* Optional: Adds some padding around the image */
+        width: 50%;
+        max-width: 50%;
+        height: auto; /* Optional: Adds some padding around the image */
         box-sizing: border-box; /* Ensures padding is included in the total width and height */
-        padding-left: 15px;
-        
     }
     
     /* Responsive image styling */
@@ -9866,15 +9867,14 @@ html{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: end;
+        justify-content: center;
     }
     .about-content{
         width: 100%;
-        max-width: 70%;
         display: flex;
         flex-direction: column;
-        align-items: start;
-        padding: 0 10px 0 20px;
+        align-items: center;
+        justify-content: center;
     }
     .about-heading{
         font-family: "Montserrat";
@@ -9883,14 +9883,17 @@ html{
     }
     .about-Subheading{
         margin-top: 5px;
+        text-align: center;
         font-family: "Montserrat";
         font-weight: 700;
         font-size: 24px;
     }
     .about-description{
+        text-align: center;
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 12px;
+        line-height: 1.2rem;
     
     }
     .about-button{
@@ -9913,22 +9916,20 @@ html{
     
     .why-choose-us{
         width: 100%;
-        height: 500px;
+        height: 400px;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         
     }
     
     .why-choose-us-content{
         width: 50%;
-        max-width: 48%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding-left: 15px;
-      
+        align-items: center; 
+        justify-content: center;
     }
     
     .why-choose-us-heading{
@@ -9939,28 +9940,30 @@ html{
     
     .why-choose-us-Subheading{
         margin-top: 5px;
+        text-align: center;
         font-family: "Montserrat";
         font-weight: 700;
         font-size: 24px;
     }
     
     .why-choose-us-description{
+        text-align: center;
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 12px;
+        line-height: 1.2rem;
     }
     
     .why-us-image-container {
         width: 50%;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
-        max-width: 36%;
-        height: 90%; /* Optional: Adds some padding around the image */
+        width: 50%;
+        max-width: 50%;
+        height: auto; /* Optional: Adds some padding around the image */
         box-sizing: border-box; /* Ensures padding is included in the total width and height */
-        padding-right: 15px;
-        
     }
     
     /* Responsive image styling */
