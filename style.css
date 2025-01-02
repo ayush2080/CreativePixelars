@@ -5818,7 +5818,7 @@ html{
         }
         .hero-section{
             width: 100%;
-            height: 100vh;
+            height: 600px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -5894,7 +5894,7 @@ html{
         }
         .about{
             width: 100%;
-            height: 380px;
+            height: 400px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -5973,7 +5973,7 @@ html{
         
         .why-choose-us{
             width: 100%;
-            height: 380px;
+            height: 400px;
             display: flex;
             flex-direction: row-reverse;
             justify-content: center;
@@ -6029,8 +6029,8 @@ html{
             height: auto;
         }
         .reasons{
-            width: 100vw;
-            height: auto;
+            width: 100%;
+            height: 400px;
             
             
         }
@@ -7797,7 +7797,7 @@ html{
     }
     .hero-section{
         width: 100%;
-        height: 100vh;
+        height: 700px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -7872,7 +7872,7 @@ html{
     }
     .about{
         width: 100%;
-        height: 380px;
+        height: 500px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -7952,7 +7952,7 @@ html{
     
     .why-choose-us{
         width: 100%;
-        height: 380px;
+        height: 500px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
@@ -8009,7 +8009,7 @@ html{
     }
     .reasons{
         width: 100%;
-        height: auto;
+        height: 450px;
         
         
     }
@@ -9769,7 +9769,7 @@ html{
     }
     .hero-section{
         width: 100%;
-        height: 100vh;
+        height: 750px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -9837,7 +9837,7 @@ html{
     }
     .about{
         width: 100%;
-        height: 400px;
+        height: 550px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -9916,7 +9916,7 @@ html{
     
     .why-choose-us{
         width: 100%;
-        height: 400px;
+        height: 550px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
@@ -9974,7 +9974,7 @@ html{
     }
     .reasons{
         width: 100%;
-        height: 400px;
+        height: 500px;
         
         
     }
