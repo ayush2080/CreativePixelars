@@ -11436,7 +11436,7 @@ html{
 }
 .Our-services-cards-row{
     width: 100%;
-    max-width: 80%;
+    max-width: 75%;
     height: auto;
     display: flex;
     align-items: center;
@@ -11777,19 +11777,19 @@ html{
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
-        font-size: 36px;
+        font-size: 34px;
     }
     
     .hero-description{
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 15px;
-        line-height: 1.3rem;
+        font-size: 13px;
+        line-height: 1.2rem;
     }
     .hero-text-italic{
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 36px;
+        font-size: 34px;
     }
     .hero-button{
         margin-top: 20px;
@@ -11874,14 +11874,14 @@ html{
         text-align: center;
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 26px;
+        font-size: 24px;
     }
     .about-description{
         text-align: center;
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 15px;
-        line-height: 1.3rem;
+        font-size: 13px;
+        line-height: 1.2rem;
     
     }
     .about-button{
@@ -11931,15 +11931,15 @@ html{
         text-align: center;
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 26px;
+        font-size: 24px;
     }
     
     .why-choose-us-description{
         text-align: center;
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 15px;
-        line-height: 1.3rem;
+        font-size: 13px;
+        line-height: 1.2rem;
     }
     
     .why-us-image-container {
@@ -12146,6 +12146,7 @@ html{
         text-align: center;
         line-height: 1.1rem;
         font-size: 13px;
+        color: rgba( 30, 30, 30, 0.9);
         width: 210px;
         height: 104px;
     }
@@ -12189,13 +12190,13 @@ html{
         margin-top: 5px;
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 26px;
+        font-size: 24px;
     }
     .services-description{
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 15px;
-        line-height: 1.3rem;
+        font-size: 13px;
+        line-height: 1.2rem;
     
     }
     .services-button{
@@ -13064,10 +13065,10 @@ html{
 }
 .approach-heading-container h3{
     font-family: "Montserrat";
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 1.1rem;
-    color: #1e1e1e;
+    line-height: 1.2rem;
+    color: rgba( 30, 30, 30, 0.9);
 }
 .approach-heading-container h1{
     display: flex;
@@ -13129,10 +13130,10 @@ html{
 }
 .approach-content-description-container p{
     font-family: "Montserrat";
-    font-size: 9.8px;
+    font-size: 11px;
     font-weight: 400;
-    color: #1e1e1e;
-    line-height: 1rem;
+    color: rgba(30, 30, 30, 0.9);
+    line-height: 1.2rem;
 }
 .vl {
     border-left: 2px solid #000000;
@@ -13184,7 +13185,8 @@ html{
 .about-us-work-together-content-right p{
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: 11px;
+    font-size: 14px;
+    line-height: 1.3rem;
     color: #fff;
 }
 .about-us-work-together-button{
@@ -13200,7 +13202,7 @@ html{
     font-family: "Montserrat Medium";
     font-weight: 400;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     border-style: none;
     box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
 }
@@ -13241,10 +13243,10 @@ html{
 }
 .what-we-do-left-content h3{
     font-family: "Montserrat";
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
-    color: #1e1e1e;
-    line-height: 1.1rem;
+    color: rgba( 30, 30, 30, 0.9);
+    line-height: 1.2rem;
 
 }
 .what-we-do-img-container{
@@ -13412,7 +13414,7 @@ html{
 }
 .Our-services-cards-row{
     width: 100%;
-    max-width: 80%;
+    max-width: 64%;
     height: auto;
     display: flex;
     align-items: center;
@@ -13529,7 +13531,8 @@ html{
 .Our-services-work-together-content-right p{
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: 11px;
+    font-size: 14px;
+    line-height: 1.2rem;
     color: #fff;
 }
 .Our-services-work-together-button{
@@ -13545,7 +13548,7 @@ html{
     font-family: "Montserrat Medium";
     font-weight: 400;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     border-style: none;
     box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
 }
@@ -15159,7 +15162,8 @@ html{
 .about-us-work-together-content-right p{
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: 11px;
+    font-size: 15px;
+    line-height: 1.4rem;
     color: #fff;
 }
 .about-us-work-together-button{
@@ -15175,7 +15179,7 @@ html{
     font-family: "Montserrat Medium";
     font-weight: 400;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     border-style: none;
     box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
 }
@@ -15387,7 +15391,7 @@ html{
 }
 .Our-services-cards-row{
     width: 100%;
-    max-width: 80%;
+    max-width: 55%;
     height: auto;
     display: flex;
     align-items: center;
@@ -17134,8 +17138,9 @@ html{
 .about-us-work-together-content-right p{
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: 11px;
+    font-size: 15px;
     color: #fff;
+    line-height: 1.4rem;
 }
 .about-us-work-together-button{
     margin-top: 10px;
@@ -17150,7 +17155,7 @@ html{
     font-family: "Montserrat Medium";
     font-weight: 400;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     border-style: none;
     box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
 }
@@ -17362,7 +17367,7 @@ html{
 }
 .Our-services-cards-row{
     width: 100%;
-    max-width: 80%;
+    max-width: 49%;
     height: auto;
     display: flex;
     align-items: center;
