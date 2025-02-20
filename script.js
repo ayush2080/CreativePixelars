@@ -39,6 +39,9 @@ window.addEventListener("scroll", function () {
 })
 
 
-
+// Function to open a webpage when button is clicked
+function openWebPage() {
+  window.open("Contact Us.html", "_blank");
+}
 
 
