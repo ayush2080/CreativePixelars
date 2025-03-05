@@ -117,7 +117,9 @@ nav {
 .nav-link.active:hover::after {
     width: 100%;
 }
-
+.nav-item-contact{
+    display: none;
+}
 .close-menu {
     display: none;
     font-size: 3rem;
@@ -2711,6 +2713,11 @@ input:focus {
         align-items: center;
         padding: 7px;
     }
+    .nav-item-contact{
+        height: 7%;
+        display: flex;
+        align-items: center;
+    }
 
     .navbar-content.show {
         display: flex;
@@ -2812,6 +2819,7 @@ input:focus {
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 10px;
+        line-height: 1rem;
     }
     .hero-text-italic{
         font-family: "Montserrat";
@@ -2886,7 +2894,6 @@ input:focus {
         height: 100%;
     }
     .about-content-container-1200px-above{
-        width: 100%;
         height: 50%;
         display: flex;
         flex-direction: column;
@@ -2995,7 +3002,7 @@ input:focus {
         line-height: 1rem;
         
     }
-
+    
     .reasons{
         display: flex;
         flex-direction: column;
@@ -3017,7 +3024,7 @@ input:focus {
         margin-top: 1rem;
         
     }
-        
+    
     
     .reason-line{
         display: none;
@@ -3047,13 +3054,13 @@ input:focus {
         
     }
     .reason-circle{
-       position: relative;
-       width: 130px;
-       height: 130px;
-       z-index: 2;
-       border-radius: 50%;
-       background-color: #1e1e1e;
-       margin: 1rem 0 0 0;
+        position: relative;
+        width: 130px;
+        height: 130px;
+        z-index: 2;
+        border-radius: 50%;
+        background-color: #1e1e1e;
+        margin: 1rem 0 0 0;
     }
     .reason-circle1{
         position: relative;
@@ -3063,8 +3070,8 @@ input:focus {
         border-radius: 50%;
         background-color: #1e1e1e;
         margin: 9rem 0 0 0;
-     }
-
+    }
+    
     .reason-no{
         position: relative;
         z-index: 3;
@@ -3075,11 +3082,12 @@ input:focus {
         border-radius: 50%;
         background-color: #FB8500;
         border: 3px solid white;
-    
+        
     }
     .reason-no-text{
         position: relative;
         font-family: "Montserrat";
+        width: 100%;
         font-weight: 500;
         font-size: 18px;
         color: #F5F7F5;
@@ -3726,6 +3734,7 @@ input:focus {
         
     }
     .footer-left-content{
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content:space-evenly;
@@ -3742,12 +3751,17 @@ input:focus {
         height: auto;
     }
     .footer-left-content p{
+        width: 90%;
         text-align:left;
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 14px;
+        font-size: 13px;
+        line-height: 1.2rem;
         color: rgba(245, 247, 245, 0.5);
         margin: 20px 0 0 0;
+    }
+    .footer-left-content p br{
+        display: none;
     }
     .footer-right-content{
         display: flex;
@@ -5290,6 +5304,11 @@ input:focus {
         align-items: center;
         padding: 7px;
     }
+    .nav-item-contact{
+        height: 7%;
+        display: flex;
+        align-items: center;
+    }
 
     .navbar-content.show {
         display: flex;
@@ -5392,6 +5411,7 @@ input:focus {
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 10px;
+        line-height: 1rem;
     }
     .hero-text-italic{
         font-family: "Montserrat";
@@ -7615,7 +7635,11 @@ input:focus {
             align-items: center;
             
         }
-        
+
+        .nav-item-contact{
+            display: none;
+        }
+
         .nav-link {
             font-family: 'Montserrat', sans-serif;
             font-size: 15px;
@@ -10028,6 +10052,10 @@ input:focus {
         
     }
     
+    .nav-item-contact{
+        display: none;
+    }
+
     .nav-link {
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
@@ -12437,6 +12465,10 @@ input:focus {
         
     }
     
+    .nav-item-contact{
+        display: none;
+    }
+
     .nav-link {
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
@@ -14836,6 +14868,10 @@ input:focus {
         
     }
     
+    .nav-item-contact{
+        display: none;
+    }
+
     .nav-link {
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
@@ -17245,6 +17281,10 @@ input:focus {
         
     }
     
+    .nav-item-contact{
+        display: none;
+    }
+
     .nav-link {
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
@@ -19647,6 +19687,10 @@ input:focus {
         display: flex;
         align-items: center;
         
+    }
+    
+    .nav-item-contact{
+        display: none;
     }
     
     .nav-link {
