@@ -181,7 +181,6 @@ nav {
 }
 .lets-talk-button:hover{
     background-position: right center; /* change the direction of the change here */
-    color: #633a08;
     text-decoration: none;
 }
 .arrow-right-icon {
@@ -3013,12 +3012,12 @@ input:focus {
         font-size: 20px;
     }
     .about-description{
-        width: 95%;
+        width: 90%;
         text-align: center;
         font-family: "Montserrat";
         font-weight: 400;
         font-size: 13px;
-        line-height: 1.2rem;
+        line-height: 1.3rem;
         color: #717171;
     }
     .about-description br{
@@ -4228,20 +4227,21 @@ input:focus {
 
 .about-us-work-together{
     width: 100%;
-    height: 220px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: #2A2A2A;
 }
 .about-us-work-together-content-left{
     width: 100%;
-    height: auto;
+    height: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    margin: 0px;
     
 }
 .about-us-work-together-content-left p{
@@ -4255,28 +4255,33 @@ input:focus {
     font-weight: 700;
     font-size: 25px;
     color: #fff;
-    margin-top: -4px;
+    margin: 0px;
     
 }
 .about-us-work-together-content-right{
     width: 100%;
-    height: 100%;
-    margin-top: -1rem;
+    height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0px;
 }
 .about-us-work-together-content-right p{
+    width: 95%;
     text-align: center;
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: 10px;
+    font-size: 13.8px;
     color: #fff;
-    line-height: 1rem;
+    line-height: 1.2rem;
+    word-spacing: 1px;
+}
+.about-us-work-together-content-right p br{
+    display: none;
 }
 .about-us-work-together-button{
-    margin-top: 10px;
+    margin: 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -4567,19 +4572,19 @@ input:focus {
 
 .Our-services-work-together{
     width: 100%;
-    height: 230px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: #2A2A2A;
 }
 .Our-services-work-together-content-left{
     width: 100%;
-    height: 40%;
+    height: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     
 }
@@ -4594,24 +4599,30 @@ input:focus {
     font-weight: 700;
     font-size: 25px;
     color: #fff;
-    margin-top: -4px;
+    margin: 0px;
     
 }
 .Our-services-work-together-content-right{
     width: 100%;
-    height: 60%;
+    height: 140px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    margin: 0px;
 }
 .Our-services-work-together-content-right p{
+    width: 95%;
     text-align: center;
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: 10px;
+    font-size: 13.8px;
     color: #fff;
-    line-height: 1rem;
+    line-height: 1.2rem;
+    word-spacing: 1px;
+}
+.Our-services-work-together-content-right p br{
+    display: none;
 }
 .Our-services-work-together-button{
     display: flex;
@@ -4654,7 +4665,7 @@ input:focus {
 .Our-commitment-description{
     font-family: "Montserrat";
     font-weight: 500;
-    font-size: 11px;
+    font-size: 13px;
     color:rgba(30, 30, 30, 0.7);
     line-height: 1.3rem;
 }
@@ -4986,19 +4997,19 @@ input:focus {
 
 .project-work-together{
     width: 100%;
-    height: 230px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: #2A2A2A;
 }
 .project-work-together-content-left{
     width: 100%;
-    height: 40%;
+    height: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     
 }
@@ -5013,24 +5024,30 @@ input:focus {
     font-weight: 700;
     font-size: 25px;
     color: #fff;
-    margin-top: -4px;
+    margin: 0px;
     
 }
 .project-work-together-content-right{
     width: 100%;
-    height: 60%;
+    height: 140px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    margin: 0px;
 }
 .project-work-together-content-right p{
+    width: 95%;
     text-align: center;
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: 10px;
+    font-size: 13.8px;
     color: #fff;
-    line-height: 1rem;
+    line-height: 1.2rem;
+    word-spacing: 1px;
+}
+.project-work-together-content-right p br{
+    display: none;
 }
 .project-work-together-button{
     display: flex;
@@ -5063,9 +5080,9 @@ input:focus {
     align-items: center;
     justify-content: center;
     font-family: "Montserrat";
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 1.1rem;
+    line-height: 1.3rem;
     color: #1e1e1e;
 }
 .Our-work-footer{
@@ -5649,12 +5666,12 @@ input:focus {
         font-size: 20px;
     }
     .about-description{
-        width: 95%;
+        width: 90%;
         text-align: center;
         font-family: "Montserrat";
         font-weight: 400;
         font-size: 13px;
-        line-height: 1.2rem;
+        line-height: 1.3rem;
         color: #717171;
     }
     .about-description br{
@@ -6861,22 +6878,23 @@ input:focus {
 
   }
 
-.about-us-work-together{
+  .about-us-work-together{
     width: 100%;
-    height: 220px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: #2A2A2A;
 }
 .about-us-work-together-content-left{
     width: 100%;
-    height: auto;
+    height: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    margin: 0px;
     
 }
 .about-us-work-together-content-left p{
@@ -6890,28 +6908,33 @@ input:focus {
     font-weight: 700;
     font-size: 25px;
     color: #fff;
-    margin-top: -4px;
+    margin: 0px;
     
 }
 .about-us-work-together-content-right{
     width: 100%;
-    height: 100%;
-    margin-top: -1rem;
+    height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0px;
 }
 .about-us-work-together-content-right p{
+    width: 95%;
     text-align: center;
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: 10px;
+    font-size: 13.8px;
     color: #fff;
-    line-height: 1rem;
+    line-height: 1.2rem;
+    word-spacing: 1px;
+}
+.about-us-work-together-content-right p br{
+    display: none;
 }
 .about-us-work-together-button{
-    margin-top: 10px;
+    margin: 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -7203,19 +7226,19 @@ input:focus {
 
 .Our-services-work-together{
     width: 100%;
-    height: 230px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: #2A2A2A;
 }
 .Our-services-work-together-content-left{
     width: 100%;
-    height: 40%;
+    height: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     
 }
@@ -7230,24 +7253,30 @@ input:focus {
     font-weight: 700;
     font-size: 25px;
     color: #fff;
-    margin-top: -4px;
+    margin: 0px;
     
 }
 .Our-services-work-together-content-right{
     width: 100%;
-    height: 60%;
+    height: 140px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    margin: 0px;
 }
 .Our-services-work-together-content-right p{
+    width: 95%;
     text-align: center;
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: 10px;
+    font-size: 13.8px;
     color: #fff;
-    line-height: 1rem;
+    line-height: 1.2rem;
+    word-spacing: 1px;
+}
+.Our-services-work-together-content-right p br{
+    display: none;
 }
 .Our-services-work-together-button{
     display: flex;
@@ -7290,7 +7319,7 @@ input:focus {
 .Our-commitment-description{
     font-family: "Montserrat";
     font-weight: 500;
-    font-size: 11px;
+    font-size: 13px;
     color:rgba(30, 30, 30, 0.7);
     line-height: 1.3rem;
 }
@@ -7623,19 +7652,19 @@ input:focus {
 
 .project-work-together{
     width: 100%;
-    height: 230px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: #2A2A2A;
 }
 .project-work-together-content-left{
     width: 100%;
-    height: 40%;
+    height: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     
 }
@@ -7650,24 +7679,30 @@ input:focus {
     font-weight: 700;
     font-size: 25px;
     color: #fff;
-    margin-top: -4px;
+    margin: 0px;
     
 }
 .project-work-together-content-right{
     width: 100%;
-    height: 60%;
+    height: 140px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    margin: 0px;
 }
 .project-work-together-content-right p{
+    width: 95%;
     text-align: center;
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: 10px;
+    font-size: 13.8px;
     color: #fff;
-    line-height: 1rem;
+    line-height: 1.2rem;
+    word-spacing: 1px;
+}
+.project-work-together-content-right p br{
+    display: none;
 }
 .project-work-together-button{
     display: flex;
@@ -7700,9 +7735,9 @@ input:focus {
     align-items: center;
     justify-content: center;
     font-family: "Montserrat";
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 1.1rem;
+    line-height: 1.3rem;
     color: #1e1e1e;
 }
 
