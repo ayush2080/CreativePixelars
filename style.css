@@ -2931,7 +2931,10 @@ input:focus {
         display: none;
     }
     .logo{
+        position: relative;
         display: flex;
+        align-items: center;
+        justify-content: flex-start;
         width: 85%;
         padding-left: 14px;
         
@@ -2939,9 +2942,24 @@ input:focus {
     .logo img {
         max-width:120px;
         height: auto;
+        position: absolute;
+        transition: opacity 0.3s ease;
         
     }
+    .white-logo{
+        opacity: 1;
+    }
+    .black-logo{
+        opacity: 0;
+    }
+    header.sticky .white-logo{
+        opacity: 0;
     
+    }
+    header.sticky .black-logo{
+        opacity: 1;
+    
+    }
     .hero-section{
         width: 100%;
         height: 700px;
@@ -5583,7 +5601,6 @@ input:focus {
     .close-menu {
         display: flex;
         font-size: 3rem;
-        color: #ffffff;
         border: none;
         cursor: pointer;
         align-self: flex-end;
@@ -5594,15 +5611,34 @@ input:focus {
         display: none;
     }
     .logo{
+        position: relative;
         display: flex;
+        align-items: center;
+        justify-content: flex-start;
         width: 85%;
         padding-left: 14px;
-    
+        
     }
     .logo img {
         max-width:120px;
         height: auto;
+        position: absolute;
+        transition: opacity 0.3s ease;
         
+    }
+    .white-logo{
+        opacity: 1;
+    }
+    .black-logo{
+        opacity: 0;
+    }
+    header.sticky .white-logo{
+        opacity: 0;
+    
+    }
+    header.sticky .black-logo{
+        opacity: 1;
+    
     }
     
     .hero-section{
