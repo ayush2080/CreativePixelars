@@ -2834,6 +2834,7 @@ input:focus {
 @media only screen and ((min-width:0px) and  (max-width: 576px)) {
     nav {
         width: 15%;
+        height: 50px;
     }
     
 
@@ -2908,11 +2909,20 @@ input:focus {
 
     .bar {
         width: 28px;
+        height: 3.2px;
+        background-color: #f5f5f5;
+        margin: 2.5px 0;
+        border-radius: 3px;
+    }
+
+    header.sticky .bar{
+        width: 28px;
         height: 4px;
         background-color: #1e1e1e;
         margin: 2px 0;
         border-radius: 3px;
     }
+
 
     .lets-talk {
         display: none;
@@ -5192,13 +5202,54 @@ input:focus {
 
 }
 .contact-us-page-heading-bg{
+    position: relative;
+    z-index: 3;
     width: 100%;
-    height: 100%;
+    height: 325px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F5F7F5;
+    
+}
+.contact-us-page-heading-bg h1{
+    z-index: 4;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    color: #f5f5f5;
+}
+.contact-us-page-heading-bg span{
+    position: relative;
+    z-index: 4;
+    color: #f5f5f5;
+}
+.contact-us-page-heading-bg img{
+    width: 100%;
+    height: 325px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%; /* Optional: Adds some padding around the image */
+    box-sizing: border-box; /* Ensures padding is included in the total width and height */
+}
+/* Responsive image styling */
+.contact-us-page-heading-bg-responsive-image {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto; /* Maintain aspect ratio */
+    width: auto;  /* Maintain aspect ratio */
+}
+.contact-us-page-heading-bg-overlay{
+    position: absolute;
+    width: 100%;
+    height: 325px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    
 }
 .contact-us-main{
     width: 100%;
@@ -5379,11 +5430,15 @@ input:focus {
     color: #1e1e1e;
 }
 .contact-form-heading p{
+    width: 100%;
     font-family: "Montserrat";
     font-size: 13px;
     font-weight: 400;
     line-height: 1.3rem;
     color: #1e1e1e;
+}
+.contact-form-heading p br{
+    display: none;
 }
 .contact-form-container{
     width: 100%;
@@ -5587,6 +5642,14 @@ input:focus {
     }
 
     .bar {
+        width: 28px;
+        height: 4px;
+        background-color: #f5f5f5;
+        margin: 2px 0;
+        border-radius: 3px;
+    }
+
+    header.sticky .bar{
         width: 28px;
         height: 4px;
         background-color: #1e1e1e;
@@ -7867,22 +7930,374 @@ input:focus {
 
 /* Contact Us*/
 
+/*Contact Us*/
+
 .contact-us-hero-section{
     width: 100%;
-    height: 400px;
+    height: 325px;
     display: flex;
     flex-direction: column;
 
 }
 .contact-us-page-heading-bg{
+    position: relative;
+    z-index: 3;
     width: 100%;
-    height: 100%;
+    height: 325px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F5F7F5;
+    
+}
+.contact-us-page-heading-bg h1{
+    z-index: 4;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    color: #f5f5f5;
+}
+.contact-us-page-heading-bg span{
+    position: relative;
+    z-index: 4;
+    color: #f5f5f5;
+}
+.contact-us-page-heading-bg img{
+    width: 100%;
+    height: 325px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%; /* Optional: Adds some padding around the image */
+    box-sizing: border-box; /* Ensures padding is included in the total width and height */
+}
+/* Responsive image styling */
+.contact-us-page-heading-bg-responsive-image {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto; /* Maintain aspect ratio */
+    width: auto;  /* Maintain aspect ratio */
+}
+.contact-us-page-heading-bg-overlay{
+    position: absolute;
+    width: 100%;
+    height: 325px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    
+}
+.contact-us-main{
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us-content-main{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us-left-content{
+    width: 100%;
+    max-width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.contact-us-left-content h1{
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+.contact-us-left-content h3{
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e1e1e;
+}
+.contact-us-left-content p{
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.3rem;
+    color: #1e1e1e;
+}
+.contact-us-right-content-main{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us-right-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-us-right-content-text{
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 
+}
+.contact-us-right-content-text h1{
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+.contact-us-right-content-text p{
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: 400;
+    color: #1e1e1e;
+}
+.contact-us-icon-container{
+    width: 40%;
+    max-width: 40px;
+    height: 40px;
+    border: rgba( 30, 30, 30, 0.1);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us-icon-container span{
+    font-size: 20px;
+}
+.contact-us-socials-main{
+    width: 100%;
+    max-width: 90%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.contact-us-socials-content{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;;
+    justify-content: center;
+}
+.contact-us-socials-content h1{
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e1e1e; 
+}
+.contact-us-socials-content p{
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.3rem;
+    color: #1e1e1e;
+}
+.contact-us-socials-icons-main{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contact-us-socials-icons-container{
+    width: 100%;
+    max-width: 60%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-us-socials-icons{
+    width: 40px;
+    height: 40px;
+    border: rgba( 30, 30, 30, 0.1);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-us-socials-icons img{
+    width: 19px;
+    height: 19px;
+}
+.contact-form-main{
+    width: 100%;
+    height: 1200px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form-heading{
+    width: 100%;
+    height: 150px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.contact-form-heading h1{
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+.contact-form-heading p{
+    width: 100%;
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.3rem;
+    color: #1e1e1e;
+}
+.contact-form-heading p br{
+    display: none;
+}
+.contact-form-container{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form-field-container-main{
+    width: 100%;
+    max-width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form-field-container-main-mobile-no{
+    width: 100%;
+    max-width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contact-form-field-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:  space-evenly;
+}
+.form-item{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.form-item img{
+    width: 18px;
+    height: 18px;
+}
+.form-titles{
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    color: #1e1e1e;
+}
+input{
+    width: 100%;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1.8px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-bottom-color: #007bff;
+}
+
+.form-bottom{
+    width: 100%;
+    max-width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.form-button-container{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.submit-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 45px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right,#FB8500,#FFB703);
+    font-family: "Montserrat Medium";
+    font-weight: 400;
+    color: #fff;
+    font-size: 15px;
+    border-style: none;
+    box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+}
+.checkbox-container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.checkbox-container p{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.checkbox-container input{
+    width: 10%;
+    height: 15px;
 }
 
 }
