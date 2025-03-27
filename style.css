@@ -2924,8 +2924,14 @@ input:focus {
         cursor: pointer;
     
     }
-
-    .bar {
+    .bar{
+        width: 28px;
+        height: 4px;
+        background-color: #1e1e1e;
+        margin: 2px 0;
+        border-radius: 3px;
+    }
+    .contact-us-bar {
         width: 28px;
         height: 3.2px;
         background-color: #f5f5f5;
@@ -2933,7 +2939,7 @@ input:focus {
         border-radius: 3px;
     }
 
-    header.sticky .bar{
+    header.sticky .contact-us-bar{
         width: 28px;
         height: 4px;
         background-color: #1e1e1e;
@@ -5670,8 +5676,14 @@ input:focus {
         cursor: pointer;
     
     }
-
-    .bar {
+    .bar{
+        width: 28px;
+        height: 4px;
+        background-color: #1e1e1e;
+        margin: 2px 0;
+        border-radius: 3px;
+    }
+    .contact-us-bar {
         width: 28px;
         height: 4px;
         background-color: #f5f5f5;
@@ -5679,7 +5691,7 @@ input:focus {
         border-radius: 3px;
     }
 
-    header.sticky .bar{
+    header.sticky .contact-us-bar{
         width: 28px;
         height: 4px;
         background-color: #1e1e1e;
