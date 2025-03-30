@@ -303,7 +303,7 @@ nav {
     text-align: center;
     font-family: "Montserrat";
     font-weight: 800;
-    font-size: 80px;
+    font-size: 40px;
     color: #fff;
 }
 
@@ -3066,6 +3066,35 @@ input:focus {
         opacity: 1;
     
     }
+    .bubble-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        height: 100%;
+        z-index: 3; /* Ensure the bubbles are behind the content */
+        pointer-events: none; /* Allow interaction with the content on top */
+    }
+      
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+      
+      /* Style for the bubbles */
+    .bubble {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 154, 3, 0.9);
+        border-radius: 50%;
+        box-shadow: 0 0 25px 0px rgba(254, 185, 13, 0.4); /* Constant glow */
+        opacity: 0.7;
+        will-change: transform;
+    }
     .hero-section{
         width: 100%;
         height: 800px;
@@ -5720,6 +5749,35 @@ input:focus {
     .navbar-content.show {
         display: flex;
         transform: translateX(0);
+    }
+    .bubble-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        height: 100%;
+        z-index: 3; /* Ensure the bubbles are behind the content */
+        pointer-events: none; /* Allow interaction with the content on top */
+    }
+      
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+      
+      /* Style for the bubbles */
+    .bubble {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 154, 3, 0.9);
+        border-radius: 50%;
+        box-shadow: 0 0 25px 0px rgba(254, 185, 13, 0.4); /* Constant glow */
+        opacity: 0.7;
+        will-change: transform;
     }
 
     header {
@@ -11369,6 +11427,37 @@ input:focus {
     .arrow-right-icon {
         margin-left: 13px;
     }
+
+    .bubble-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        height: 100%;
+        z-index: 3; /* Ensure the bubbles are behind the content */
+        pointer-events: none; /* Allow interaction with the content on top */
+    }
+      
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+      
+      /* Style for the bubbles */
+    .bubble {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 154, 3, 0.9);
+        border-radius: 50%;
+        box-shadow: 0 0 25px 0px rgba(254, 185, 13, 0.4); /* Constant glow */
+        opacity: 0.7;
+        will-change: transform;
+    }
+
     .hero-section{
         width: 100%;
         height: 420px;
@@ -14194,6 +14283,36 @@ input:focus {
     .arrow-right-icon {
         margin-left: 13px;
     }
+    .bubble-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        height: 100%;
+        z-index: 3; /* Ensure the bubbles are behind the content */
+        pointer-events: none; /* Allow interaction with the content on top */
+    }
+      
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+      
+      /* Style for the bubbles */
+    .bubble {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 154, 3, 0.9);
+        border-radius: 50%;
+        box-shadow: 0 0 25px 0px rgba(254, 185, 13, 0.4); /* Constant glow */
+        opacity: 0.7;
+        will-change: transform;
+    }
+
     .hero-section{
         width: 100%;
         height: 600px;
@@ -17007,6 +17126,37 @@ input:focus {
     .arrow-right-icon {
         margin-left: 13px;
     }
+
+    .bubble-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        height: 100%;
+        z-index: 3; /* Ensure the bubbles are behind the content */
+        pointer-events: none; /* Allow interaction with the content on top */
+    }
+      
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+      
+      /* Style for the bubbles */
+    .bubble {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 154, 3, 0.9);
+        border-radius: 50%;
+        box-shadow: 0 0 25px 0px rgba(254, 185, 13, 0.4); /* Constant glow */
+        opacity: 0.7;
+        will-change: transform;
+    }
+
     .hero-section{
         width: 100%;
         height: 700px;
@@ -17037,19 +17187,16 @@ input:focus {
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 46px;
+        font-size: 34px;
+        color: #f5f5f5;
     }
     
     .hero-description{
-        width: 100%;
-        max-width: 39%;
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 13px;
-        line-height: 1.5rem;
-    }
-    .hero-description br{
-        display: none;
+        line-height: 1.3rem;
+        color: #f5f5f5;
     }
     .hero-description-mobile{
         display: none;
@@ -17057,7 +17204,8 @@ input:focus {
     .hero-text-italic{
         font-family: "Montserrat";
         font-weight: 600;
-        font-size: 45px;
+        font-size: 34px;
+        color: #f5f5f5;
     }
     .hero-button{
         margin-top: 20px;
@@ -19818,6 +19966,36 @@ input:focus {
     .arrow-right-icon {
         margin-left: 13px;
     }
+    .bubble-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        height: 100%;
+        z-index: 3; /* Ensure the bubbles are behind the content */
+        pointer-events: none; /* Allow interaction with the content on top */
+    }
+      
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+      
+      /* Style for the bubbles */
+    .bubble {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 154, 3, 0.9);
+        border-radius: 50%;
+        box-shadow: 0 0 25px 0px rgba(254, 185, 13, 0.4); /* Constant glow */
+        opacity: 0.7;
+        will-change: transform;
+    }
+
     .hero-section{
         width: 100%;
         height: 700px;
@@ -22588,6 +22766,36 @@ input:focus {
     .arrow-right-icon {
         margin-left: 13px;
     }
+    .bubble-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        height: 100%;
+        z-index: 3; /* Ensure the bubbles are behind the content */
+        pointer-events: none; /* Allow interaction with the content on top */
+    }
+      
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+      
+      /* Style for the bubbles */
+    .bubble {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 154, 3, 0.9);
+        border-radius: 50%;
+        box-shadow: 0 0 25px 0px rgba(254, 185, 13, 0.4); /* Constant glow */
+        opacity: 0.7;
+        will-change: transform;
+    }
+
     .hero-section{
         width: 100%;
         height: 700px;
