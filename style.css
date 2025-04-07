@@ -2,7 +2,39 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #F5F7F5;
+    background-color: #f5f5f5;
+}
+
+
+/* Bubble background container */
+.bubble-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 100%;
+    z-index: 3; /* Ensure the bubbles are behind the content */
+    pointer-events: none; /* Allow interaction with the content on top */
+}
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+  
+  /* Style for the bubbles */
+.bubble {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 154, 3, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 0 25px 0px rgba(254, 185, 13, 0.4); /* Constant glow */
+    opacity: 0.7;
+    will-change: transform;
 }
 
 header {
@@ -205,42 +237,82 @@ nav {
     margin-left: 13px;
 }
 
-
 .hero-section{
+    position: relative;
     width: 100%;
-    height: 630px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    overflow: hidden;
 }
 .hero-section-container{
+    position: absolute;
     width: 100%;
-    height: 600px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+/* Video Background */
+.hero-video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#hero-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hero-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+    
+}
 .hero-content{
-    width: 60%;
+    position: absolute;
+    z-index: 4;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     
 
 }    
 .hero-heading{
+    text-align: center;
     font-family: "Montserrat";
     font-weight: 800;
     font-size: 40px;
+    color: #1e1e1e;
 }
 
 .hero-description{
+    text-align: center;
     font-family: "Montserrat";
-    font-weight: 300;
-    font-size: 16px;
+    font-weight: 200;
+    font-size: 13px;
+    color: #1e1e1e;
 }
 .hero-text-italic{
     font-family: "Montserrat";
@@ -2981,10 +3053,10 @@ input:focus {
         
     }
     .white-logo{
-        opacity: 1;
+        opacity: 0;
     }
     .black-logo{
-        opacity: 0;
+        opacity: 1;
     }
     header.sticky .white-logo{
         opacity: 0;
@@ -2995,25 +3067,61 @@ input:focus {
     
     }
     .hero-section{
+        position: relative;
         width: 100%;
-        height: 800px;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     }
     .hero-section-container{
+        position: absolute;
         width: 100%;
-        height: 700px;
-        margin: 1rem 0 0 0;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     }
+    /* Video Background */
+    .hero-video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    }
+
+    #hero-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+    .hero-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+    
+}
+   
     .hero-content{
+        position: absolute;
+        z-index: 4;
         width: 95%;
-        height: 350px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5748,32 +5856,68 @@ input:focus {
     }
     
     .hero-section{
+        position: relative;
         width: 100%;
-        height: 800px;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     }
     .hero-section-container{
+        position: absolute;
         width: 100%;
-        height: 700px;
-        margin: 1rem 0 0 0;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     }
+    /* Video Background */
+    .hero-video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    }
+
+    #hero-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+    .hero-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+    
+    }
+   
     .hero-content{
+        position: absolute;
+        z-index: 4;
         width: 95%;
-        height: 350px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         
         
-    }    
+    }     
     .hero-heading{
         text-align: center;
         font-family: "Montserrat";
@@ -8394,14 +8538,32 @@ input:focus {
             box-shadow: 4px 0 5px rgba(0,0,0,0.3);
         }
         .logo{
+            position: relative;
             width: 15%;
-            display: flex;
+            display:flex;
             align-items: center;
             justify-content: center;
         }
+        .white-logo{
+            opacity: 0;
+        }
+        .black-logo{
+            opacity: 1;
+        }
+        header.sticky .white-logo{
+            opacity: 0;
+        
+        }
+        header.sticky .black-logo{
+            opacity: 1;
+        
+        }
         .logo img {
+            position: absolute;
+            width: 100%;
             max-width: 120px;
             height: auto;
+            transition: opacity 0.3s ease;
         }
         .menu-toggle{
             display: none;
@@ -8517,53 +8679,86 @@ input:focus {
         }
         .hero-section{
             width: 100%;
-            height: 450px;
+            height: 100vh;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
         .hero-section-container{
             width: 100%;
-            height: 338px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            margin: 7rem 0 0 0;
-        }
-        .hero-content{
-            width: 50%;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            
+            align-items: center;
+            margin: 0px;
+        }
+        /* Video Background */
+    .hero-video-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        }
+    
+        #hero-video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover; /* Ensures the video covers the entire area */
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+        .hero-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 2;
+        
+        }
+        .hero-content{
+            z-index: 4;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         
         }    
         .hero-heading{
             font-family: "Montserrat";
             font-weight: 800;
-            font-size: 24px;
+            font-size: 29px;
         }
         
         .hero-description{
-            display: none;
+            max-width: 445px;
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.3rem;
         }
-        .hero-description p br{
+        .hero-description br{
             display: none;
         }
         .hero-description-mobile{
-            max-width: 80%;
-            font-family: "Montserrat";
-            font-weight: 400;
-            font-size: 11px;
-            line-height: 1.2rem;
+            display: none;
         }
 
         .hero-text-italic{
             font-family: "Montserrat";
             font-weight: 700;
-            font-size: 24px;
+            font-size: 28px;
         }
         .hero-button{
             margin-top: 20px;
@@ -11176,14 +11371,32 @@ input:focus {
         
     }
     .logo{
+        position: relative;
         width: 15%;
-        display: flex;
+        display:flex;
         align-items: center;
         justify-content: center;
     }
+    .white-logo{
+        opacity: 0;
+    }
+    .black-logo{
+        opacity: 1;
+    }
+    header.sticky .white-logo{
+        opacity: 0;
+    
+    }
+    header.sticky .black-logo{
+        opacity: 1;
+    
+    }
     .logo img {
+        position: absolute;
+        width: 100%;
         max-width: 135px;
         height: auto;
+        transition: opacity 0.3s ease;
     }
     .menu-toggle{
         display: none;
@@ -11299,55 +11512,90 @@ input:focus {
     }
     .hero-section{
         width: 100%;
-        height: 420px;
+        height: 100vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 8rem 0 0 0;
         
         
     }
     .hero-section-container{
         min-width: 993px;
         max-width: 1250px;
-        height: 370px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .hero-content{
-        width: 50%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+
+    /* Video Background */
+    .hero-video-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        }
+    
+        #hero-video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover; /* Ensures the video covers the entire area */
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+        .hero-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 2;
+        
+        }
+    .hero-content{
+        z-index: 4;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         
     
     }    
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
-        font-size: 24px;
+        font-size: 32px;
     }
     
     .hero-description{
-        display: none;
+        width: 100%;
+        max-width: 595px;
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.4rem;
     }
-    .hero-description p br{
+    .hero-description br{
         display: none;
     }
     .hero-description-mobile{
-        max-width: 425px;
-        font-family: "Montserrat";
-        font-weight: 300;
-        font-size: 12px;
-        line-height: 1.2rem;
+        display: none;
     }
     .hero-text-italic{
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 24px;
+        font-size: 31px;
     }
     .hero-button{
         margin-top: 20px;
@@ -11392,7 +11640,7 @@ input:focus {
     }
     .about{
         width: 100%;
-        height: 450px;
+        height: 500px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -13950,20 +14198,35 @@ input:focus {
     
     }
     header.sticky {
-        
         background-color: #fff;
         box-shadow: 4px 0 5px rgba(0,0,0,0.3);
-        
     }
     .logo{
-        width: 10%;
-        display: flex;
+        position: relative;
+        width: 15%;
+        display:flex;
         align-items: center;
         justify-content: center;
     }
+    .white-logo{
+        opacity: 0;
+    }
+    .black-logo{
+        opacity: 1;
+    }
+    header.sticky .white-logo{
+        opacity: 0;
+    
+    }
+    header.sticky .black-logo{
+        opacity: 1;
+    
+    }
     .logo img {
-        max-width: 135px;
-        height: auto;
+        position: absolute;
+        width: 165px;
+        height: 42px;
+        transition: opacity 0.3s ease;
     }
     .menu-toggle{
         display: none;
@@ -14110,43 +14373,84 @@ input:focus {
         margin-left: 13px;
     }
     .hero-section{
+        position: relative;
         width: 100%;
-        height: 600px;
+        height: 100vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .hero-section-container{
+        position: absolute;
         min-width: 1300px;
         max-width: 1450px;
-        height: 400px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 9rem 0 0 0;
-    }
-    .hero-content{
-        width: 50%;
-        max-width: 40%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+    /* Video Background */
+    .hero-video-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        }
+    
+    #hero-video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover; /* Ensures the video covers the entire area */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .hero-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 2;
+        
+    }
+     
+    .hero-content{
+        width: 100%;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         
     
     }    
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
-        font-size: 31px;
+        font-size: 36px;
     }
     
     .hero-description{
+        width: 100%;
+        max-width: 45%;
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 13px;
-        line-height: 1.3rem;
+        font-size: 14px;
+        line-height: 1.4rem;
+    }
+    .hero-description br{
+        display: none;
     }
     .hero-description-mobile{
         display: none;
@@ -14154,7 +14458,7 @@ input:focus {
     .hero-text-italic{
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 31px;
+        font-size: 35px;
     }
     .hero-button{
         margin-top: 20px;
@@ -16754,14 +17058,31 @@ input:focus {
         
     }
     .logo{
+        position: relative;
         width: 10%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    .white-logo{
+        opacity: 0;
+    }
+    .black-logo{
+        opacity: 1;
+    }
+    header.sticky .white-logo{
+        opacity: 0;
+    
+    }
+    header.sticky .black-logo{
+        opacity: 1;
+    
+    }
     .logo img {
-        max-width: 135px;
+        position: absolute;
+        width: 145px;
         height: auto;
+        transition: opacity 0.3s ease;
     }
     .menu-toggle{
         display: none;
@@ -16905,45 +17226,89 @@ input:focus {
     .arrow-right-icon {
         margin-left: 13px;
     }
+
+   
     .hero-section{
+        position: relative;
         width: 100%;
-        height: 700px;
+        height: 100vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
     .hero-section-container{
+        position: absolute;
         min-width: 1500px;
         max-width: 1780px;
-        height: 400px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 9rem 0 0 0;
-    }
-    .hero-content{
-        width: 50%;
-        max-width: 40%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+        /* Video Background */
+    .hero-video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    }
+
+    #hero-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+    .hero-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+    
+    }
+    .hero-content{
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         
     
     }    
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
-        font-size: 34px;
+        font-size: 38px;
+        color: #1e1e1e;
     }
     
     .hero-description{
+        width: 100%;
+        max-width: 50%;
         font-family: "Montserrat";
-        font-weight: 300;
+        font-weight: 400;
         font-size: 14px;
         line-height: 1.4rem;
+        color: #1e1e1e;
+    }
+    .hero-description br{
+        display: none;
     }
     .hero-description-mobile{
         display: none;
@@ -16951,7 +17316,7 @@ input:focus {
     .hero-text-italic{
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 34px;
+        font-size: 38px;
     }
     .hero-button{
         margin-top: 20px;
@@ -16962,13 +17327,51 @@ input:focus {
         width: 160px;
         height: 45px;
         border-radius: 25px;
-        background-image: linear-gradient(to right,#FB8500,#FFB703);
+        background-image: linear-gradient(to right, #FB8500, #FFB703);
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
         font-size: 13px;
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    }
+    .hero-button:hover {
+        background-image: none;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        color: #3e0000;
+    }
+    
+    .hero-button:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .hero-button-white {
+        background-color: #d8d503;
+        background-image: none;
+    }
+    
+    .hero-button::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    .hero-button-white::after {
+        background-image: linear-gradient(to right, #FB8500, #FFB703);
+    }
+    
+    .hero-button:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
     }
     .hero-gif-container{
         display: flex;
@@ -16987,7 +17390,7 @@ input:focus {
     }
     .about{
         width: 100%;
-        height: 500px;
+        height: 600px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -19560,15 +19963,33 @@ input:focus {
         
     }
     .logo{
+        position: relative;
         width: 10%;
-        display: flex;
+        display:flex;
         align-items: center;
         justify-content: center;
     }
-    .logo img {
-        max-width: 135px;
-        height: auto;
+    .white-logo{
+        opacity: 0;
     }
+    .black-logo{
+        opacity: 1;
+    }
+    header.sticky .white-logo{
+        opacity: 0;
+    
+    }
+    header.sticky .black-logo{
+        opacity: 1;
+    
+    }
+    .logo img {
+        position: absolute;
+        width: 165px;
+        height: auto;
+        transition: opacity 0.3s ease;
+    }
+
     .menu-toggle{
         display: none;
     }
@@ -19662,8 +20083,8 @@ input:focus {
     }
     
     .lets-talk-button {
-        width: 125px;
-        height: 40px;
+        width: 145px;
+        height: 45px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -19673,7 +20094,7 @@ input:focus {
         font-family: 'Montserrat Medium', sans-serif;
         font-weight: 400;
         color: #ffffff;
-        font-size: 11px;
+        font-size: 13px;
         border: none;
         background-size: 200% auto;
         transition: 0.5s;
@@ -19713,28 +20134,63 @@ input:focus {
         margin-left: 13px;
     }
     .hero-section{
+        position: relative;
         width: 100%;
-        height: 700px;
+        height: 100vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .hero-section-container{
+        position: absolute;
         min-width: 1800px;
         max-width: 1980px;
-        height: 400px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 9rem 0 0 0;
-    }
-    .hero-content{
-        width: 50%;
-        max-width: 40%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Video Background */
+    .hero-video-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    #hero-video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover; /* Ensures the video covers the entire area */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .hero-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 2;
+        
+    }
+    .hero-content{
+        position: absolute;
+        width: 100%;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         
     
@@ -19742,14 +20198,19 @@ input:focus {
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
-        font-size: 36px;
+        font-size: 42px;
     }
     
     .hero-description{
+        width: 100%;
+        max-width: 37%;
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.4rem;
+    }
+    .hero-description br{
+        display: none;
     }
     .hero-description-mobile{
         display: none;
@@ -19757,7 +20218,7 @@ input:focus {
     .hero-text-italic{
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 36px;
+        font-size: 41px;
     }
     .hero-button{
         margin-top: 20px;
@@ -22361,14 +22822,31 @@ input:focus {
         
     }
     .logo{
+        position: relative;
         width: 10%;
-        display: flex;
+        display:flex;
         align-items: center;
         justify-content: center;
     }
+    .white-logo{
+        opacity: 0;
+    }
+    .black-logo{
+        opacity: 1;
+    }
+    header.sticky .white-logo{
+        opacity: 0;
+    
+    }
+    header.sticky .black-logo{
+        opacity: 1;
+    
+    }
     .logo img {
-        max-width: 135px;
+        position: absolute;
+        width: 165px;
         height: auto;
+        transition: opacity 0.3s ease;
     }
     .menu-toggle{
         display: none;
@@ -22463,8 +22941,8 @@ input:focus {
     }
     
     .lets-talk-button {
-        width: 125px;
-        height: 40px;
+        width: 145px;
+        height: 45px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -22474,7 +22952,7 @@ input:focus {
         font-family: 'Montserrat Medium', sans-serif;
         font-weight: 400;
         color: #ffffff;
-        font-size: 11px;
+        font-size: 13px;
         border: none;
         transition: background-color 0.3s ease;
     }
@@ -22483,28 +22961,63 @@ input:focus {
         margin-left: 13px;
     }
     .hero-section{
+        position: relative;
         width: 100%;
-        height: 700px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;  
-    }
-
-    .hero-section-container{
-        min-width: 2000px;
-        height: 400px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 9rem 0 0 0;
-    }
-    .hero-content{
-        width: 50%;
-        max-width: 40%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-section-container{
+        position: absolute;
+        min-width: 1800px;
+        max-width: 1980px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Video Background */
+    .hero-video-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    #hero-video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover; /* Ensures the video covers the entire area */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .hero-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 2;
+        
+    }
+    .hero-content{
+        position: absolute;
+        width: 100%;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         
     
@@ -22512,14 +23025,19 @@ input:focus {
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
-        font-size: 36px;
+        font-size: 42px;
     }
     
     .hero-description{
+        width: 100%;
+        max-width: 37%;
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.4rem;
+    }
+    .hero-description br{
+        display: none;
     }
 
     .hero-description-mobile{
@@ -22565,7 +23083,7 @@ input:focus {
     }
     .about{
         width: 100%;
-        height: 500px;
+        height: 600px;
         display: flex;
         flex-direction: row;
         justify-content: center;
