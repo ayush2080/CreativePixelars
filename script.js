@@ -78,3 +78,19 @@ window.onload = () => {
 
 
 
+
+window.onload = function() {
+  // Show loader initially
+  document.getElementById('page-loader').style.display = 'flex';
+
+  // Simulate fetching data (this could be a real API call)
+  setTimeout(function() {
+      // Hide loader with a fade effect
+      document.getElementById('page-loader').style.opacity = '0';
+      document.getElementById('page-loader').style.visibility = 'hidden';
+
+      // Show content with a fade-in effect
+      document.getElementById('content').classList.add('visible');
+  }, 3000); // Adjust time as needed for your data fetching
+};
+
