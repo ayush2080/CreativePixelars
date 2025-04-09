@@ -2999,6 +2999,13 @@ input:focus {
     .bar{
         width: 28px;
         height: 4px;
+        background-color: #f5f5f5;
+        margin: 2px 0;
+        border-radius: 3px;
+    }
+    header.sticky .bar{
+        width: 28px;
+        height: 4px;
         background-color: #1e1e1e;
         margin: 2px 0;
         border-radius: 3px;
@@ -3042,7 +3049,7 @@ input:focus {
         align-items: center;
         justify-content: flex-start;
         width: 85%;
-        padding-left: 14px;
+        padding-left: 20px;
         
     }
     .logo img {
@@ -3053,10 +3060,10 @@ input:focus {
         
     }
     .white-logo{
-        opacity: 0;
+        opacity: 1;
     }
     .black-logo{
-        opacity: 1;
+        opacity: 0;
     }
     header.sticky .white-logo{
         opacity: 0;
@@ -3134,6 +3141,7 @@ input:focus {
         font-family: "Montserrat";
         font-weight: 800;
         font-size: 22px;
+        color: #f5f5f5;
     }
     
     .hero-description{
@@ -3147,7 +3155,7 @@ input:focus {
         font-weight: 400;
         font-size: 13px;
         line-height: 1.2rem;
-        color: #1e1e1e;
+        color: #f5f5f5;
     }
     .hero-text-italic{
         font-family: "Montserrat";
@@ -5788,6 +5796,13 @@ input:focus {
     .bar{
         width: 28px;
         height: 4px;
+        background-color: #f5f5f5;
+        margin: 2px 0;
+        border-radius: 3px;
+    }
+    header.sticky .bar{
+        width: 28px;
+        height: 4px;
         background-color: #1e1e1e;
         margin: 2px 0;
         border-radius: 3px;
@@ -5800,7 +5815,7 @@ input:focus {
         border-radius: 3px;
     }
 
-    header.sticky .contact-us-bar{
+    header.sticky .contact-us-bar {
         width: 28px;
         height: 4px;
         background-color: #1e1e1e;
@@ -5830,7 +5845,7 @@ input:focus {
         align-items: center;
         justify-content: flex-start;
         width: 85%;
-        padding-left: 14px;
+        padding-left: 20px;
         
     }
     .logo img {
@@ -5923,6 +5938,7 @@ input:focus {
         font-family: "Montserrat";
         font-weight: 800;
         font-size: 22px;
+        color: #f5f5f5;
     }
     
     .hero-description{
@@ -5936,7 +5952,7 @@ input:focus {
         font-weight: 400;
         font-size: 13px;
         line-height: 1.2rem;
-        color: #1e1e1e;
+        color: #f5f5f5;
     }
     .hero-text-italic{
         font-family: "Montserrat";
@@ -8739,6 +8755,7 @@ input:focus {
             font-family: "Montserrat";
             font-weight: 800;
             font-size: 29px;
+            color: #f5f5f5;
         }
         
         .hero-description{
@@ -8747,6 +8764,7 @@ input:focus {
             font-weight: 400;
             font-size: 12px;
             line-height: 1.3rem;
+            color: #f5f5f5;
         }
         .hero-description br{
             display: none;
@@ -11576,6 +11594,7 @@ input:focus {
         font-family: "Montserrat";
         font-weight: 800;
         font-size: 32px;
+        color: #f5f5f5;
     }
     
     .hero-description{
@@ -11585,6 +11604,7 @@ input:focus {
         font-weight: 300;
         font-size: 14px;
         line-height: 1.4rem;
+        color: #f5f5f5;
     }
     .hero-description br{
         display: none;
@@ -14439,6 +14459,7 @@ input:focus {
         font-family: "Montserrat";
         font-weight: 800;
         font-size: 36px;
+        color: #f5f5f5;
     }
     
     .hero-description{
@@ -14448,6 +14469,7 @@ input:focus {
         font-weight: 300;
         font-size: 14px;
         line-height: 1.4rem;
+        color: #f5f5f5;
     }
     .hero-description br{
         display: none;
@@ -20199,6 +20221,7 @@ input:focus {
         font-family: "Montserrat";
         font-weight: 800;
         font-size: 42px;
+        color: #f5f5f5;
     }
     
     .hero-description{
@@ -20208,6 +20231,7 @@ input:focus {
         font-weight: 300;
         font-size: 16px;
         line-height: 1.4rem;
+        color: #f5f5f5;
     }
     .hero-description br{
         display: none;
@@ -23026,6 +23050,7 @@ input:focus {
         font-family: "Montserrat";
         font-weight: 800;
         font-size: 42px;
+        color: #f5f5f5;
     }
     
     .hero-description{
@@ -23035,6 +23060,7 @@ input:focus {
         font-weight: 300;
         font-size: 16px;
         line-height: 1.4rem;
+        color: #f5f5f5;
     }
     .hero-description br{
         display: none;
