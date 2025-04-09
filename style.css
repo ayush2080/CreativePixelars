@@ -8580,10 +8580,10 @@ input:focus {
             justify-content: center;
         }
         .white-logo{
-            opacity: 0;
+            opacity: 1;
         }
         .black-logo{
-            opacity: 1;
+            opacity: 0;
         }
         header.sticky .white-logo{
             opacity: 0;
@@ -9750,7 +9750,7 @@ input:focus {
             justify-content: center;
             align-items: center;
             width: 220px;
-            height: 45px;
+            height: 50px;
             border-radius: 25px;
             background-image: linear-gradient(to right,#FB8500,#FFB703);
             font-family: "Montserrat Medium";
@@ -11421,10 +11421,10 @@ input:focus {
         justify-content: center;
     }
     .white-logo{
-        opacity: 0;
+        opacity: 1;
     }
     .black-logo{
-        opacity: 1;
+        opacity: 0;
     }
     header.sticky .white-logo{
         opacity: 0;
@@ -12599,7 +12599,7 @@ input:focus {
         justify-content: center;
         align-items: center;
         width: 220px;
-        height: 45px;
+        height: 50px;
         border-radius: 25px;
         background-image: linear-gradient(to right,#FB8500,#FFB703);
         font-family: "Montserrat Medium";
@@ -14260,10 +14260,10 @@ input:focus {
         justify-content: center;
     }
     .white-logo{
-        opacity: 0;
+        opacity: 1;
     }
     .black-logo{
-        opacity: 1;
+        opacity: 0;
     }
     header.sticky .white-logo{
         opacity: 0;
@@ -20035,10 +20035,10 @@ input:focus {
         justify-content: center;
     }
     .white-logo{
-        opacity: 0;
+        opacity: 1;
     }
     .black-logo{
-        opacity: 1;
+        opacity: 0;
     }
     header.sticky .white-logo{
         opacity: 0;
@@ -22902,10 +22902,10 @@ input:focus {
         justify-content: center;
     }
     .white-logo{
-        opacity: 0;
+        opacity: 1;
     }
     .black-logo{
-        opacity: 1;
+        opacity: 0;
     }
     header.sticky .white-logo{
         opacity: 0;
