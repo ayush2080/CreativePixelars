@@ -298,6 +298,13 @@ nav {
     align-items: center;
     
 
+}
+.typewriter {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
 }    
 .hero-heading{
     text-align: center;
@@ -3135,7 +3142,13 @@ input:focus {
         align-items: center;
         
         
-    }    
+    }
+    .typewriter {
+        font-size: 22px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+    }      
     .hero-heading{
         text-align: center;
         font-family: "Montserrat";
@@ -5932,7 +5945,13 @@ input:focus {
         align-items: center;
         
         
-    }     
+    }
+    .typewriter {
+        font-size: 22px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+    }       
     .hero-heading{
         text-align: center;
         font-family: "Montserrat";
@@ -8750,7 +8769,13 @@ input:focus {
             justify-content: center;
             align-items: center;
         
-        }    
+        }
+        .typewriter {
+            font-size: 29px;
+            font-weight: 700;
+            white-space: nowrap;
+            overflow: hidden;
+        }     
         .hero-heading{
             font-family: "Montserrat";
             font-weight: 800;
@@ -11589,7 +11614,13 @@ input:focus {
         align-items: center;
         
     
-    }    
+    }
+    .typewriter {
+        font-size: 32px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+    }     
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
@@ -14454,7 +14485,13 @@ input:focus {
         align-items: center;
         
     
-    }    
+    }
+    .typewriter {
+        font-size: 36px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+    }     
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
@@ -17312,7 +17349,13 @@ input:focus {
         align-items: center;
         
     
-    }    
+    }
+    .typewriter {
+        font-size: 38px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+    }     
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
@@ -20216,7 +20259,13 @@ input:focus {
         justify-content: center;
         
     
-    }    
+    }
+    .typewriter {
+        font-size: 42px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+    }     
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;
@@ -23045,7 +23094,13 @@ input:focus {
         justify-content: center;
         
     
-    }    
+    }
+    .typewriter {
+        font-size: 42px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+    }     
     .hero-heading{
         font-family: "Montserrat";
         font-weight: 800;

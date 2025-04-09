@@ -45,3 +45,36 @@ function openWebPage() {
 }
 
 
+
+// JavaScript to type the text
+const text = "Creative Pixelars !";
+let index = 0;
+const speed = 100; // Speed of typing in milliseconds
+
+// Get the element where text will be displayed
+const typewriterElement = document.getElementById('typewriter');
+
+// Function to type out the text
+function type() {
+  if (index < text.length) {
+    // Add the next character to the content
+    typewriterElement.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(type, speed); // Call the function again after the delay
+  } else {
+    // Reset after the full text is typed
+    setTimeout(() => {
+      typewriterElement.innerHTML = ''; // Clear the text
+      index = 0; // Reset the index
+      type(); // Start typing again
+    }, 2000); // Wait for 1 second before starting over
+  }
+}
+
+// Start typing when the page loads
+window.onload = () => {
+  type();
+};
+
+
+
