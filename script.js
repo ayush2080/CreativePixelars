@@ -50,6 +50,7 @@ function openWebPage() {
 const text = "Creative Pixelars !";
 let index = 0;
 const speed = 100; // Speed of typing in milliseconds
+const waitTime = 2000; // Time to wait before resetting
 
 // Get the element where text will be displayed
 const typewriterElement = document.getElementById('typewriter');
@@ -67,7 +68,7 @@ function type() {
       typewriterElement.innerHTML = ''; // Clear the text
       index = 0; // Reset the index
       type(); // Start typing again
-    }, 2000); // Wait for 1 second before starting over
+    }, waitTime); // Wait for the specified time before starting over
   }
 }
 
@@ -75,6 +76,11 @@ function type() {
 window.onload = () => {
   type();
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+  type(); // Call the typewriter effect when the DOM is ready
+});
+
 
 
 
@@ -91,6 +97,6 @@ window.onload = function() {
 
       // Show content with a fade-in effect
       document.getElementById('content').classList.add('visible');
-  }, 3000); // Adjust time as needed for your data fetching
+  }, 2200); // Adjust time as needed for your data fetching
 };
 
