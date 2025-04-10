@@ -3115,11 +3115,18 @@ input:focus {
     .bar{
         width: 28px;
         height: 4px;
+        background-color: #1e1e1e;
+        margin: 2px 0;
+        border-radius: 3px;
+    }
+    .home-page-bar{
+        width: 28px;
+        height: 4px;
         background-color: #f5f5f5;
         margin: 2px 0;
         border-radius: 3px;
     }
-    header.sticky .bar{
+    header.sticky .home-page-bar{
         width: 28px;
         height: 4px;
         background-color: #1e1e1e;
