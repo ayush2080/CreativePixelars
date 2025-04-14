@@ -1,20 +1,20 @@
-document.getElementById('menuToggle').addEventListener('click', function() {
-            var navbarContent = document.getElementById('navbarContent');
-            navbarContent.classList.toggle('show');
-            document.getElementById('menuToggle').classList.toggle('hide');
-        });
+document.getElementById('menuToggle').addEventListener('click', function () {
+  var navbarContent = document.getElementById('navbarContent');
+  navbarContent.classList.toggle('show');
+  document.getElementById('menuToggle').classList.toggle('hide');
+});
 
-        document.getElementById('closeMenu').addEventListener('click', function() {
-            var navbarContent = document.getElementById('navbarContent');
-            navbarContent.classList.remove('show');
-            document.getElementById('menuToggle').classList.remove('hide');
-        });
+document.getElementById('closeMenu').addEventListener('click', function () {
+  var navbarContent = document.getElementById('navbarContent');
+  navbarContent.classList.remove('show');
+  document.getElementById('menuToggle').classList.remove('hide');
+});
 
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -34,7 +34,7 @@ function topFunction() {
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
-  
+
 
 })
 
@@ -85,18 +85,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-window.onload = function() {
-  // Show loader initially
-  document.getElementById('page-loader').style.display = 'flex';
+window.onload = function () {
+  // Prevent scroll while loading
+  document.body.classList.add('no-scroll');
 
-  // Simulate fetching data (this could be a real API call)
-  setTimeout(function() {
-      // Hide loader with a fade effect
-      document.getElementById('page-loader').style.opacity = '0';
-      document.getElementById('page-loader').style.visibility = 'hidden';
+  // Show loader (optional since it's already shown by default)
+  document.getElementById('loader').style.display = 'flex';
 
-      // Show content with a fade-in effect
-      document.getElementById('content').classList.add('visible');
-  }, 2200); // Adjust time as needed for your data fetching
+  // Simulate fetching data (e.g., from an API)
+  setTimeout(function () {
+    // Fade out loader
+    const loaderWrapper = document.getElementById('loaderWrapper');
+    loaderWrapper.style.opacity = '0';
+    loaderWrapper.style.visibility = 'hidden';
+
+    // Re-enable scrolling after loader is gone
+    document.body.classList.remove('no-scroll');
+
+    // Show your main content
+    document.getElementById('content').classList.add('visible');
+  }, 2200); // Adjust time as needed
 };
+
 

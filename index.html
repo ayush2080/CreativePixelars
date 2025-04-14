@@ -1,253 +1,290 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>Creative Pixelars</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="aos-master/dist/aos.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="page-loader" id="page-loader">
-        <div class="bounceball"></div>
+    <div id="loaderWrapper">
+        <div class="loader" id="loader"></div>
     </div>
     <div class="content" id="content">
-     <header id="header">
-        <div class="logo">
-            <img class="black-logo" src="images/Creative Pixelars Logo.png" alt="logo">
-            <img class="white-logo" src="images/Creative Pixelars Logo White.png" alt="logo">
-        </div>
-        
-        <nav>
-            <div class="menu-toggle" id="menuToggle">
-                <span class="home-page-bar"></span>
-                <span class="home-page-bar"></span>
-                <span class="home-page-bar"></span>
+        <header id="header">
+            <div class="logo">
+                <img class="black-logo" src="images/Creative Pixelars Logo.png" alt="logo">
+                <img class="white-logo" src="images/Creative Pixelars Logo White.png" alt="logo">
             </div>
-            <ul class="navbar-content" id="navbarContent">
-                <li class="nav-item1 close-menu" id="closeMenu">&times;</li>
-                <li class="nav-item"><a class="nav-link active" href="About Us.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="Our Services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="Our Work.html">Our Work</a></li>
-                <li class="nav-item-contact"><a class="nav-link" href="Contact Us.html">Contact Us</a></li>
 
-                <div class="mobile-sidebar-socials-icons-main">
-                    <div class="mobile-sidebar-socials-icons-container">
-                        <div class="mobile-sidebar-socials-icons" data-aos="zoom-in" data-aos-duration="1200">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                            <path fill="" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
-                        </div>
-                        <div class="mobile-sidebar-socials-icons" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="150">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path fill="" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                        </div>
-                        <div class="mobile-sidebar-socials-icons" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="150">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path fill="" d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>
-                        </div>
-                        <div class="mobile-sidebar-socials-icons" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="150">
-                            <a href="https://www.youtube.com/channel/UCLJSWKWAWnMQm4CxD5e2B2Q">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path fill="" d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/>
-                            </svg>
-                            </a>
+            <nav>
+                <div class="menu-toggle" id="menuToggle">
+                    <span class="home-page-bar"></span>
+                    <span class="home-page-bar"></span>
+                    <span class="home-page-bar"></span>
+                </div>
+                <ul class="navbar-content" id="navbarContent">
+                    <li class="nav-item1 close-menu" id="closeMenu">&times;</li>
+                    <li class="nav-item"><a class="nav-link active" href="About Us.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Our Services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Our Work.html">Our Work</a></li>
+                    <li class="nav-item-contact"><a class="nav-link" href="Contact Us.html">Contact Us</a></li>
+
+                    <div class="mobile-sidebar-socials-icons-main">
+                        <div class="mobile-sidebar-socials-icons-container">
+                            <div class="mobile-sidebar-socials-icons" data-aos="zoom-in" data-aos-duration="1200">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill=""
+                                        d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                                </svg>
+                            </div>
+                            <div class="mobile-sidebar-socials-icons" data-aos="zoom-in" data-aos-duration="1200"
+                                data-aos-delay="150">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill=""
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg>
+                            </div>
+                            <div class="mobile-sidebar-socials-icons" data-aos="zoom-in" data-aos-duration="1200"
+                                data-aos-delay="150">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill=""
+                                        d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                                </svg>
+                            </div>
+                            <div class="mobile-sidebar-socials-icons" data-aos="zoom-in" data-aos-duration="1200"
+                                data-aos-delay="150">
+                                <a href="https://www.youtube.com/channel/UCLJSWKWAWnMQm4CxD5e2B2Q">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path fill=""
+                                            d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                
-            </ul>
-        </nav>
-        <div class="lets-talk">
-        <button class="lets-talk-button" type="button" onclick="openWebPage()">
-            Let's Talk <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span>
-        </button>
-        </div>
-    </header> 
-    
-    <section class="hero-section">
-        <!-- Video Background -->
-        <div class="hero-video-container">
-            <video autoplay muted loop id="hero-video">
-                <source src="images/Small Particles in a Sphere-uhd_2560_1440_25fps.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="hero-overlay"></div>
-        
-        <div class="hero-section-container">
-        
-        <div class="hero-content">
-            <h1 class="hero-heading" data-aos="fade-up" data-aos-duration="1200">
-                Unlock Your Design Potential<br> with 
-                <i class="typewriter" id="typewriter"></i>
-            </h1>
 
-            <p class="hero-description" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
-                Empower your brand's journey with Creative Pixelars, where every pixel tells<br> your story. From concept to creation, we bring your vision to life, shaping<br> unforgettable experiences and sparking meaningful connections with your<br> audience.
-            </p>
-            <p class="hero-description-mobile" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
-                Elevate your brand with Creative Pixelars, where every pixel tells your story. From concept to creation, we bring your vision to life, sparking meaningful connections with your audience.
-            </p>
 
-            <button class="hero-button hero-button-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
-                Get Started
-                <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span> 
-            </button>
-        </div>
-    </div>
-
-    </section>
-       
-    <section class="about">
-
-        <div class="about-image-container" data-aos="zoom-in-up" data-aos-duration="1200">
-            <img src="images/about-img.png" alt="About Us Image" class="about-responsive-image">
-
-        </div>
-        <div class="about-content-container-1200px-above">
-        <div class="about-content">
-            <h3 class="about-heading" data-aos="fade-up" data-aos-duration="1100">
-                About Us
-            </h3>
-            <h1 class="about-Subheading" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="150">
-                ILLUMINATING OUR FUNDAMENTAL <br> IDEALS AND CONVICTIONS
-            </h1>
-
-            <p class="about-description" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="150">
-                Welcome to Creative Pixelars, where your vision drives our creativity. As <br> your dedicated design partner, we offer a full suite of services including <br> graphic design, motion design, website design, UI/UX design, and video <br> editing.<br/> <br/>Our client-centered approach ensures your needs are met with precision & <br> flair. Let's collaborate to turn your ideas into impactful designs with us.
-            </p>
-
-            <button class="about-button" type="button" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="150">
-                Show More
-                <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span>
-            </button>
-        </div>
-    </div>   
-    </section>
-
-    <section class="why-choose-us">
-        
-        <div class="why-us-image-container" data-aos="zoom-in-up" data-aos-duration="1200" >
-            <img src="images/Why Choose Us-img.png" alt="Why Choose Us Image" class="why-us-responsive-image">
-
-        </div>
-
-        <div class="why-choose-us-content">
-            <h3 class="why-choose-us-heading" data-aos="fade-up" data-aos-duration="1100">
-                Why Choose Us
-            </h3>
-            <h1 class="why-choose-us-Subheading" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="150">
-                ELEVATING YOUR BRAND WITH <br> UNMATCHED DESIGN EXPERTISE
-            </h1>
-
-            <p class="why-choose-us-description" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="150">
-                You're not just getting a design service, you're gaining a dedicated <br> partner invested in elevating your brand to new heights of <br> success. <br><br>
-                In a crowded marketplace, selecting the right design partner is <br> crucial. Here's why Creative Pixelars stands out:
-            </p>
-
-        </div>
-
-        
-
-    </section>
-
-    <section class="reasons">
-        <div class="reason-content-circle">
-          <div class="reason-line" data-aos="fade-right" data-aos-duration="1300">
-            <img class="line" src="images/Line 1920.png" alt="Line">
-          </div>
-          <div class="reason-circle-container">
-            <div class="reason-circle">
-                <div class="reason-no">
-                    <div class="reason-no-text">1</div>
-                </div>
-                <img class="reason-icon" src="icons/Empathize icon.png" alt="Experience Icon" data-aos="zoom-in" data-aos-duration="1200"> 
+                </ul>
+            </nav>
+            <div class="lets-talk">
+                <button class="lets-talk-button" type="button" onclick="openWebPage()">
+                    Let's Talk <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span>
+                </button>
             </div>
-            <div class="reason-circle reason-circle1">
-                <div class="reason-no">
-                    <div class="reason-no-text">2</div>
-                </div>
-                <img class="reason-icon" src="icons/Quality icon.png" alt="Experience Icon" data-aos="zoom-in" data-aos-duration="1200"> 
-            </div>
-            <div class="reason-circle reason-circle1">
-                <div class="reason-no">
-                    <div class="reason-no-text">3</div>
-                </div> 
-                <img class="reason-icon" src="icons/fast-delivery icon.png" alt="Experience Icon" data-aos="zoom-in" data-aos-duration="1200">
-            </div>
-            <div class="reason-circle reason-circle1">
-                <div class="reason-no">
-                    <div class="reason-no-text">4</div>
-                </div>
-                <img class="reason-icon" src="icons/Pricing icon.png" alt="Experience Icon" data-aos="zoom-in" data-aos-duration="1200"> 
-            </div>
-          </div>
-        
-        </div>
-        <div class="reason-heading-container">
-        <div class="reason-text-heading1" data-aos="fade-right" data-aos-duration="1200">
-            
-            <h3 class="reason-heading">
-            Experience
-            </h3>
-        </div>
-        <div class="reason-text-heading234" data-aos="fade-right" data-aos-duration="1200">
-            <h3 class="reason-heading">
-            Quality
-            </h3>
-        </div>
-        <div class="reason-text-heading234" data-aos="fade-right" data-aos-duration="1200">
-            <h3 class="reason-heading">
-            Timely Delivery
-            </h3>
-        </div>
-        <div class="reason-text-heading234" data-aos="fade-right" data-aos-duration="1200">
-            <h3 class="reason-heading">
-            Affordable Pricing
-            </h3>
+        </header>
 
-        </div>
-        </div>
-        <div class="reason-description-container">
-        <div class="reason-text-description1" data-aos="fade-right" data-aos-duration="1200">
-            
-                <p class="reason-description">
-                    With years of experience in<br>the industry, we have honed <br> our skills and perfected our<br>craft.
+        <section class="hero-section">
+            <!-- Video Background -->
+            <div class="hero-video-container">
+                <video autoplay muted loop id="hero-video">
+                    <source src="images/Small Particles in a Sphere-uhd_2560_1440_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-section-container">
+
+                <div class="hero-content">
+                    <h1 class="hero-heading" data-aos="fade-up" data-aos-duration="1200">
+                        Unlock Your Design Potential<br> with
+                        <i class="typewriter" id="typewriter"></i>
+                    </h1>
+
+                    <p class="hero-description" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
+                        Empower your brand's journey with Creative Pixelars, where every pixel tells<br> your story.
+                        From concept to creation, we bring your vision to life, shaping<br> unforgettable experiences
+                        and sparking meaningful connections with your<br> audience.
+                    </p>
+                    <p class="hero-description-mobile" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
+                        Elevate your brand with Creative Pixelars, where every pixel tells your story. From concept to
+                        creation, we bring your vision to life, sparking meaningful connections with your audience.
+                    </p>
+
+                    <button class="hero-button hero-button-white" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="150">
+                        Get Started
+                        <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about">
+
+            <div class="about-image-container" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img src="images/about-img.png" alt="About Us Image" class="about-responsive-image">
+
+            </div>
+            <div class="about-content-container-1200px-above">
+                <div class="about-content">
+                    <h3 class="about-heading" data-aos="fade-up" data-aos-duration="1100">
+                        About Us
+                    </h3>
+                    <h1 class="about-Subheading" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="150">
+                        ILLUMINATING OUR FUNDAMENTAL <br> IDEALS AND CONVICTIONS
+                    </h1>
+
+                    <p class="about-description" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="150">
+                        Welcome to Creative Pixelars, where your vision drives our creativity. As <br> your dedicated
+                        design partner, we offer a full suite of services including <br> graphic design, motion design,
+                        website design, UI/UX design, and video <br> editing.<br /> <br />Our client-centered approach
+                        ensures your needs are met with precision & <br> flair. Let's collaborate to turn your ideas
+                        into impactful designs with us.
+                    </p>
+
+                    <button class="about-button" type="button" data-aos="fade-up" data-aos-duration="1100"
+                        data-aos-delay="150">
+                        Show More
+                        <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us">
+
+            <div class="why-us-image-container" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img src="images/Why Choose Us-img.png" alt="Why Choose Us Image" class="why-us-responsive-image">
+
+            </div>
+
+            <div class="why-choose-us-content">
+                <h3 class="why-choose-us-heading" data-aos="fade-up" data-aos-duration="1100">
+                    Why Choose Us
+                </h3>
+                <h1 class="why-choose-us-Subheading" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="150">
+                    ELEVATING YOUR BRAND WITH <br> UNMATCHED DESIGN EXPERTISE
+                </h1>
+
+                <p class="why-choose-us-description" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="150">
+                    You're not just getting a design service, you're gaining a dedicated <br> partner invested in
+                    elevating your brand to new heights of <br> success. <br><br>
+                    In a crowded marketplace, selecting the right design partner is <br> crucial. Here's why Creative
+                    Pixelars stands out:
                 </p>
-        </div>
-        <div class="reason-text-description234" data-aos="fade-right" data-aos-duration="1200">
-                <p class="reason-description">
-                    We are committed to<br> delivering high-quality designs<br> that make a lasting<br> impression.
-                </p>
-        </div>
-        <div class="reason-text-description234" data-aos="fade-right" data-aos-duration="1200">
-                <p class="reason-description">
-                    We understand the importance<br> of deadlines and strive to<br> deliver projects on time,<br> every time.
-                </p>
-        </div>
-        <div class="reason-text-description234" data-aos="fade-right" data-aos-duration="1200">        
-                <p class="reason-description">
-                    Our services are competitively<br> priced to provide you with<br> excellent value for your<br> investment.
-                </p>
-        </div>    
-        </div>
-    
+
+            </div>
+
+
+
+        </section>
+
+        <section class="reasons">
+            <div class="reason-content-circle">
+                <div class="reason-line" data-aos="fade-right" data-aos-duration="1300">
+                    <img class="line" src="images/Line 1920.png" alt="Line">
+                </div>
+                <div class="reason-circle-container">
+                    <div class="reason-circle">
+                        <div class="reason-no">
+                            <div class="reason-no-text">1</div>
+                        </div>
+                        <img class="reason-icon" src="icons/Empathize icon.png" alt="Experience Icon" data-aos="zoom-in"
+                            data-aos-duration="1200">
+                    </div>
+                    <div class="reason-circle reason-circle1">
+                        <div class="reason-no">
+                            <div class="reason-no-text">2</div>
+                        </div>
+                        <img class="reason-icon" src="icons/Quality icon.png" alt="Experience Icon" data-aos="zoom-in"
+                            data-aos-duration="1200">
+                    </div>
+                    <div class="reason-circle reason-circle1">
+                        <div class="reason-no">
+                            <div class="reason-no-text">3</div>
+                        </div>
+                        <img class="reason-icon" src="icons/fast-delivery icon.png" alt="Experience Icon"
+                            data-aos="zoom-in" data-aos-duration="1200">
+                    </div>
+                    <div class="reason-circle reason-circle1">
+                        <div class="reason-no">
+                            <div class="reason-no-text">4</div>
+                        </div>
+                        <img class="reason-icon" src="icons/Pricing icon.png" alt="Experience Icon" data-aos="zoom-in"
+                            data-aos-duration="1200">
+                    </div>
+                </div>
+
+            </div>
+            <div class="reason-heading-container">
+                <div class="reason-text-heading1" data-aos="fade-right" data-aos-duration="1200">
+
+                    <h3 class="reason-heading">
+                        Experience
+                    </h3>
+                </div>
+                <div class="reason-text-heading234" data-aos="fade-right" data-aos-duration="1200">
+                    <h3 class="reason-heading">
+                        Quality
+                    </h3>
+                </div>
+                <div class="reason-text-heading234" data-aos="fade-right" data-aos-duration="1200">
+                    <h3 class="reason-heading">
+                        Timely Delivery
+                    </h3>
+                </div>
+                <div class="reason-text-heading234" data-aos="fade-right" data-aos-duration="1200">
+                    <h3 class="reason-heading">
+                        Affordable Pricing
+                    </h3>
+
+                </div>
+            </div>
+            <div class="reason-description-container">
+                <div class="reason-text-description1" data-aos="fade-right" data-aos-duration="1200">
+
+                    <p class="reason-description">
+                        With years of experience in<br>the industry, we have honed <br> our skills and perfected
+                        our<br>craft.
+                    </p>
+                </div>
+                <div class="reason-text-description234" data-aos="fade-right" data-aos-duration="1200">
+                    <p class="reason-description">
+                        We are committed to<br> delivering high-quality designs<br> that make a lasting<br> impression.
+                    </p>
+                </div>
+                <div class="reason-text-description234" data-aos="fade-right" data-aos-duration="1200">
+                    <p class="reason-description">
+                        We understand the importance<br> of deadlines and strive to<br> deliver projects on time,<br>
+                        every time.
+                    </p>
+                </div>
+                <div class="reason-text-description234" data-aos="fade-right" data-aos-duration="1200">
+                    <p class="reason-description">
+                        Our services are competitively<br> priced to provide you with<br> excellent value for your<br>
+                        investment.
+                    </p>
+                </div>
+            </div>
+
     </div>
     </section>
     <section class="showreel-container" data-aos="fade-up" data-aos-duration="1200">
-       
-            <video class="showreel-video" width="1920" height="700" autoplay muted loop>
-                <source src="images/showreel.mp4" type="video/mp4">
 
-            </video>
+        <video class="showreel-video" width="1920" height="700" autoplay muted loop>
+            <source src="images/showreel.mp4" type="video/mp4">
+
+        </video>
 
     </section>
     <section class="services">
@@ -260,122 +297,125 @@
             </h1>
 
             <p class="services-description" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
-                At Creative Pixelars, we believe that design is more than just <br> aesthetics – it's a powerful tool that shapes perceptions, drives <br> engagement, and builds connections.
+                At Creative Pixelars, we believe that design is more than just <br> aesthetics – it's a powerful tool
+                that shapes perceptions, drives <br> engagement, and builds connections.
             </p>
 
             <p class="services-description" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
-                Our range of design services is crafted to help you stand out in <br> a crowded digital landscape and leave a lasting impression on <br> your audience. 
+                Our range of design services is crafted to help you stand out in <br> a crowded digital landscape and
+                leave a lasting impression on <br> your audience.
             </p>
 
             <button class="services-button" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
                 Show More
                 <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span>
             </button>
-        </div> 
-        
+        </div>
+
         <div class="services-container">
             <div class="services-bg-container services-bg-container-left">
-            <div class="services-bg-1" data-aos="zoom-in-up" data-aos-duration="1200">
-                <div class="services-container-content">
+                <div class="services-bg-1" data-aos="zoom-in-up" data-aos-duration="1200">
+                    <div class="services-container-content">
 
-                <img class="services-icon" src="icons/graphic design icon.png" alt="graphic design">
-                <h3 class="services-text">
-                    GRAPHIC DESIGN
-                </h3>
-                <img src="icons/right arrow services.png" alt="graphic design">
-                </div>
-            </div>
-
-            <div class="services-bg-2" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="150">
-                <div class="services-container-content">
-
-                    <img class="services-icon" src="icons/video editing icon.png" alt="Video Editing">
-                    <h3 class="services-text">
-                        VIDEO EDITING
-                    </h3>
-                    <img src="icons/right arrow services.png" alt="Video Editing">
+                        <img class="services-icon" src="icons/graphic design icon.png" alt="graphic design">
+                        <h3 class="services-text">
+                            GRAPHIC DESIGN
+                        </h3>
+                        <img src="icons/right arrow services.png" alt="graphic design">
                     </div>
-            </div>
+                </div>
+
+                <div class="services-bg-2" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="150">
+                    <div class="services-container-content">
+
+                        <img class="services-icon" src="icons/video editing icon.png" alt="Video Editing">
+                        <h3 class="services-text">
+                            VIDEO EDITING
+                        </h3>
+                        <img src="icons/right arrow services.png" alt="Video Editing">
+                    </div>
+                </div>
             </div>
 
             <div class="services-bg-container services-bg-container-right">
-            <div class="services-bg-3" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="150">
-                <div class="services-container-content">
+                <div class="services-bg-3" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="150">
+                    <div class="services-container-content">
 
-                    <img class="services-icon" src="icons/ux icon.png" alt="UI/UX design">
-                    <h3 class="services-text">
-                        UI/UX DESIGN
-                    </h3>
-                    <img src="icons/right arrow services.png" alt="UI/UX design">
+                        <img class="services-icon" src="icons/ux icon.png" alt="UI/UX design">
+                        <h3 class="services-text">
+                            UI/UX DESIGN
+                        </h3>
+                        <img src="icons/right arrow services.png" alt="UI/UX design">
+                    </div>
                 </div>
-            </div>
 
-            <div class="services-bg-4" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="150">
-                <div class="services-container-content">
+                <div class="services-bg-4" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="150">
+                    <div class="services-container-content">
 
-                    <img class="services-icon" src="icons/motion graphic icon.png" alt="motion graphic">
-                    <h3 class="services-text">
-                        MOTION GRAPHIC
-                    </h3>
-                    <img src="icons/right arrow services.png" alt="motion graphic">
+                        <img class="services-icon" src="icons/motion graphic icon.png" alt="motion graphic">
+                        <h3 class="services-text">
+                            MOTION GRAPHIC
+                        </h3>
+                        <img src="icons/right arrow services.png" alt="motion graphic">
+                    </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
         </div>
         <div class="services-container1">
             <div class="services-bg-container1">
-            <div class="services-bg1" data-aos="zoom-in" data-aos-duration="1200">
-                <div class="services-container1-content">
+                <div class="services-bg1" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="services-container1-content">
 
-                <img class="services-icon" src="icons/graphic design icon.png" alt="graphic design">
-                <h3 class="services-text">
-                    GRAPHIC DESIGN
-                </h3>
-                <img src="icons/right arrow services.png" alt="graphic design">
-                </div>
-            </div>
-
-            <div class="services-bg2" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="150">
-                <div class="services-container1-content">
-
-                    <img class="services-icon" src="icons/video editing icon.png" alt="Video Editing">
-                    <h3 class="services-text">
-                        VIDEO EDITING
-                    </h3>
-                    <img src="icons/right arrow services.png" alt="Video Editing">
+                        <img class="services-icon" src="icons/graphic design icon.png" alt="graphic design">
+                        <h3 class="services-text">
+                            GRAPHIC DESIGN
+                        </h3>
+                        <img src="icons/right arrow services.png" alt="graphic design">
                     </div>
-            </div>
-            
-
-           
-            <div class="services-bg3" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="150">
-                <div class="services-container1-content">
-
-                    <img class="services-icon" src="icons/ux icon.png" alt="UI/UX design">
-                    <h3 class="services-text">
-                        UI/UX DESIGN
-                    </h3>
-                    <img src="icons/right arrow services.png" alt="UI/UX design">
                 </div>
-            </div>
 
-            <div class="services-bg4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="150">
-                <div class="services-container1-content">
+                <div class="services-bg2" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="150">
+                    <div class="services-container1-content">
 
-                    <img class="services-icon" src="icons/motion graphic icon.png" alt="motion graphic">
-                    <h3 class="services-text">
-                        MOTION GRAPHIC
-                    </h3>
-                    <img src="icons/right arrow services.png" alt="motion graphic">
+                        <img class="services-icon" src="icons/video editing icon.png" alt="Video Editing">
+                        <h3 class="services-text">
+                            VIDEO EDITING
+                        </h3>
+                        <img src="icons/right arrow services.png" alt="Video Editing">
+                    </div>
                 </div>
-            </div>
 
+
+
+                <div class="services-bg3" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="150">
+                    <div class="services-container1-content">
+
+                        <img class="services-icon" src="icons/ux icon.png" alt="UI/UX design">
+                        <h3 class="services-text">
+                            UI/UX DESIGN
+                        </h3>
+                        <img src="icons/right arrow services.png" alt="UI/UX design">
+                    </div>
+                </div>
+
+                <div class="services-bg4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="150">
+                    <div class="services-container1-content">
+
+                        <img class="services-icon" src="icons/motion graphic icon.png" alt="motion graphic">
+                        <h3 class="services-text">
+                            MOTION GRAPHIC
+                        </h3>
+                        <img src="icons/right arrow services.png" alt="motion graphic">
+                    </div>
+                </div>
+
+            </div>
         </div>
-        </div>
-        <button class="services-button1" type="button" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="150">
+        <button class="services-button1" type="button" data-aos="zoom-in-up" data-aos-duration="1200"
+            data-aos-delay="150">
             Show More
-            <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span> 
+            <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span>
         </button>
     </section>
     <section class="work-together" data-aos="fade-up" data-aos-duration="1200">
@@ -400,168 +440,169 @@
     </section>
 
     <section class="Work">
-         <div class="work-content" data-aos="zoom-in" data-aos-duration="1200">
-          <h3>
-            Our Portfolio
-          </h3>
-          <p>
-            “Discover how our creative solutions can transform your vision into impactful designs.”
-          </p>
-         </div>
-
-         <div class="work-tile-bg1">
-
-         <div class="work-tile-1" data-aos="zoom-in-up" data-aos-duration="1200">
-            <div class="responsive-image-container">
-            <img src="images/Banner Web Design final.jpg" alt="Web Design">
-            </div>
-            <div class="work-tile-1-overlay"></div>
-            <div class="work-heading-webdesign">
+        <div class="work-content" data-aos="zoom-in" data-aos-duration="1200">
             <h3>
-            Website Design
+                Our Portfolio
             </h3>
-            </div>
-            <div class="work-subheading-webdesign">
             <p>
-            Media
-            </p>
-            </div>
-         </div>
-
-         <div class="work-tile-2" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200">
-            <div class="responsive-image-container">
-            <img src="images/UI UX Design.jpg" alt="User Interface Design">
-            </div>
-            <div class="work-tile-2-overlay"></div> 
-        <div class="work-heading-UI-UX">
-            <h3>
-            User Interface Design
-            </h3>
-            </div>
-        <div class="work-subheading-UI-UX">
-            <p>
-            UI/UX Design
+                “Discover how our creative solutions can transform your vision into impactful designs.”
             </p>
         </div>
-            
-        </div>
+
+        <div class="work-tile-bg1">
+
+            <div class="work-tile-1" data-aos="zoom-in-up" data-aos-duration="1200">
+                <div class="responsive-image-container">
+                    <img src="images/Banner Web Design final.jpg" alt="Web Design">
+                </div>
+                <div class="work-tile-1-overlay"></div>
+                <div class="work-heading-webdesign">
+                    <h3>
+                        Website Design
+                    </h3>
+                </div>
+                <div class="work-subheading-webdesign">
+                    <p>
+                        Media
+                    </p>
+                </div>
+            </div>
+
+            <div class="work-tile-2" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200">
+                <div class="responsive-image-container">
+                    <img src="images/UI UX Design.jpg" alt="User Interface Design">
+                </div>
+                <div class="work-tile-2-overlay"></div>
+                <div class="work-heading-UI-UX">
+                    <h3>
+                        User Interface Design
+                    </h3>
+                </div>
+                <div class="work-subheading-UI-UX">
+                    <p>
+                        UI/UX Design
+                    </p>
+                </div>
+
+            </div>
         </div>
 
         <div class="work-tile-bg2">
-        <div class="work-tile-3" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="400">
-            <div class="video-container">
-        
-            <video muted autoplay loop>
-            <source src="images/Video Demo.mp4" type="Video/mp4">
-            </video>
-            </div>
-        <div class="work-tile-3-overlay"></div>
-        <div class="work-heading-video">
-            <h3>
-            Video Editing
-            </h3>
-        </div>
-        <div class="work-subheading-video">
-            <p>
-            Media
-            </p>
-        </div>
-        </div>
+            <div class="work-tile-3" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="400">
+                <div class="video-container">
 
-        <div class="work-tile-4" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="600">
-            <div class="responsive-image-container">
-            <img src="images/Graphic Design.jpg" alt="Graphic Design">
+                    <video muted autoplay loop>
+                        <source src="images/Video Demo.mp4" type="Video/mp4">
+                    </video>
+                </div>
+                <div class="work-tile-3-overlay"></div>
+                <div class="work-heading-video">
+                    <h3>
+                        Video Editing
+                    </h3>
+                </div>
+                <div class="work-subheading-video">
+                    <p>
+                        Media
+                    </p>
+                </div>
             </div>
-            <div class="work-tile-4-overlay"></div> 
-        <div class="work-heading-graphic">
-            <h3>
-            Graphic Design
-            </h3>
-        </div>
-        <div class="work-subheading-graphic">
-            <p>
-            Media
-            </p>
-        </div>
-        </div>
+
+            <div class="work-tile-4" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="600">
+                <div class="responsive-image-container">
+                    <img src="images/Graphic Design.jpg" alt="Graphic Design">
+                </div>
+                <div class="work-tile-4-overlay"></div>
+                <div class="work-heading-graphic">
+                    <h3>
+                        Graphic Design
+                    </h3>
+                </div>
+                <div class="work-subheading-graphic">
+                    <p>
+                        Media
+                    </p>
+                </div>
+            </div>
 
 
-        <div class="work-tile-5" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="800">
-            <div class="responsive-image-container">
-            <img src="images/Motion Graphics.gif" alt="Motion Graphics"> 
-            </div>
+            <div class="work-tile-5" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="800">
+                <div class="responsive-image-container">
+                    <img src="images/Motion Graphics.gif" alt="Motion Graphics">
+                </div>
                 <div class="work-heading-motion">
                     <h3>
-                    Motion Graphic Design
+                        Motion Graphic Design
                     </h3>
                 </div>
                 <div class="work-subheading-motion">
                     <p>
-                    Media
+                        Media
                     </p>
                 </div>
+            </div>
         </div>
-        </div>
-        
+
         <button class="work-button" data-aos="zoom-in" data-aos-duration="1200">
             View All Projects
             <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span>
         </button>
-        
+
     </section>
-    
+
     <footer class="footer">
         <div class="footer-main">
-        <div class="footer-content-container">
-            <div class="footer-left-content">
-            <div class="footer-logo">
-                <img src="images/Creative Pixelars Logo White.png" alt="Creative Pixelars Logo">
-            </div>
-                <p>
-                    Empowering brands through design<br> excellence. Creative Pixelars is your<br> trusted partner for exceptional design<br> solutions.
-                </p>
-            </div>
-
-            <div class="footer-right-content">
-                <div class="contact-info-main">
-                <div class="contact-info">
-                    <h3 class="contact-info-heading">
-                        Contact Info
-                    </h3>
-                    <img class="contact-info-icon" src="icons/Contact Info Icon.png" alt="Contact Info Icon">
-                </div>
-                <div>
-                    <p>
-                    www.creativepixelars.com
-                    </p>
-                    <p>
-                    creativepixelars@gmail.com
-                    </p>
-                    <p>
-                    Phone: +91 798 513 9586
-                    </p>
-                </div>
-                </div>
-
-
-                <div class="visit-us-main">
-                    <div class="visit-us">
-                        <h3 class="visit-us-heading">
-                            Visit Us
-                        </h3>
-                        <img class="visit-us-icon" src="icons/Visit Us Icon.png" alt="Visit Us Icon">
+            <div class="footer-content-container">
+                <div class="footer-left-content">
+                    <div class="footer-logo">
+                        <img src="images/Creative Pixelars Logo White.png" alt="Creative Pixelars Logo">
                     </div>
-                    <div>
-                        <p>
-                        Gomtinagar, Lucknow
-                        </p>
-                        <p>
-                        226010, UttarPradesh,
-                        </p>
-                        <p>
-                        India
-                        </p>
+                    <p>
+                        Empowering brands through design<br> excellence. Creative Pixelars is your<br> trusted partner
+                        for exceptional design<br> solutions.
+                    </p>
+                </div>
+
+                <div class="footer-right-content">
+                    <div class="contact-info-main">
+                        <div class="contact-info">
+                            <h3 class="contact-info-heading">
+                                Contact Info
+                            </h3>
+                            <img class="contact-info-icon" src="icons/Contact Info Icon.png" alt="Contact Info Icon">
+                        </div>
+                        <div>
+                            <p>
+                                www.creativepixelars.com
+                            </p>
+                            <p>
+                                creativepixelars@gmail.com
+                            </p>
+                            <p>
+                                Phone: +91 798 513 9586
+                            </p>
+                        </div>
                     </div>
+
+
+                    <div class="visit-us-main">
+                        <div class="visit-us">
+                            <h3 class="visit-us-heading">
+                                Visit Us
+                            </h3>
+                            <img class="visit-us-icon" src="icons/Visit Us Icon.png" alt="Visit Us Icon">
+                        </div>
+                        <div>
+                            <p>
+                                Gomtinagar, Lucknow
+                            </p>
+                            <p>
+                                226010, UttarPradesh,
+                            </p>
+                            <p>
+                                India
+                            </p>
+                        </div>
                     </div>
 
 
@@ -574,36 +615,36 @@
                         </div>
                         <div>
                             <p>
-                            Twitter
+                                Twitter
                             </p>
                             <p>
-                            Facebook
+                                Facebook
                             </p>
                             <p>
-                            Youtube
+                                Youtube
                             </p>
                             <p>
-                            Instagram
+                                Instagram
                             </p>
                         </div>
-                        </div>
-                
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div class="copyright-text">
+                <p>
+                    &#169 Copyright 2024 Creative Pixelars. All Rights Reserved.
+                </p>
             </div>
         </div>
-        <hr>
-        <div class="copyright-text">
-            <p>
-            &#169 Copyright 2024 Creative Pixelars. All Rights Reserved.
-            </p>
-        </div>
-    </div>
     </footer>
-</div>
+    </div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         <span class="material-symbols-outlined"> arrow_upward </span>
     </button>
-    
+
 </body>
 <script type="text/javascript" src="scrolly/scrolly.js"></script>
 <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
@@ -612,4 +653,5 @@
 <script>
     AOS.init();
 </script>
+
 </html>
