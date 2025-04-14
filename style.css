@@ -3386,6 +3386,97 @@ input:focus {
 }
 
 
+/* Quote Form Css*/
+
+.quote-form-container {
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 750px;
+    height: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.quote-form h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.quote-form label {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+.quote-form input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.quote-form input:focus,
+textarea:focus,
+select:focus {
+    border-color: #ff8c10;
+    outline: none;
+}
+
+.quote-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.quote-form button {
+    margin-top: 30px;
+    background-color: #ff8c10;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+}
+
+.quote-form button:hover {
+    background-color: #ffbf31;
+}
+
+.quote-form .note {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+
 @media only screen and ((min-width:0px) and (max-width: 576px)) {
     nav {
         width: 15%;
@@ -6572,6 +6663,102 @@ input:focus {
         height: 15px;
     }
 
+
+
+    /* Quote Form Css*/
+
+    .quote-form-container {
+        width: 100%;
+        height: 1500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quote-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 85%;
+        height: 1200px;
+        padding: 0 0 0 15px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .quote-form h1 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #222;
+    }
+
+    .quote-form label {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 6px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .quote-form input,
+    select,
+    textarea {
+        width: 100%;
+        max-width: 90%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        transition: border-color 0.2s;
+    }
+
+    .quote-form input:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #ff8c10;
+        outline: none;
+    }
+
+    .quote-form textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .quote-form button {
+        margin: 30px 0 0 0;
+        background-color: #ff8c10;
+        color: white;
+        padding: 14px 0px;
+        border: none;
+        border-radius: 6px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        width: 100%;
+        max-width: 95%;
+    }
+
+    .quote-form button:hover {
+        background-color: #ffbf31;
+    }
+
+    .quote-form .note {
+        width: 100%;
+        max-width: 95%;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 15px;
+        color: #666;
+    }
 
 }
 
@@ -9770,6 +9957,101 @@ input:focus {
     .checkbox-container input {
         width: 10%;
         height: 15px;
+    }
+
+    /* Quote Form Css*/
+
+    .quote-form-container {
+        width: 100%;
+        height: 1500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quote-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 85%;
+        height: 1200px;
+        padding: 0 0 0 15px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .quote-form h1 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #222;
+    }
+
+    .quote-form label {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 6px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .quote-form input,
+    select,
+    textarea {
+        width: 100%;
+        max-width: 90%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        transition: border-color 0.2s;
+    }
+
+    .quote-form input:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #ff8c10;
+        outline: none;
+    }
+
+    .quote-form textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .quote-form button {
+        margin-top: 30px;
+        background-color: #ff8c10;
+        color: white;
+        padding: 14px 0px;
+        border: none;
+        border-radius: 6px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        width: 100%;
+        max-width: 95%;
+    }
+
+    .quote-form button:hover {
+        background-color: #ffbf31;
+    }
+
+    .quote-form .note {
+        width: 100%;
+        max-width: 95%;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 15px;
+        color: #666;
     }
 
 }

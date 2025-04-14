@@ -44,6 +44,13 @@ function openWebPage() {
   window.open("Contact Us.html", "_blank");
 }
 
+function openAboutPage() {
+  window.open("About Us.html", "_blank");
+}
+
+function openQuoteForm() {
+  window.open("Quote.html", "_blank");
+}
 
 
 // JavaScript to type the text
