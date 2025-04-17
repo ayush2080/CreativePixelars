@@ -47,6 +47,13 @@ function openWebPage() {
 function openAboutPage() {
   window.open("About Us.html", "_blank");
 }
+function openServices() {
+  window.open("Our Services.html", "_blank");
+}
+
+function openWork() {
+  window.open("Our Work.html", "_blank");
+}
 
 function openQuoteForm() {
   window.open("Quote.html", "_blank");
@@ -115,3 +122,36 @@ window.onload = function () {
 };
 
 
+/* Script for Image scaling (Zoom in and Zoom out effect) animation*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Image hover effects
+  const imageContainers = document.querySelectorAll(".responsive-image-container img");
+
+  imageContainers.forEach((img) => {
+    img.addEventListener("mouseenter", () => {
+      img.style.transition = "transform 0.5s ease-out";
+      img.style.transform = "scale(1.1)";
+    });
+
+    img.addEventListener("mouseleave", () => {
+      img.style.transition = "transform 0.7s ease-in-out";
+      img.style.transform = "scale(1)";
+    });
+  });
+
+  // Video hover effects
+  const videoContainers = document.querySelectorAll(".video-container video");
+
+  videoContainers.forEach((video) => {
+    video.addEventListener("mouseenter", () => {
+      video.style.transition = "transform 0.5s ease-out";
+      video.style.transform = "scale(1.1)";
+    });
+
+    video.addEventListener("mouseleave", () => {
+      video.style.transition = "transform 0.7s ease-in-out";
+      video.style.transform = "scale(1)";
+    });
+  });
+});
