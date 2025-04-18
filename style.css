@@ -3658,7 +3658,7 @@ select:focus {
     .mobile-sidebar-socials-icons {
         width: 40px;
         height: 40px;
-        background-color: #FFB703;
+        background-color: #FB8500;
         border-style: none;
         border-width: 2px;
         border-radius: 50%;
@@ -3689,7 +3689,7 @@ select:focus {
     }
 
     .mobile-sidebar-socials-icons svg:hover {
-        fill: #FFB703;
+        fill: #FB8500;
         transform: scale(1.0);
     }
 
@@ -3939,13 +3939,52 @@ select:focus {
         max-width: 130px;
         max-height: 40px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background:#FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
         font-size: 11px;
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-button:hover {
+        background-image: none;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        color: #3e0000;
+    }
+    
+    .hero-button:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .hero-button-white {
+        background-color: #bfdb09;
+        background-image: none;
+    }
+    
+    .hero-button::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    .hero-button-white::after {
+        background: #FB8500;
+    }
+    
+    .hero-button:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
     }
 
     .hero-gif-container {
@@ -6996,7 +7035,7 @@ select:focus {
     .mobile-sidebar-socials-icons {
         width: 40px;
         height: 40px;
-        background-color: #FFB703;
+        background-color: #FB8500;
         border-style: none;
         border-width: 2px;
         border-radius: 50%;
@@ -7027,7 +7066,7 @@ select:focus {
     }
 
     .mobile-sidebar-socials-icons svg:hover {
-        fill: #FFB703;
+        fill: #FB8500;
         transform: scale(1.0);
     }
 
@@ -7276,13 +7315,52 @@ select:focus {
         max-width: 130px;
         max-height: 40px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
         font-size: 11px;
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-button:hover {
+        background-image: none;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        color: #3e0000;
+    }
+    
+    .hero-button:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .hero-button-white {
+        background-color: #bfdb09;
+        background-image: none;
+    }
+    
+    .hero-button::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    .hero-button-white::after {
+        background: #FB8500;
+    }
+    
+    .hero-button:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
     }
 
     .hero-gif-container {
