@@ -157,7 +157,7 @@
 
     </section>
 
-    <section class="contact-form-main">
+    <section class="contact-form-main" id="contactForm">
         <div class="contact-form-heading">
             <h1 data-aos="fade-up" data-aos-duration="1200">
                 Contact Form
@@ -166,61 +166,59 @@
                 For your convenience, you can also fill out the form below and we'll get back to <br> you as soon as possible.
             </p>
         </div>
-        <form action="#" method="POST" class="contact-form-container">
-            <div class="contact-form-field-container-main">
-                <div class="contact-form-field-container" data-aos="fade-up" data-aos-duration="1200">
-                    <div class="form-item">
-                        <img src="icons/form user icon.png">
-                        <label for="name" class="form-titles">Name*</label>
-                    </div>
-                    <input type="name" id="name" name="name" required>
-                </div>
-                <div class="contact-form-field-container" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
-                    <div class="form-item">
-                        <img src="icons/form email icon.png">
-                        <label for="email" class="form-titles">Email*</label>
-                    </div>
-                    <input type="email" id="email" name="email" required>
-                </div>
-            </div>
-            
-            <div class="contact-form-field-container-main-mobile-no">
-                <div class="contact-form-field-container" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
-                    <div class="form-item">
-                        <img src="icons/form phone icon.png">
-                        <label for="mobilenumber" class="form-titles">Mobile No. (Optional)</label>
-                    </div>
-                    <input type="mobilenumber" id="mobilenumber" name="mobilenumber" required>
-                </div>
-            </div>
-
-            <div class="contact-form-field-container-main-mobile-no">
-                <div class="contact-form-field-container" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
-                    <div class="form-item">
-                        <img src="icons/form description icon.png">
-                        <label for="description" class="form-titles">Description*</label>
-                    </div>
-                    <input type="description" id="description" name="description" required>
-                </div>
-            </div>
-
-            <div class="form-bottom">
-            <div class="form-button-container"  data-aos="zoom-in" data-aos-duration="1200">
-
-            <button class="submit-button" type="button">
-                Submit
-            <span class="material-symbols-outlined arrow-right-icon"> arrow_circle_right</span>
-            </button>
-
-            </div>
-            <div class="checkbox-container">
-            <input type="checkbox" name="Terms & Conditions" required>
-            <p>
-                I agree to all the Terms and Conditions.
-            </p>
-            </div>
-            </div>
-        </form>
+        <!-- Your Form HTML -->
+<form id="contactForm" class="contact-form-container">
+    <div class="contact-form-field-container-main">
+      <div class="contact-form-field-container">
+        <div class="form-item">
+          <img src="icons/form user icon.png">
+          <label for="name" class="form-titles">Name*</label>
+        </div>
+        <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" title="Only letters allowed" required>
+      </div>
+      <div class="contact-form-field-container">
+        <div class="form-item">
+          <img src="icons/form email icon.png">
+          <label for="email" class="form-titles">Email*</label>
+        </div>
+        <input type="text" id="email" name="email" required>
+      </div>
+    </div>
+  
+    <div class="contact-form-field-container-main-mobile-no">
+      <div class="contact-form-field-container">
+        <div class="form-item">
+          <img src="icons/form phone icon.png">
+          <label for="mobilenumber" class="form-titles">Mobile No. (Optional)</label>
+        </div>
+        <input type="text" id="mobilenumber" name="mobilenumber" maxlength="10" pattern="\d{10}" required>
+      </div>
+    </div>
+  
+    <div class="contact-form-field-container-main-mobile-no">
+      <div class="contact-form-field-container">
+        <div class="form-item">
+          <img src="icons/form description icon.png">
+          <label for="description" class="form-titles">Description*</label>
+        </div>
+        <input type="text" id="description" name="description" pattern="[A-Za-z\s]+" title="Only letters allowed" required>
+      </div>
+    </div>
+  
+    <div class="form-bottom">
+      <div class="form-button-container">
+        <button class="submit-button" type="submit">
+          Submit
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f5f5f5"><path d="m480-320 160-160-160-160-56 56 64 64H320v80h168l-64 64 56 56Zm0 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        </button>
+      </div>
+  
+      <div class="checkbox-container">
+        <input type="checkbox" name="terms" required>
+        <p>I agree to all the Terms and Conditions.</p>
+      </div>
+    </div>
+  </form>
     </section>
     
 
@@ -321,6 +319,79 @@
         <span class="material-symbols-outlined"> arrow_upward </span>
     </button>
 </div>
+
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+  
+    // 🔧 Firebase config
+    const firebaseConfig = {
+    apiKey: "AIzaSyCLo6_Hfy_uelxctI5GpR6E5VLGeDPBAj4",
+    authDomain: "creative-pixelars-2024.firebaseapp.com",
+    projectId: "creative-pixelars-2024",
+    storageBucket: "creative-pixelars-2024.firebasestorage.app",
+    messagingSenderId: "1067934103920",
+    appId: "1:1067934103920:web:48fb3cb588e2c7f95877b5"
+  };
+  
+    // 🔌 Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+  
+    // Initialize EmailJS
+    (function() {
+        emailjs.init("w3zvxQJuT8WHKDLOz"); // Your EmailJS user ID
+    })();
+  
+    // 🚀 Form submit logic
+    document.getElementById("contactForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
+    
+        const form = e.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const mobilenumber = form.mobilenumber.value;
+        const description = form.description.value;
+    
+        try {
+            // Store form data in Firestore
+            await addDoc(collection(db, "messages"), {
+                name,
+                email,
+                mobilenumber,
+                description,
+                timestamp: new Date()
+            });
+    
+            // Send email using EmailJS
+            const emailParams = {
+                from_name: name,
+                from_email: email,
+                mobilenumber: mobilenumber,
+                description: description
+            };
+    
+            emailjs.send("service_m7bjxds", "template_c7k8j5d", emailParams)
+                .then(function(response) {
+                    console.log("Email sent successfully:", response);
+                    alert("✅ Message submitted successfully!");
+                }, function(error) {
+                    console.error("Email sending failed:", error);
+                    alert("❌ Failed to send email. Please try again.");
+                });
+    
+            form.reset(); // ✅ Clear form after success
+    
+        } catch (error) {
+            console.error("❌ Firestore error:", error);
+            alert("❌ Failed to submit message. Please try again.");
+        }
+    });
+</script>
+
+  
+  
 </body>
 <script type="text/javascript" src="scrolly/scrolly.js"></script>
 <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
@@ -328,5 +399,11 @@
 <script src="aos-master/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+      emailjs.init("w3zvxQJuT8WHKDLOz"); // Replace with your EmailJS user ID
+    })();
 </script>
 </html>

@@ -3466,18 +3466,38 @@ input:focus {
 .submit-button {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 170px;
     height: 45px;
     border-radius: 25px;
-    background-image: linear-gradient(to right, #FB8500, #FFB703);
+    background:#FB8500;
     font-family: "Montserrat Medium";
     font-weight: 400;
     color: #fff;
     font-size: 15px;
     border-style: none;
     box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.submit-button:hover{
+    background: #bfdb09;
+}
+
+.submit-button > svg {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.submit-button:hover svg {
+    transform: translateX(5px);
+}
+  
+.submit-button:active {
+    transform: scale(0.95);
 }
 
 .checkbox-container {
@@ -6834,12 +6854,12 @@ select:focus {
     .submit-button {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 170px;
         height: 45px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background:#FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -10222,12 +10242,12 @@ select:focus {
     .submit-button {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 170px;
         height: 45px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background:#FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -13495,12 +13515,12 @@ select:focus {
     .submit-button {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 170px;
         height: 45px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background:#FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -16688,12 +16708,12 @@ select:focus {
     .submit-button {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 170px;
         height: 45px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background:#FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -19894,12 +19914,12 @@ select:focus {
     .submit-button {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 170px;
         height: 45px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background:#FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -23161,12 +23181,12 @@ select:focus {
     .submit-button {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 170px;
         height: 45px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background:#FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -26375,12 +26395,12 @@ select:focus {
     .submit-button {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 170px;
         height: 45px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background:#FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -29554,12 +29574,12 @@ select:focus {
     .submit-button {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 170px;
         height: 45px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background:#FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
