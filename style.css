@@ -11,6 +11,10 @@ body.no-scroll {
     height: 100vh;
 }
 
+body.lock-scroll {
+    overflow: hidden;
+}
+
 /* Main content styling */
 .content {
     opacity: 0;
@@ -234,6 +238,12 @@ nav {
     cursor: pointer;
     align-self: flex-end;
 
+}
+
+.divider {
+    display: none;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .mobile-sidebar-socials-icons-main {
@@ -3569,12 +3579,12 @@ select:focus {
 
 
     .navbar-content {
+        width: 100%;
         height: 100vh;
         display: flex;
         position: fixed;
         right: 0;
         top: -16px;
-        width: 270px;
         background-color: #1e1e1e;
         border-radius: 0;
         flex-direction: column;
@@ -3588,20 +3598,23 @@ select:focus {
     }
 
     .nav-item {
+        margin: 0 0 0 40px;
         height: 7%;
         display: flex;
         align-items: center;
     }
 
     .nav-item1 {
+        margin: 10px 0 0 0;
+        width: 45px;
         height: 25px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        padding: 7px;
     }
 
     .nav-item-contact {
+        margin: 0 0 0 40px;
         height: 7%;
         display: flex;
         align-items: center;
@@ -3609,20 +3622,20 @@ select:focus {
 
     .mobile-sidebar-socials-icons-main {
         width: 100%;
-        height: 100px;
+        height: 90px;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        margin: 5rem 0 0 0;
+        justify-content: center;
+        margin: 1rem 0 0 0;
     }
 
     .mobile-sidebar-socials-icons-container {
         width: 100%;
-        max-width: 90%;
-        height: 100px;
+        max-width: 80%;
+        height: 75px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .mobile-sidebar-socials-icons {
@@ -3775,6 +3788,24 @@ select:focus {
         transition: opacity 0.3s ease;
 
     }
+    .sidebar-logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+
+
+    }
+
+    .sidebar-logo img {
+        max-width: 120px;
+        height: auto;
+        position: absolute;
+        transition: opacity 0.3s ease;
+
+    }
 
     .white-logo {
         opacity: 1;
@@ -3784,6 +3815,7 @@ select:focus {
         opacity: 0;
     }
 
+
     header.sticky .white-logo {
         opacity: 0;
 
@@ -3792,6 +3824,16 @@ select:focus {
     header.sticky .black-logo {
         opacity: 1;
 
+    }
+    .divider {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        margin: 2rem auto;
     }
 
     .hero-section {
