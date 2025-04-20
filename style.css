@@ -134,6 +134,15 @@ header.sticky .black-logo {
     transition: opacity 0.3s ease;
 }
 
+.sidebar-logo {
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
 .menu-toggle {
     display: none;
 }
