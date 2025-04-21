@@ -373,7 +373,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(18, 18, 18, 0.9);
     z-index: 2;
 
 }
@@ -620,7 +620,7 @@ nav {
 }
 
 .about-button:hover {
-    background: #bfdb09;
+    background: #FFB703;
 }
 
 .about-button>svg {
@@ -635,6 +635,9 @@ nav {
 
 .about-button:active {
     transform: scale(0.95);
+}
+.about-button:focus{
+    outline: none;
 }
 
 .why-choose-us {
@@ -966,7 +969,7 @@ nav {
 }
 
 .services-button:hover {
-    background: #bfdb09;
+    background: #FFB703;
 }
 
 .services-button>svg {
@@ -983,6 +986,9 @@ nav {
     transform: scale(0.95);
 }
 
+.services-button:focus{
+    outline: none;
+}
 
 .services-button1 {
     margin-top: 10px;
@@ -1005,7 +1011,7 @@ nav {
 }
 
 .services-button1:hover {
-    background: #bfdb09;
+    background: #FFB703;
 }
 
 .services-button1>svg {
@@ -1021,7 +1027,9 @@ nav {
 .services-button1:active {
     transform: scale(0.95);
 }
-
+.services-button1:focus{
+    outline: none;
+}
 .services-container {
     display: flex;
     flex-direction: row;
@@ -1233,7 +1241,7 @@ nav {
 }
 
 .work-together-button:hover {
-    background: #bfdb09;
+    background: #FFB703;
 }
 
 .work-together-button>svg {
@@ -1248,6 +1256,9 @@ nav {
 
 .work-together-button:active {
     transform: scale(0.95);
+}
+.work-together-button:focus{
+    outline: none;
 }
 
 .Work {
@@ -1666,7 +1677,7 @@ nav {
 }
 
 .work-button:hover {
-    background: #bfdb09;
+    background: #FFB703;
 }
 
 .work-button>svg {
@@ -1681,6 +1692,9 @@ nav {
 
 .work-button:active {
     transform: scale(0.95);
+}
+.work-button:focus{
+    outline: none;
 }
 
 .footer {
@@ -2160,18 +2174,38 @@ html {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 180px;
     height: 45px;
     border-radius: 25px;
-    background-image: linear-gradient(to right, #FB8500, #FFB703);
+    background: #FB8500;
     font-family: "Montserrat Medium";
     font-weight: 400;
     color: #fff;
     font-size: 15px;
     border-style: none;
     box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.about-us-work-together-button:hover {
+    background: #FFB703;
+}
+
+.about-us-work-together-button>svg {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-us-work-together-button:hover svg {
+    transform: translateX(5px);
+}
+
+.about-us-work-together-button:active {
+    transform: scale(0.95);
 }
 
 
@@ -2551,18 +2585,38 @@ html {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 180px;
     height: 45px;
     border-radius: 25px;
-    background-image: linear-gradient(to right, #FB8500, #FFB703);
+    background: #FB8500;
     font-family: "Montserrat Medium";
     font-weight: 400;
     color: #fff;
     font-size: 15px;
     border-style: none;
     box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.Our-services-work-together-button:hover {
+    background: #FFB703;
+}
+
+.Our-services-work-together-button>svg {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Our-services-work-together-button:hover svg {
+    transform: translateX(5px);
+}
+
+.Our-services-together-button:active {
+    transform: scale(0.95);
 }
 
 .Our-services-our-commitment {
@@ -3003,18 +3057,38 @@ html {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 180px;
     height: 45px;
     border-radius: 25px;
-    background-image: linear-gradient(to right, #FB8500, #FFB703);
+    background: #FB8500;
     font-family: "Montserrat Medium";
     font-weight: 400;
     color: #fff;
     font-size: 15px;
     border-style: none;
     box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.project-work-together-button:hover {
+    background: #FFB703;
+}
+
+.project-work-together-button>svg {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-work-together-button:hover svg {
+    transform: translateX(5px);
+}
+
+.project-together-button:active {
+    transform: scale(0.95);
 }
 
 .Our-work-bottom {
@@ -3452,7 +3526,7 @@ input:focus {
 }
 
 .submit-button:hover {
-    background: #bfdb09;
+    background: #FFB703;
 }
 
 .submit-button>svg {
@@ -3468,7 +3542,9 @@ input:focus {
 .submit-button:active {
     transform: scale(0.95);
 }
-
+.submit-button:focus{
+    outline: none;
+}
 .checkbox-container {
     width: 80%;
     display: flex;
@@ -3581,6 +3657,11 @@ select:focus {
 
 
 @media only screen and ((min-width:0px) and (max-width: 576px)) {
+
+    button:focus {
+        outline: none;
+    }
+    
     nav {
         width: 15%;
         height: 50px;
@@ -3614,9 +3695,9 @@ select:focus {
     }
 
     .nav-item1 {
-        margin: 10px 0 0 0;
-        width: 45px;
-        height: 25px;
+        margin: 10px 10px 0 0;
+        width: 16px;
+        height: 16px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3629,13 +3710,21 @@ select:focus {
         align-items: center;
     }
 
+    .nav-link{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
     .mobile-sidebar-socials-icons-main {
         width: 100%;
         height: 90px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 1rem 0 0 0;
+        margin: 15px 0 0 0;
     }
 
     .mobile-sidebar-socials-icons-container {
@@ -3769,11 +3858,17 @@ select:focus {
 
     .close-menu {
         display: flex;
-        font-size: 3rem;
+        font-size: 2rem;
         border: none;
         cursor: pointer;
         align-self: flex-end;
+        background-color: #c48c00;
+        border-radius: 50%;
+        justify-content: center;
 
+    }
+    .close-menu:focus {
+        outline: none;
     }
 
     .menu-toggle.hide {
@@ -3797,19 +3892,21 @@ select:focus {
         transition: opacity 0.3s ease;
 
     }
+
     .sidebar-logo {
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 100px;
+        height: 80px;
+        margin:  0 0 20px 0;
 
 
     }
 
     .sidebar-logo img {
-        max-width: 120px;
+        max-width: 130px;
         height: auto;
         position: absolute;
         transition: opacity 0.3s ease;
@@ -3834,6 +3931,7 @@ select:focus {
         opacity: 1;
 
     }
+
     .divider {
         width: 100%;
         max-width: 90%;
@@ -3842,7 +3940,7 @@ select:focus {
         justify-content: center;
         border: none;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
-        margin: 2rem auto;
+        margin: 3rem auto 0;
     }
 
     .hero-section {
@@ -3983,7 +4081,7 @@ select:focus {
     }
 
     .hero-button-white {
-        background-color: #bfdb09;
+        background-color: #FFB703;
         background-image: none;
     }
 
@@ -4126,6 +4224,9 @@ select:focus {
         font-size: 11px;
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    }
+    .about-button:focus{
+        outline: none;
     }
 
     .why-choose-us {
@@ -4485,6 +4586,9 @@ select:focus {
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
     }
+    .services-button:focus{
+        outline: none;
+    }
 
     .services-button1 {
         margin-top: 0px;
@@ -4502,6 +4606,9 @@ select:focus {
         font-size: 15px;
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    }
+    .services-button1:focus{
+        outline: none;
     }
 
     .services-container {
@@ -4727,6 +4834,9 @@ select:focus {
         font-size: 13px;
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    }
+    .work-together-button:focus{
+        outline: none;
     }
 
     .Work {
@@ -5065,6 +5175,9 @@ select:focus {
         font-size: 15px;
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    }
+    .work-button:focus{
+        outline: none;
     }
 
 
@@ -5568,12 +5681,12 @@ select:focus {
         margin: 0px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 140px;
         height: 40px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -5953,12 +6066,12 @@ select:focus {
     .Our-services-work-together-button {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 140px;
         height: 40px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -6423,12 +6536,12 @@ select:focus {
     .project-work-together-button {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 140px;
         height: 40px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -6874,6 +6987,9 @@ select:focus {
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
     }
+    .submit-button:focus{
+        outline: none;
+    }
 
     .checkbox-container {
         width: 100%;
@@ -7023,23 +7139,33 @@ select:focus {
     }
 
     .nav-item {
+        margin: 0 0 0 40px;
         height: 7%;
         display: flex;
         align-items: center;
     }
 
     .nav-item1 {
-        height: 25px;
+        margin: 10px 10px 0 0;
+        width: 16px;
+        height: 16px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        padding: 7px;
     }
 
     .nav-item-contact {
+        margin: 0 0 0 40px;
         height: 7%;
         display: flex;
         align-items: center;
+    }
+    .nav-link{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .mobile-sidebar-socials-icons-main {
@@ -7048,7 +7174,7 @@ select:focus {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        margin: 5rem 0 0 0;
+        margin: 15px0 0 0;
     }
 
     .mobile-sidebar-socials-icons-container {
@@ -7181,11 +7307,17 @@ select:focus {
 
     .close-menu {
         display: flex;
-        font-size: 3rem;
+        font-size: 2rem;
         border: none;
         cursor: pointer;
         align-self: flex-end;
+        background-color: #c48c00;
+        border-radius: 50%;
+        justify-content: center;
 
+    }
+    .close-menu:focus {
+        outline: none;
     }
 
     .menu-toggle.hide {
@@ -7210,6 +7342,26 @@ select:focus {
 
     }
 
+    .sidebar-logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+        margin:  0 0 20px 0;
+
+
+    }
+
+    .sidebar-logo img {
+        max-width: 130px;
+        height: auto;
+        position: absolute;
+        transition: opacity 0.3s ease;
+
+    }
+
     .white-logo {
         opacity: 1;
     }
@@ -7226,6 +7378,17 @@ select:focus {
     header.sticky .black-logo {
         opacity: 1;
 
+    }
+
+    .divider {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        margin: 3rem auto 0;
     }
 
     .hero-section {
@@ -7366,7 +7529,7 @@ select:focus {
     }
 
     .hero-button-white {
-        background-color: #bfdb09;
+        background-color: #FFB703;
         background-image: none;
     }
 
@@ -7518,6 +7681,9 @@ select:focus {
         font-size: 11px;
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    }
+    .about-button:focus{
+        outline: none;
     }
 
     .why-choose-us {
@@ -7877,6 +8043,9 @@ select:focus {
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
     }
+    .services-button:focus{
+        outline: none;
+    }
 
     .services-button1 {
         margin-top: 0px;
@@ -7894,6 +8063,9 @@ select:focus {
         font-size: 15px;
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    }
+    .services-button1:focus{
+        outline: none;
     }
 
     .services-container {
@@ -8119,6 +8291,9 @@ select:focus {
         font-size: 13px;
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    }
+    .work-together-button:focus{
+        outline: none;
     }
 
     .Work {
@@ -8457,6 +8632,9 @@ select:focus {
         font-size: 15px;
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+    }
+    .work-button:focus{
+        outline: none;
     }
 
 
@@ -8959,12 +9137,12 @@ select:focus {
         margin: 0px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 140px;
         height: 40px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -9345,12 +9523,12 @@ select:focus {
     .Our-services-work-together-button {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 140px;
         height: 40px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -9816,12 +9994,12 @@ select:focus {
     .project-work-together-button {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 140px;
         height: 40px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -10269,6 +10447,9 @@ select:focus {
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
     }
+    .submit-button:focus{
+        outline: none;
+    }
 
     .checkbox-container {
         width: 100%;
@@ -10621,7 +10802,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(10, 10, 10, 0.7);
         z-index: 2;
 
     }
@@ -11375,6 +11556,7 @@ select:focus {
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
     }
+    
 
     .Work {
         width: 100vw;
@@ -12259,12 +12441,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 145px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -12646,12 +12828,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 140px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -13106,12 +13288,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 140px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -13811,7 +13993,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(10, 10, 10, 0.7);
         z-index: 2;
 
     }
@@ -15453,12 +15635,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 145px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -15843,12 +16025,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 150px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -16302,12 +16484,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 150px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -17034,7 +17216,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(10, 10, 10, 0.7);
         z-index: 2;
 
     }
@@ -18666,12 +18848,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 145px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -19056,12 +19238,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 150px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -19514,12 +19696,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 150px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -20248,7 +20430,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(10, 10, 10, 0.7);
         z-index: 2;
 
     }
@@ -21932,12 +22114,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 145px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -22324,12 +22506,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 145px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -22784,12 +22966,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 150px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -23518,7 +23700,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(10, 10, 10, 0.7);
         z-index: 2;
 
     }
@@ -25153,12 +25335,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 145px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -25542,12 +25724,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 145px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -26002,12 +26184,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 150px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -26699,7 +26881,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(10, 10, 10, 0.7);
         z-index: 2;
 
     }
@@ -28335,12 +28517,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 145px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -28724,12 +28906,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 145px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
@@ -29184,12 +29366,12 @@ select:focus {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 150px;
         height: 42px;
         border-radius: 25px;
-        background-image: linear-gradient(to right, #FB8500, #FFB703);
+        background: #FB8500;
         font-family: "Montserrat Medium";
         font-weight: 400;
         color: #fff;
