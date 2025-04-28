@@ -143,6 +143,7 @@ header.sticky .black-logo {
     height: 100px;
 }
 
+
 .menu-toggle {
     display: none;
 }
@@ -1738,6 +1739,7 @@ nav {
     font-family: "Montserrat";
     font-weight: 300;
     font-size: 14px;
+    line-height: 1rem;
     color: rgba(245, 247, 245, 0.5);
     margin-top: 30px;
 }
@@ -1883,6 +1885,14 @@ nav {
     color: rgba(245, 247, 245, 0.5);
 }
 
+.on-socials-main a:-webkit-any-link {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.on-socials-main a:-webkit-any-link {
+    text-decoration: none !important;
+}
+
 hr {
     width: 95%;
     height: 0.7px;
@@ -1954,7 +1964,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F5F7F5;
+    background-color: #f6eeee;
 
 }
 
@@ -1964,6 +1974,11 @@ html {
     font-weight: 700;
     color: #1e1e1e;
 
+}
+.about-us-page-heading-bg svg{
+    width: 30px;
+    height: 30px;
+    color: #1e1e1e;
 }
 
 .about-us-page-content-container {
@@ -2384,7 +2399,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F5F7F5;
+    background-color: #f6eeee;
 
 }
 
@@ -2394,6 +2409,11 @@ html {
     font-weight: 700;
     color: #1e1e1e;
 
+}
+.Our-services-page-heading-bg svg{
+    width: 30px;
+    height: 30px;
+    color: #1e1e1e;
 }
 
 .Our-services-content-container {
@@ -3148,10 +3168,12 @@ html {
     color: #f5f5f5;
 }
 
-.contact-us-page-heading-bg span {
+.contact-us-page-heading-bg svg {
     position: relative;
     z-index: 4;
     color: #f5f5f5;
+    width: 30px;
+    height: 30px;
 }
 
 .contact-us-page-heading-bg img {
@@ -5390,6 +5412,10 @@ select:focus {
         font-size: 14px;
         color: rgba(245, 247, 245, 0.5);
     }
+    .on-socials-main a:-webkit-any-link {
+        text-decoration: none !important;
+        cursor: pointer;
+    }
 
     hr {
         width: 95%;
@@ -5437,7 +5463,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -5447,6 +5473,12 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+
+    .about-us-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .about-us-page-content-container {
@@ -5849,7 +5881,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -5859,6 +5891,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .Our-services-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .Our-services-content-container {
@@ -6607,10 +6644,12 @@ select:focus {
         color: #f5f5f5;
     }
 
-    .contact-us-page-heading-bg span {
+    .contact-us-page-heading-bg svg {
         position: relative;
         z-index: 4;
         color: #f5f5f5;
+        width: 30px;
+        height: 30px;
     }
 
     .contact-us-page-heading-bg img {
@@ -8847,6 +8886,10 @@ select:focus {
         font-size: 14px;
         color: rgba(245, 247, 245, 0.5);
     }
+    .on-socials-main a:-webkit-any-link {
+        text-decoration: none !important;
+        cursor: pointer;
+    }
 
     hr {
         width: 95%;
@@ -8893,7 +8936,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -8903,6 +8946,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .about-us-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .about-us-page-content-container {
@@ -9306,7 +9354,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -9316,6 +9364,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .Our-services-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .Our-services-content-container {
@@ -10067,10 +10120,12 @@ select:focus {
         color: #f5f5f5;
     }
 
-    .contact-us-page-heading-bg span {
+    .contact-us-page-heading-bg svg {
         position: relative;
         z-index: 4;
         color: #f5f5f5;
+        width: 30px;
+        height: 30px;
     }
 
     .contact-us-page-heading-bg img {
@@ -11995,6 +12050,7 @@ select:focus {
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 10px;
+        line-height: 1rem;
         color: rgba(245, 247, 245, 0.5);
         margin-top: 15px;
     }
@@ -12142,6 +12198,10 @@ select:focus {
         font-size: 11px;
         color: rgba(245, 247, 245, 0.5);
     }
+    .on-socials-main a:-webkit-any-link {
+        text-decoration: none !important;
+        cursor: pointer;
+    }
 
     hr {
         width: 95%;
@@ -12218,7 +12278,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -12228,6 +12288,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .about-us-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .about-us-page-content-container {
@@ -12620,7 +12685,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -12630,6 +12695,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .Our-services-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .Our-services-content-container {
@@ -13359,10 +13429,12 @@ select:focus {
         color: #f5f5f5;
     }
 
-    .contact-us-page-heading-bg span {
+    .contact-us-page-heading-bg svg {
         position: relative;
         z-index: 4;
         color: #f5f5f5;
+        width: 30px;
+        height: 30px;
     }
 
     .contact-us-page-heading-bg img {
@@ -15191,6 +15263,7 @@ select:focus {
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 10px;
+        line-height: 1rem;
         color: rgba(245, 247, 245, 0.5);
         margin-top: 15px;
     }
@@ -15338,6 +15411,10 @@ select:focus {
         font-size: 11px;
         color: rgba(245, 247, 245, 0.5);
     }
+    .on-socials-main a:-webkit-any-link {
+        text-decoration: none !important;
+        cursor: pointer;
+    }
 
     hr {
         width: 95%;
@@ -15412,7 +15489,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -15422,6 +15499,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .about-us-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .about-us-page-content-container {
@@ -15817,7 +15899,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -15827,6 +15909,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .Our-services-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .Our-services-content-container {
@@ -16556,10 +16643,12 @@ select:focus {
         color: #f5f5f5;
     }
 
-    .contact-us-page-heading-bg span {
+    .contact-us-page-heading-bg svg {
         position: relative;
         z-index: 4;
         color: #f5f5f5;
+        width: 30px;
+        height: 30px;
     }
 
     .contact-us-page-heading-bg img {
@@ -18406,6 +18495,7 @@ select:focus {
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 10px;
+        line-height: 1rem;
         color: rgba(245, 247, 245, 0.5);
         margin-top: 15px;
     }
@@ -18553,6 +18643,10 @@ select:focus {
         font-size: 11px;
         color: rgba(245, 247, 245, 0.5);
     }
+    .on-socials-main a:-webkit-any-link {
+        text-decoration: none !important;
+        cursor: pointer;
+    }
 
     hr {
         width: 95%;
@@ -18625,7 +18719,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -18635,6 +18729,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .about-us-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .about-us-page-content-container {
@@ -19031,7 +19130,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
     }
 
     .Our-services-heading-bg h1 {
@@ -19040,6 +19139,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .Our-services-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .Our-services-content-container {
@@ -19766,10 +19870,12 @@ select:focus {
         color: #f5f5f5;
     }
 
-    .contact-us-page-heading-bg span {
+    .contact-us-page-heading-bg svg {
         position: relative;
         z-index: 4;
         color: #f5f5f5;
+        width: 30px;
+        height: 30px;
     }
 
     .contact-us-page-heading-bg img {
@@ -21671,6 +21777,7 @@ select:focus {
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 10px;
+        line-height: 1rem;
         color: rgba(245, 247, 245, 0.5);
         margin-top: 15px;
     }
@@ -21819,6 +21926,11 @@ select:focus {
         color: rgba(245, 247, 245, 0.5);
     }
 
+    .on-socials-main a:-webkit-any-link {
+        text-decoration: none !important;
+        cursor: pointer;
+    }
+
     hr {
         width: 95%;
         height: 0.7px;
@@ -21890,7 +22002,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -21900,6 +22012,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .about-us-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .about-us-page-content-container {
@@ -22297,7 +22414,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -22307,6 +22424,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .Our-services-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .Our-services-content-container {
@@ -23038,10 +23160,12 @@ select:focus {
         color: #f5f5f5;
     }
 
-    .contact-us-page-heading-bg span {
+    .contact-us-page-heading-bg svg {
         position: relative;
         z-index: 4;
         color: #f5f5f5;
+        width: 30px;
+        height: 30px;
     }
 
     .contact-us-page-heading-bg img {
@@ -24892,6 +25016,7 @@ select:focus {
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 10px;
+        line-height: 1rem;
         color: rgba(245, 247, 245, 0.5);
         margin-top: 15px;
     }
@@ -25039,6 +25164,12 @@ select:focus {
         font-size: 11px;
         color: rgba(245, 247, 245, 0.5);
     }
+    .on-socials-main a:hover{
+        cursor: pointer;
+        text-decoration: none;
+        all: unset;
+    
+    }
 
     hr {
         width: 95%;
@@ -25111,7 +25242,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -25121,6 +25252,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .about-us-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .about-us-page-content-container {
@@ -25518,7 +25654,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -25528,6 +25664,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .Our-services-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .Our-services-content-container {
@@ -26256,10 +26397,12 @@ select:focus {
         color: #f5f5f5;
     }
 
-    .contact-us-page-heading-bg span {
+    .contact-us-page-heading-bg svg {
         position: relative;
         z-index: 4;
         color: #f5f5f5;
+        width: 30px;
+        height: 30px;
     }
 
     .contact-us-page-heading-bg img {
@@ -28074,6 +28217,7 @@ select:focus {
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 10px;
+        line-height: 1rem;
         color: rgba(245, 247, 245, 0.5);
         margin-top: 15px;
     }
@@ -28221,6 +28365,10 @@ select:focus {
         font-size: 11px;
         color: rgba(245, 247, 245, 0.5);
     }
+    .on-socials-main a:-webkit-any-link {
+        text-decoration: none !important;
+        cursor: pointer;
+    }
 
     hr {
         width: 95%;
@@ -28293,7 +28441,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -28303,6 +28451,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .about-us-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .about-us-page-content-container {
@@ -28700,7 +28853,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F5F7F5;
+        background-color: #f6eeee;
 
     }
 
@@ -28710,6 +28863,11 @@ select:focus {
         font-weight: 700;
         color: #1e1e1e;
 
+    }
+    .Our-services-page-heading-bg svg{
+        width: 30px;
+        height: 30px;
+        color: #1e1e1e;
     }
 
     .Our-services-content-container {
@@ -29439,10 +29597,12 @@ select:focus {
         color: #f5f5f5;
     }
 
-    .contact-us-page-heading-bg span {
+    .contact-us-page-heading-bg svg {
         position: relative;
         z-index: 4;
         color: #f5f5f5;
+        width: 30px;
+        height: 30px;
     }
 
     .contact-us-page-heading-bg img {
