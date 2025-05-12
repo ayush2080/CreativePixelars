@@ -164,7 +164,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    background-color: #1e1e1e;
+    background-color: #383838;
     border-radius: 60px;
 
 }
@@ -252,49 +252,49 @@ header.sticky .nav-link {
 }
 
 /* Underline animation effect */
-    header.sticky .nav-link::after {
-        content: "";
-        display: flex;
-        position: relative;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 2px;
-        background-color: #FFB703;
-        transition: width 0.3s ease;
-    }
+header.sticky .nav-link::after {
+    content: "";
+    display: flex;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFB703;
+    transition: width 0.3s ease;
+}
 
-    /* Hover effect to expand the underline */
-    header.sticky .nav-link:hover::after {
-        width: 100%;
-    }
+/* Hover effect to expand the underline */
+header.sticky .nav-link:hover::after {
+    width: 100%;
+}
 
-    header.sticky .nav-link:hover {
-        color: #FFB703;
+header.sticky .nav-link:hover {
+    color: #FFB703;
 
-    }
+}
 
-    header.sticky .nav-link.active {
-        color: #FFB703;
-    }
+header.sticky .nav-link.active {
+    color: #FFB703;
+}
 
-    /* Underline animation effect */
-    header.sticky .nav-link.active::after {
-        content: "";
-        display: none;
-        position: relative;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 2px;
-        background-color: #fff;
-        transition: width 0.3s ease;
-    }
+/* Underline animation effect */
+header.sticky .nav-link.active::after {
+    content: "";
+    display: none;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
 
-    /* Hover effect to expand the underline */
-    header.sticky .nav-link.active:hover::after {
-        width: 100%;
-    }
+/* Hover effect to expand the underline */
+header.sticky .nav-link.active:hover::after {
+    width: 100%;
+}
 
 .nav-item-contact {
     display: none;
@@ -582,7 +582,8 @@ header.sticky .nav-link {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    object-fit: cover; /* Ensures the video covers the entire area */
+    object-fit: cover;
+    /* Ensures the video covers the entire area */
     position: fixed;
     top: 0;
     left: 0;
@@ -925,6 +926,14 @@ header.sticky .nav-link {
 
 }
 
+.reason-overlay {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-color: rgba(10, 10, 10, 0.9);
+    z-index: 1;
+}
+
 .reason-content-circle {
     width: 100%;
     height: 200px;
@@ -978,7 +987,7 @@ header.sticky .nav-link {
     z-index: 2;
     top: 1rem;
     border-radius: 50%;
-    background-color: #1e1e1e;
+    background-color: #303030;
     margin: 0 4rem 0 4rem;
 }
 
@@ -989,7 +998,7 @@ header.sticky .nav-link {
     z-index: 2;
     top: 1rem;
     border-radius: 50%;
-    background-color: #1e1e1e;
+    background-color: #303030;
     margin: 0 4rem 0 4rem;
 }
 
@@ -1002,7 +1011,7 @@ header.sticky .nav-link {
     height: 30px;
     border-radius: 50%;
     background-color: #FB8500;
-    border: 3px solid white;
+    border: 2px solid white;
 
 }
 
@@ -1023,12 +1032,11 @@ header.sticky .nav-link {
     width: 63px;
     height: 64px;
     margin: 0.3rem 0 0 2.7rem;
-    color: #F5F7F5;
-    transition: filter 0.3s ease;
+    fill: #fb8500;
 }
 
 .reason-icon:hover {
-    filter: invert(50%) sepia(100%) saturate(10000%);
+    fill: #f5f5f5;
 }
 
 .reason-heading-container {
@@ -1054,6 +1062,7 @@ header.sticky .nav-link {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    color: #f5f5f5;
 
 }
 
@@ -1064,6 +1073,7 @@ header.sticky .nav-link {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    color: #f5f5f5;
 
 }
 
@@ -1074,6 +1084,7 @@ header.sticky .nav-link {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    color: rgba(245, 245, 245, 0.5);
 
 }
 
@@ -1084,6 +1095,7 @@ header.sticky .nav-link {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    color: rgba(245, 245, 245, 0.5);
 
 }
 
@@ -1097,6 +1109,7 @@ header.sticky .nav-link {
     font-size: 25px;
     width: 300px;
     height: 33px;
+    color: #f5f5f5;
 
 }
 
@@ -1111,6 +1124,7 @@ header.sticky .nav-link {
     font-size: 12px;
     width: 200px;
     height: 104px;
+    color: rgba(245, 245, 245, 0.5);
 }
 
 
@@ -4222,7 +4236,8 @@ select:focus {
         justify-content: center;
         width: 100%;
         height: 100vh;
-        object-fit: cover; /* Ensures the video covers the entire area */
+        object-fit: cover;
+        /* Ensures the video covers the entire area */
         position: fixed;
         top: 0;
         left: 0;
@@ -4547,8 +4562,14 @@ select:focus {
         align-items: center;
         width: 100%;
         height: auto;
-
-
+        background-color: rgba(10, 10, 10, 0.9);
+    }
+    .reason-overlay {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background-color: rgba(10, 10, 10, 0.9);
+        z-index: 2;
     }
 
     .reason-content-circle {
@@ -4600,7 +4621,7 @@ select:focus {
         height: 130px;
         z-index: 2;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 1rem 0 0 0;
     }
 
@@ -4610,7 +4631,7 @@ select:focus {
         height: 130px;
         z-index: 2;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 9rem 0 0 0;
     }
 
@@ -4623,7 +4644,7 @@ select:focus {
         height: 30px;
         border-radius: 50%;
         background-color: #FB8500;
-        border: 3px solid white;
+        border: 2px solid white;
 
     }
 
@@ -4645,12 +4666,11 @@ select:focus {
         width: 53px;
         height: 54px;
         margin: 0.2rem 0 0 2.4rem;
-        color: #F5F7F5;
-        transition: filter 0.3s ease;
+        fill: #fb8500;
     }
 
     .reason-icon:hover {
-        filter: invert(50%) sepia(100%) saturate(10000%);
+        fill: #f5f5f5;
     }
 
     .reason-heading-container {
@@ -4680,6 +4700,7 @@ select:focus {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        color: #f5f5f5;
 
     }
 
@@ -4691,6 +4712,7 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
         margin-top: 12.5rem;
+        color: #f5f5f5;
 
     }
 
@@ -4701,6 +4723,7 @@ select:focus {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -4712,6 +4735,7 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
         margin-top: 9.3rem;
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -4725,6 +4749,7 @@ select:focus {
         font-size: 22px;
         width: 300px;
         height: 33px;
+        color: #f5f5f5;
 
     }
 
@@ -4739,6 +4764,7 @@ select:focus {
         font-size: 12px;
         width: 200px;
         height: 104px;
+        color: rgba(245, 245, 245, 0.5);
     }
 
     .showreel-container {
@@ -7680,7 +7706,8 @@ select:focus {
         justify-content: center;
         width: 100%;
         height: 100vh;
-        object-fit: cover; /* Ensures the video covers the entire area */
+        object-fit: cover;
+        /* Ensures the video covers the entire area */
         position: fixed;
         top: 0;
         left: 0;
@@ -8014,8 +8041,14 @@ select:focus {
         align-items: center;
         width: 100%;
         height: auto;
-
-
+        background-color: rgba(10, 10, 10, 0.9);
+    }
+    .reason-overlay {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background-color: rgba(10, 10, 10, 0.9);
+        z-index: 2;
     }
 
     .reason-content-circle {
@@ -8067,7 +8100,7 @@ select:focus {
         height: 130px;
         z-index: 2;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 1rem 0 0 0;
     }
 
@@ -8077,7 +8110,7 @@ select:focus {
         height: 130px;
         z-index: 2;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 9rem 0 0 0;
     }
 
@@ -8090,7 +8123,7 @@ select:focus {
         height: 30px;
         border-radius: 50%;
         background-color: #FB8500;
-        border: 3px solid white;
+        border: 2px solid white;
 
     }
 
@@ -8112,12 +8145,11 @@ select:focus {
         width: 53px;
         height: 54px;
         margin: 0.2rem 0 0 2.4rem;
-        color: #F5F7F5;
-        transition: filter 0.3s ease;
+        fill: #fb8500;
     }
 
     .reason-icon:hover {
-        filter: invert(50%) sepia(100%) saturate(10000%);
+        fill: #f5f5f5;
     }
 
     .reason-heading-container {
@@ -8147,6 +8179,7 @@ select:focus {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        color: #f5f5f5;
 
     }
 
@@ -8158,6 +8191,7 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
         margin-top: 12.5rem;
+        color: #f5f5f5;
 
     }
 
@@ -8168,6 +8202,7 @@ select:focus {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -8179,6 +8214,7 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
         margin-top: 9.3rem;
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -8192,6 +8228,7 @@ select:focus {
         font-size: 22px;
         width: 300px;
         height: 33px;
+        color: #f5f5f5;
 
     }
 
@@ -8206,6 +8243,7 @@ select:focus {
         font-size: 12px;
         width: 200px;
         height: 104px;
+        color: rgba(245, 245, 245, 0.5);
     }
 
     .showreel-container {
@@ -8292,6 +8330,7 @@ select:focus {
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
     }
+
     .services-button1 {
         margin-top: 0px;
         display: flex;
@@ -8538,6 +8577,7 @@ select:focus {
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
     }
+
     .Work {
         width: 100%;
         height: 1900px;
@@ -10705,6 +10745,7 @@ select:focus {
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
     }
+
     .checkbox-container {
         width: 100%;
         height: 80px;
@@ -10909,7 +10950,7 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
         list-style: none;
-        background-color: #1e1e1e;
+        background-color: #383838;
         border-radius: 60px;
         padding: 0 20px;
 
@@ -10939,7 +10980,8 @@ select:focus {
         text-decoration: none;
         transition: background-color 0.3s;
     }
-    header.sticky .nav-link{
+
+    header.sticky .nav-link {
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         font-weight: 500;
@@ -11150,7 +11192,8 @@ select:focus {
         justify-content: center;
         width: 100%;
         height: 100vh;
-        object-fit: cover; /* Ensures the video covers the entire area */
+        object-fit: cover;
+        /* Ensures the video covers the entire area */
         position: fixed;
         top: 0;
         left: 0;
@@ -11160,7 +11203,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(20, 20, 20, 0.7);
+        background-color: rgba(16, 16, 16, 0.7);
         z-index: 2;
 
     }
@@ -11415,8 +11458,14 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
 
-
+    .reason-overlay {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        background-color: rgba(10, 10, 10, 0.9);
+        z-index: 1;
     }
 
     .reason-content-circle {
@@ -11472,7 +11521,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 0 1rem 0 1rem;
     }
 
@@ -11483,7 +11532,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 0 1rem 0 1rem;
     }
 
@@ -11496,7 +11545,7 @@ select:focus {
         height: 26px;
         border-radius: 50%;
         background-color: #FB8500;
-        border: 3px solid white;
+        border: 2px solid white;
 
     }
 
@@ -11517,12 +11566,11 @@ select:focus {
         width: 55px;
         height: 56px;
         margin: 0.1rem 0 0 2.3rem;
-        color: #F5F7F5;
-        transition: filter 0.3s ease;
+        fill: #fb8500;
     }
 
     .reason-icon:hover {
-        filter: invert(50%) sepia(100%) saturate(10000%);
+        fill: #f5f5f5;
     }
 
     .reason-heading-container {
@@ -11552,6 +11600,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: #f5f5f5;
 
     }
 
@@ -11562,6 +11611,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: #f5f5f5;
 
     }
 
@@ -11572,6 +11622,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -11582,6 +11633,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -11595,6 +11647,7 @@ select:focus {
         font-size: 18px;
         width: 240px;
         height: 33px;
+        color: #f5f5f5;
 
     }
 
@@ -11609,6 +11662,7 @@ select:focus {
         font-size: 10px;
         width: 200px;
         height: 104px;
+        color: rgba(245, 245, 245, 0.5);
     }
 
 
@@ -14228,7 +14282,7 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
         list-style: none;
-        background-color: #1e1e1e;
+        background-color: #383838;
         border-radius: 60px;
         padding: 0 20px;
 
@@ -14258,7 +14312,8 @@ select:focus {
         text-decoration: none;
         transition: background-color 0.3s;
     }
-    header.sticky .nav-link{
+
+    header.sticky .nav-link {
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         font-weight: 500;
@@ -14437,7 +14492,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(20, 20, 20, 0.7);
+        background-color: rgba(16, 16, 16, 0.7);
         z-index: 2;
 
     }
@@ -14695,8 +14750,13 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-
+    }
+    .reason-overlay {
+        position: absolute;
+        width: 100%;
+        height: 450px;
+        background-color: rgba(10, 10, 10, 0.9);
+        z-index: 1;
     }
 
     .reason-content-circle {
@@ -14753,7 +14813,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 0 1rem 0 1rem;
     }
 
@@ -14764,7 +14824,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 0 1rem 0 1rem;
     }
 
@@ -14777,7 +14837,7 @@ select:focus {
         height: 26px;
         border-radius: 50%;
         background-color: #FB8500;
-        border: 3px solid white;
+        border: 2px solid white;
 
     }
 
@@ -14798,12 +14858,11 @@ select:focus {
         width: 55px;
         height: 56px;
         margin: 0.1rem 0 0 2.3rem;
-        color: #F5F7F5;
-        transition: filter 0.3s ease;
+        fill: #fb8500;
     }
 
     .reason-icon:hover {
-        filter: invert(50%) sepia(100%) saturate(10000%);
+        fill: #f5f5f5;
     }
 
     .reason-heading-container {
@@ -14835,6 +14894,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: #f5f5f5;
 
     }
 
@@ -14845,6 +14905,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: #f5f5f5;
 
     }
 
@@ -14855,6 +14916,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: #f5f5f5;
 
     }
 
@@ -14865,6 +14927,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -14878,6 +14941,7 @@ select:focus {
         font-size: 21px;
         width: 240px;
         height: 33px;
+        color: #f5f5f5;
 
     }
 
@@ -14892,6 +14956,7 @@ select:focus {
         font-size: 12px;
         width: 200px;
         height: 104px;
+        color: rgba(245, 245, 245, 0.5);
     }
 
 
@@ -17502,7 +17567,7 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
         list-style: none;
-        background-color: #1e1e1e;
+        background-color: #383838;
         border-radius: 60px;
         padding: 0 20px;
 
@@ -17532,7 +17597,8 @@ select:focus {
         text-decoration: none;
         transition: background-color 0.3s;
     }
-    header.sticky .nav-link{
+
+    header.sticky .nav-link {
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         font-weight: 500;
@@ -17736,7 +17802,8 @@ select:focus {
         justify-content: center;
         width: 100%;
         height: 100vh;
-        object-fit: cover; /* Ensures the video covers the entire area */
+        object-fit: cover;
+        /* Ensures the video covers the entire area */
         position: fixed;
         top: 0;
         left: 0;
@@ -17746,7 +17813,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(20, 20, 20, 0.7);
+        background-color: rgba(16, 16, 16, 0.7);
         z-index: 2;
 
     }
@@ -17993,8 +18060,13 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-
+    }
+    .reason-overlay {
+        position: absolute;
+        width: 100%;
+        height: 450px;
+        background-color: rgba(10, 10, 10, 0.9);
+        z-index: 1;
     }
 
     .reason-content-circle {
@@ -18051,7 +18123,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 0 1rem 0 1rem;
     }
 
@@ -18062,7 +18134,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 0 1rem 0 1rem;
     }
 
@@ -18075,7 +18147,7 @@ select:focus {
         height: 26px;
         border-radius: 50%;
         background-color: #FB8500;
-        border: 3px solid white;
+        border: 2px solid white;
 
     }
 
@@ -18096,12 +18168,11 @@ select:focus {
         width: 55px;
         height: 56px;
         margin: 0.1rem 0 0 2.3rem;
-        color: #F5F7F5;
-        transition: filter 0.3s ease;
+        fill: #fb8500;
     }
 
     .reason-icon:hover {
-        filter: invert(50%) sepia(100%) saturate(10000%);
+        fill: #f5f5f5;
     }
 
     .reason-heading-container {
@@ -18133,6 +18204,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: #f5f5f5;
 
     }
 
@@ -18143,7 +18215,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-
+        color: #f5f5f5;
     }
 
     .reason-text-description1 {
@@ -18153,6 +18225,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -18163,6 +18236,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -18176,6 +18250,7 @@ select:focus {
         font-size: 21px;
         width: 240px;
         height: 33px;
+        color: #f5f5f5;
 
     }
 
@@ -18190,6 +18265,7 @@ select:focus {
         font-size: 12px;
         width: 210px;
         height: 104px;
+        color: rgba(245, 245, 245, 0.5);
     }
 
 
@@ -20801,7 +20877,7 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
         list-style: none;
-        background-color: #101010;
+        background-color: #383838;
         border-radius: 60px;
         padding: 0 20px;
 
@@ -21037,7 +21113,8 @@ select:focus {
         justify-content: center;
         width: 100%;
         height: 100vh;
-        object-fit: cover; /* Ensures the video covers the entire area */
+        object-fit: cover;
+        /* Ensures the video covers the entire area */
         position: fixed;
         top: 0;
         left: 0;
@@ -21047,7 +21124,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(20, 20, 20, 0.7);
+        background-color: rgba(16, 16, 16, 0.7);
         z-index: 1;
     }
 
@@ -21345,12 +21422,12 @@ select:focus {
 
 
     }
+
     .reason-overlay {
-        width: 100%;
         position: absolute;
         width: 100%;
         height: 450px;
-        background-color: rgba(10, 10, 10, 0.8);
+        background-color: rgba(10, 10, 10, 0.9);
         z-index: 1;
     }
 
@@ -21377,7 +21454,8 @@ select:focus {
         height: 100%;
         box-sizing: border-box;
         padding: 21px 0 0 0;
-        filter: brightness(0) invert(1); /* makes black = white */
+        filter: brightness(0) invert(1);
+        /* makes black = white */
 
 
     }
@@ -21409,7 +21487,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: #303030;
         margin: 0 1rem 0 1rem;
     }
 
@@ -21420,7 +21498,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: #303030;
         margin: 0 1rem 0 1rem;
     }
 
@@ -21433,7 +21511,7 @@ select:focus {
         height: 26px;
         border-radius: 50%;
         background-color: #FB8500;
-        border: 3px solid #f5f5f5;
+        border: 2px solid white;
         box-shadow: 0 0 10px 0 rgba(30, 30, 30, 0.6);
 
     }
@@ -21455,13 +21533,11 @@ select:focus {
         width: 55px;
         height: 56px;
         margin: 0.1rem 0 0 2.3rem;
-        color: #fb8500;
-        transition: filter 0.3s ease;
-        filter: invert(50%) sepia(100%) saturate(10000%);
+        fill: #fb8500;
     }
 
     .reason-icon:hover {
-        filter: invert(50%) sepia(100%) saturate(10000%);
+        fill: #f5f5f5;
     }
 
     .reason-heading-container {
@@ -21517,7 +21593,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        color: rgba(245, 245, 245, 0.7);
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -21528,7 +21604,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        color: rgba(245, 245, 245, 0.6);
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -21555,7 +21631,8 @@ select:focus {
         text-align: center;
         line-height: 1.1rem;
         font-size: 13px;
-        color: rgba(245, 245, 245, 0.9);
+        font-weight: 300;
+        color: rgba(245, 245, 245, 0.5);
         width: 210px;
         height: 104px;
     }
@@ -24175,7 +24252,7 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
         list-style: none;
-        background-color: #1e1e1e;
+        background-color: #383838;
         border-radius: 60px;
         padding: 0 20px;
 
@@ -24410,7 +24487,8 @@ select:focus {
         justify-content: center;
         width: 100%;
         height: 100vh;
-        object-fit: cover; /* Ensures the video covers the entire area */
+        object-fit: cover;
+        /* Ensures the video covers the entire area */
         position: fixed;
         top: 0;
         left: 0;
@@ -24420,7 +24498,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(20, 20, 20, 0.7);
+        background-color: rgba(16, 16, 16, 0.7);
         z-index: 2;
 
     }
@@ -24672,6 +24750,14 @@ select:focus {
 
     }
 
+    .reason-overlay {
+        position: absolute;
+        width: 100%;
+        height: 450px;
+        background-color: rgba(10, 10, 10, 0.9);
+        z-index: 1;
+    }
+
     .reason-content-circle {
         width: 100%;
         max-width: 80%;
@@ -24726,7 +24812,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 0 1rem 0 1rem;
     }
 
@@ -24737,7 +24823,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 0 1rem 0 1rem;
     }
 
@@ -24771,12 +24857,11 @@ select:focus {
         width: 55px;
         height: 56px;
         margin: 0.1rem 0 0 2.3rem;
-        color: #F5F7F5;
-        transition: filter 0.3s ease;
+        fill: #fb8500;
     }
 
     .reason-icon:hover {
-        filter: invert(50%) sepia(100%) saturate(10000%);
+        fill: #f5f5f5;
     }
 
     .reason-heading-container {
@@ -24808,6 +24893,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: #f5f5f5;
 
     }
 
@@ -24818,6 +24904,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: #f5f5f5;
 
     }
 
@@ -24828,6 +24915,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -24838,6 +24926,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: rgba(245, 247, 245, 0.5);
 
     }
 
@@ -24851,6 +24940,7 @@ select:focus {
         font-size: 21px;
         width: 240px;
         height: 33px;
+        color: #f5f5f5;
 
     }
 
@@ -24865,6 +24955,7 @@ select:focus {
         font-size: 13px;
         width: 210px;
         height: 104px;
+        color: rgba(245, 245, 245, 0.5);
     }
 
 
@@ -27481,7 +27572,7 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
         list-style: none;
-        background-color: #1e1e1e;
+        background-color: #383838;
         border-radius: 60px;
         padding: 0 20px;
 
@@ -27680,7 +27771,8 @@ select:focus {
         justify-content: center;
         width: 100%;
         height: 100vh;
-        object-fit: cover; /* Ensures the video covers the entire area */
+        object-fit: cover;
+        /* Ensures the video covers the entire area */
         position: fixed;
         top: 0;
         left: 0;
@@ -27690,7 +27782,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(20, 20, 20, 0.7);
+        background-color: rgba(16, 16, 16, 0.7);
         z-index: 2;
 
     }
@@ -27936,8 +28028,14 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
 
-
+    .reason-overlay {
+        position: absolute;
+        width: 100%;
+        height: 450px;
+        background-color: rgba(10, 10, 10, 0.9);
+        z-index: 1;
     }
 
     .reason-content-circle {
@@ -27994,7 +28092,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 0 1rem 0 1rem;
     }
 
@@ -28005,7 +28103,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #1e1e1e;
+        background-color: #303030;
         margin: 0 1rem 0 1rem;
     }
 
@@ -28018,7 +28116,7 @@ select:focus {
         height: 26px;
         border-radius: 50%;
         background-color: #FB8500;
-        border: 3px solid white;
+        border: 2px solid white;
 
     }
 
@@ -28039,12 +28137,11 @@ select:focus {
         width: 55px;
         height: 56px;
         margin: 0.1rem 0 0 2.3rem;
-        color: #F5F7F5;
-        transition: filter 0.3s ease;
+        fill: #fb8500;
     }
 
     .reason-icon:hover {
-        filter: invert(50%) sepia(100%) saturate(10000%);
+        fill: #f5f5f5;
     }
 
     .reason-heading-container {
@@ -28076,6 +28173,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: #f5f5f5;
 
     }
 
@@ -28086,6 +28184,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: #f5f5f5;
 
     }
 
@@ -28096,6 +28195,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -28106,6 +28206,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        color: rgba(245, 245, 245, 0.5);
 
     }
 
@@ -28119,6 +28220,7 @@ select:focus {
         font-size: 21px;
         width: 240px;
         height: 33px;
+        color: #f5f5f5;
 
     }
 
@@ -28133,6 +28235,7 @@ select:focus {
         font-size: 13px;
         width: 210px;
         height: 104px;
+        color: rgba(245, 245, 245, 0.5);
     }
 
 
