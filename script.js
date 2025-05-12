@@ -12,6 +12,15 @@ document.getElementById('closeMenu').addEventListener('click', function () {
   navbarContent.classList.remove('show');
   document.getElementById('menuToggle').classList.remove('hide');
 
+  window.addEventListener('scroll', function () {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  });
+
   // Unlock scroll
   document.body.classList.remove('lock-scroll');
 });
@@ -163,3 +172,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+/* Hero Section Bg */
+
+const stripeContainer = document.querySelector('.stripes-container');
+
+function addStripes() {
+  stripeContainer.innerHTML = '';
+  const screenWidth = window.innerWidth;
+  for (let x = 0; x < screenWidth; x += 100) {
+    const stripe = document.createElement('div');
+    stripe.className = 'bg-stripe';
+    stripe.style.left = `${x}px`;
+    stripeContainer.appendChild(stripe);
+  }
+}
+
+window.addEventListener('resize', addStripes);
+window.addEventListener('DOMContentLoaded', addStripes);
