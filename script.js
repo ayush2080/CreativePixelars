@@ -1,29 +1,35 @@
 document.getElementById('menuToggle').addEventListener('click', function () {
-  var navbarContent = document.getElementById('navbarContent');
+  const navbarContent = document.getElementById('navbarContent');
   navbarContent.classList.toggle('show');
   document.getElementById('menuToggle').classList.toggle('hide');
-
-  // Lock scroll
   document.body.classList.add('lock-scroll');
 });
 
 document.getElementById('closeMenu').addEventListener('click', function () {
-  var navbarContent = document.getElementById('navbarContent');
+  const navbarContent = document.getElementById('navbarContent');
   navbarContent.classList.remove('show');
   document.getElementById('menuToggle').classList.remove('hide');
+  document.body.classList.remove('lock-scroll');
+});
 
-  window.addEventListener('scroll', function () {
-    const header = document.getElementById('header');
-    if (window.scrollY > 50) {
-      header.classList.add('sticky');
-    } else {
-      header.classList.remove('sticky');
-    }
-  });
+window.addEventListener('scroll', function () {
+  const header = document.getElementById('header');
+  if (window.scrollY > 50) {
+    header.classList.add('sticky');
+  } else {
+    header.classList.remove('sticky');
+  }
+});
+
+
+  // Lock scroll
+  document.body.classList.add('lock-scroll');
+
 
   // Unlock scroll
   document.body.classList.remove('lock-scroll');
-});
+
+
 
 
 // Get the button
@@ -173,20 +179,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* Hero Section Bg */
-
-const stripeContainer = document.querySelector('.stripes-container');
-
-function addStripes() {
-  stripeContainer.innerHTML = '';
-  const screenWidth = window.innerWidth;
-  for (let x = 0; x < screenWidth; x += 100) {
-    const stripe = document.createElement('div');
-    stripe.className = 'bg-stripe';
-    stripe.style.left = `${x}px`;
-    stripeContainer.appendChild(stripe);
-  }
-}
-
-window.addEventListener('resize', addStripes);
-window.addEventListener('DOMContentLoaded', addStripes);
