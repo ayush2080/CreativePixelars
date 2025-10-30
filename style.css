@@ -436,7 +436,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: rgba(18, 18, 18, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 2;
 
 }
@@ -4395,7 +4395,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(20, 20, 20, 0.9);
         z-index: 2;
 
     }
@@ -4631,7 +4631,7 @@ select:focus {
 
     .why-choose-us {
         width: 100%;
-        height: 650px;
+        height: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -4644,11 +4644,11 @@ select:focus {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         width: 100%;
         height: 50%;
         max-width: 95%;
-        max-height: 50%;
+        max-height: 42%;
         /* Optional: Adds some padding around the image */
         box-sizing: border-box;
         /* Ensures padding is included in the total width and height */
@@ -7865,7 +7865,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(20, 20, 20, 0.9);
         z-index: 2;
 
     }
@@ -8110,7 +8110,7 @@ select:focus {
 
     .why-choose-us {
         width: 100%;
-        height: 650px;
+        height: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -8123,11 +8123,11 @@ select:focus {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         width: 100%;
         height: 50%;
         max-width: 95%;
-        max-height: 50%;
+        max-height: 42%;
         /* Optional: Adds some padding around the image */
         box-sizing: border-box;
         /* Ensures padding is included in the total width and height */
@@ -11352,7 +11352,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(16, 16, 16, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
         z-index: 2;
 
     }
@@ -14902,7 +14902,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(16, 16, 16, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
         z-index: 2;
 
     }
@@ -18445,7 +18445,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(16, 16, 16, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
         z-index: 2;
 
     }
@@ -21759,7 +21759,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.7);
         z-index: 1;
     }
 
@@ -25393,7 +25393,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(16, 16, 16, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
         z-index: 2;
 
     }
@@ -28676,7 +28676,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(16, 16, 16, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
         z-index: 2;
 
     }
