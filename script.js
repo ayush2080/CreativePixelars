@@ -83,7 +83,7 @@ function openQuoteForm() {
 
 
 // JavaScript to type the text
-const text = "Creative Pixelars !";
+const text = "Your Brand, Our Canvas";
 let index = 0;
 const speed = 100; // Speed of typing in milliseconds
 const waitTime = 2000; // Time to wait before resetting
