@@ -4386,7 +4386,6 @@ select:focus {
         width: 100%;
         height: 100vh;
         object-fit: cover;
-        /* Ensures the video covers the entire area */
         position: fixed;
         top: 0;
         left: 0;
@@ -4396,7 +4395,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(30, 30, 30, 0.9);
+        background-color: rgba(25, 25, 25, 0.9);
         z-index: 2;
 
     }
@@ -4436,7 +4435,7 @@ select:focus {
 
     .hero-description-mobile {
         width: 100%;
-        max-width: 80%;
+        max-width: 70%;
         height: auto;
         text-align: center;
         font-family: "Montserrat";
@@ -4511,28 +4510,6 @@ select:focus {
         opacity: 0;
     }
 
-    .hero-gif-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0px;
-        width: 100%;
-        max-width: 100%;
-        height: 350px;
-        /* Optional: Adds some padding around the image */
-        box-sizing: border-box;
-    }
-
-    .hero-responsive-gif {
-        max-width: 350px;
-        max-height: 350px;
-        height: auto;
-        /* Maintain aspect ratio */
-        width: auto;
-        /* Maintain aspect ratio */
-    }
-
     .about {
         width: 100%;
         height: 800px;
@@ -4549,9 +4526,9 @@ select:focus {
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 350px;
+        height: 300px;
         max-width: 350px;
-        max-height: 350px;
+        max-height: 300px;
         /* Optional: Adds some padding around the image */
         box-sizing: border-box;
         /* Ensures padding is included in the total width and height */
@@ -4571,13 +4548,14 @@ select:focus {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
         width: 100%;
-        height: 350px;
+        height: 400px;
     }
 
     .about-content-container-1200px-above {
         width: 100%;
-        height: 350px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -4596,7 +4574,7 @@ select:focus {
         margin-top: 5px;
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .about-description {
@@ -4619,7 +4597,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        width: 130px;
+        width: 135px;
         height: 40px;
         border-radius: 25px;
         background: #FB8500;
@@ -4646,30 +4624,25 @@ select:focus {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         width: 100%;
-        height: 50%;
-        max-width: 95%;
-        max-height: 42%;
-        /* Optional: Adds some padding around the image */
+        height: 350px;
+        max-width: 350px;
+        max-height: 350px;
         box-sizing: border-box;
-        /* Ensures padding is included in the total width and height */
     }
 
     /* Responsive image styling */
     .why-us-responsive-image {
-        max-width: 85%;
+        max-width: 100%;
         max-height: 100%;
-        color: #ffffff;
         height: auto;
-        /* Maintain aspect ratio */
         width: auto;
-        /* Maintain aspect ratio */
     }
 
     .why-choose-us-content {
         width: 100%;
-        height: 50%;
+        height: 250px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -4688,7 +4661,7 @@ select:focus {
         margin-top: 5px;
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .why-choose-us-description {
@@ -4697,7 +4670,7 @@ select:focus {
         font-family: "Montserrat";
         font-weight: 400;
         font-size: 13px;
-        line-height: 1.2rem;
+        line-height: 1.3rem;
         color: #717171;
     }
 
@@ -4968,7 +4941,7 @@ select:focus {
         margin-top: 5px;
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 21px;
+        font-size: 19px;
         text-align: center;
     }
 
@@ -4978,7 +4951,7 @@ select:focus {
         font-weight: 400;
         font-size: 13px;
         text-align: center;
-        line-height: 1.2rem;
+        line-height: 1.3rem;
         color: #717171;
 
     }
@@ -5622,36 +5595,38 @@ select:focus {
 
     .footer-left-content {
         width: 100%;
+        max-width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0px;
+        margin: 20px 0 0 20px;
+        gap: 20px;
 
     }
 
     .footer-logo {
         display: flex;
-        width: 90%;
+        width: 100%;
         height: auto;
         justify-content: flex-start;
         align-items: center;
     }
 
     .footer-logo img {
-        width: 170px;
+        width: 160px;
         height: auto;
     }
 
     .footer-left-content p {
-        width: 90%;
+        width: 100%;
         text-align: left;
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 13px;
         line-height: 1.2rem;
-        color: rgba(245, 247, 245, 0.5);
-        margin: 20px 0 0 0;
+        color: rgba(245, 245, 245, 0.5);
+        margin: 0;
     }
 
     .footer-left-content p br {
@@ -7870,7 +7845,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(30, 30, 30, 0.9);
+        background-color: rgba(25, 25, 25, 0.9);
         z-index: 2;
 
     }
@@ -8002,11 +7977,10 @@ select:focus {
         align-items: center;
         justify-content: center;
         width: 100%;
-        max-width: 95%;
+        height: 300px;
+        max-width: 350px;
         max-height: 300px;
-        /* Optional: Adds some padding around the image */
         box-sizing: border-box;
-        /* Ensures padding is included in the total width and height */
     }
 
     /* Responsive image styling */
@@ -8014,22 +7988,21 @@ select:focus {
         max-width: 100%;
         max-height: 100%;
         height: auto;
-        /* Maintain aspect ratio */
         width: auto;
-        /* Maintain aspect ratio */
     }
 
     .about-content {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
         width: 100%;
         height: 350px;
     }
 
     .about-content-container-1200px-above {
         width: 100%;
-        height: 350px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -8040,7 +8013,7 @@ select:focus {
         text-align: center;
         font-family: "Montserrat";
         font-weight: 600;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .about-Subheading {
@@ -8048,16 +8021,16 @@ select:focus {
         margin-top: 5px;
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .about-description {
         width: 100%;
-        max-width: 80%;
+        max-width: 90%;
         text-align: center;
         font-family: "Montserrat";
         font-weight: 400;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.3rem;
         color: #717171;
     }
@@ -8072,7 +8045,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        width: 130px;
+        width: 135px;
         height: 40px;
         border-radius: 25px;
         background: #FB8500;
@@ -8091,7 +8064,6 @@ select:focus {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
         background-color: #f5f5f5;
 
     }
@@ -8100,26 +8072,25 @@ select:focus {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         width: 100%;
-        max-width: 95%;
-        max-height: 300px; /* Optional: Adds some padding around the image */
-        box-sizing: border-box; /* Ensures padding is included in the total width and height */
+        height: 350px;
+        max-width: 350px;
+        max-height: 350px;
+        box-sizing: border-box;
     }
 
     /* Responsive image styling */
     .why-us-responsive-image {
-        max-width: 85%;
+        max-width: 100%;
         max-height: 100%;
-        color: #ffffff;
         height: auto;
-        /* Maintain aspect ratio */
         width: auto;
-        /* Maintain aspect ratio */
     }
 
     .why-choose-us-content {
         width: 100%;
+        height: 250px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -8130,7 +8101,7 @@ select:focus {
         text-align: center;
         font-family: "Montserrat";
         font-weight: 600;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .why-choose-us-Subheading {
@@ -8138,16 +8109,16 @@ select:focus {
         margin-top: 5px;
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .why-choose-us-description {
         width: 100%;
-        max-width: 80%;
+        max-width: 90%;
         text-align: center;
         font-family: "Montserrat";
         font-weight: 400;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.3rem;
         color: #717171;
     }
@@ -8163,14 +8134,14 @@ select:focus {
         align-items: center;
         width: 100%;
         height: auto;
-        background-color: rgba(30, 30, 30, 0.9);
+        background-color: rgba(25, 25, 25, 0.9);
     }
 
     .reason-overlay {
         position: absolute;
         width: 100%;
         height: auto;
-        background-color: rgba(30, 30, 30, 0.9);
+        background-color: rgba(25, 25, 25, 0.9);
         z-index: 2;
     }
 
@@ -8375,14 +8346,10 @@ select:focus {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* Center the video horizontally */
         align-items: center;
-        /* Center the video vertically */
         max-width: 100%;
-        /* Ensure the container does not exceed the viewport width */
         overflow: hidden;
         box-sizing: border-box;
-        /* Hide any overflow content */
     }
 
     .showreel-video {
@@ -8412,14 +8379,14 @@ select:focus {
     .services-heading {
         font-family: "Montserrat";
         font-weight: 600;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .services-Subheading {
         margin-top: 5px;
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 21px;
+        font-size: 19px;
         text-align: center;
     }
 
@@ -8428,7 +8395,7 @@ select:focus {
         max-width: 80%;
         font-family: "Montserrat";
         font-weight: 400;
-        font-size: 14px;
+        font-size: 13px;
         text-align: center;
         line-height: 1.3rem;
         color: #717171;
@@ -8672,13 +8639,14 @@ select:focus {
     }
 
     .work-together-content-right p {
-        width: 95%;
+        width: 100%;
+        max-width: 90%;
         text-align: center;
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 13.8px;
         color: #fff;
-        line-height: 1.2rem;
+        line-height: 1.3rem;
         word-spacing: 1px;
     }
 
@@ -9073,11 +9041,14 @@ select:focus {
     }
 
     .footer-left-content {
+        width: 100%;
+        max-width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 20px 0 0 20px;
+        gap: 20px;
 
     }
 
@@ -9101,7 +9072,7 @@ select:focus {
         font-size: 13px;
         line-height: 1.2rem;
         color: rgba(245, 245, 245, 0.5);
-        margin: 20px 0 0 0;
+        margin: 0;
     }
 
     .footer-left-content p br {
@@ -11319,7 +11290,6 @@ select:focus {
         width: 100%;
         height: 100vh;
         object-fit: cover;
-        /* Ensures the video covers the entire area */
         position: fixed;
         top: 0;
         left: 0;
@@ -11329,7 +11299,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(30, 30, 30, 0.9);
         z-index: 2;
 
     }
@@ -11345,24 +11315,25 @@ select:focus {
     }
 
     .typewriter {
-        font-size: 29px;
-        font-weight: 700;
+        font-size: 43px;
+        font-weight: 800;
         white-space: nowrap;
         overflow: hidden;
     }
 
     .hero-heading {
-        font-family: "Montserrat";
+        font-family: "Inter";
         font-weight: 800;
-        font-size: 30px;
+        font-size: 43px;
         color: #f5f5f5;
+        height: 40px;
     }
 
     .hero-description {
         max-width: 445px;
         font-family: "Montserrat";
         font-weight: 400;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 1.3rem;
         color: #f5f5f5;
     }
@@ -11397,34 +11368,6 @@ select:focus {
         font-size: 11px;
         border-style: none;
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
-    }
-
-    .hero-video {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 500px;
-        height: 500px;
-
-    }
-
-    .hero-gif-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        max-width: 40%;
-        height: auto;
-        /* Optional: Adds some padding around the image */
-        box-sizing: border-box;
-    }
-
-    .hero-responsive-gif {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
     }
 
     .about {
@@ -11579,7 +11522,7 @@ select:focus {
 
     .reasons {
         width: 100%;
-        height: 400px;
+        height: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -11589,8 +11532,8 @@ select:focus {
     .reason-overlay {
         position: absolute;
         width: 100%;
-        height: 400px;
-        background-color: rgba(10, 10, 10, 0.9);
+        height: 500px;
+        background-color: rgba(30, 30, 30, 0.9);
         z-index: 1;
     }
 
@@ -11615,7 +11558,8 @@ select:focus {
         width: 90%;
         height: 100%;
         box-sizing: border-box;
-        padding: 21px 0 0 0;
+        padding: 38px 0 0 0;
+        filter: brightness(0) invert(1);
 
 
     }
@@ -11642,23 +11586,25 @@ select:focus {
 
     .reason-circle {
         position: relative;
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #303030;
+        background-color: #f5f5f5;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6) inset;
         margin: 0 1rem 0 1rem;
     }
 
     .reason-circle1 {
         position: relative;
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #303030;
+        background-color: #f5f5f5;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6) inset;
         margin: 0 1rem 0 1rem;
     }
 
@@ -11666,12 +11612,13 @@ select:focus {
         position: relative;
         z-index: 3;
         top: -0.1rem;
-        left: 6.3rem;
-        width: 26px;
-        height: 26px;
+        left: 5.3rem;
+        width: 23px;
+        height: 23px;
         border-radius: 50%;
         background-color: #FB8500;
         border: 2px solid white;
+        box-shadow: 0 0 10px 0 rgba(30, 30, 30, 0.6);
 
     }
 
@@ -11679,9 +11626,9 @@ select:focus {
         position: relative;
         font-family: "Montserrat";
         font-weight: 500;
-        font-size: 15px;
+        font-size: 13px;
         color: #F5F7F5;
-        margin-top: 4px;
+        margin-top: 3px;
         justify-content: center;
         text-align: center;
     }
@@ -11689,34 +11636,36 @@ select:focus {
     .reason-icon {
         position: relative;
         z-index: 5;
-        width: 55px;
-        height: 56px;
-        margin: 0.1rem 0 0 2.3rem;
+        width: 40px;
+        height: 40px;
+        margin: 0.5rem 2.2rem;
         fill: #fb8500;
     }
 
     .reason-icon:hover {
-        fill: #f5f5f5;
+        fill: #303030;
     }
 
     .reason-heading-container {
-        width: 100vw;
+        width: 100%;
         height: 50px;
         margin-top: 1px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        z-index: 2;
     }
 
     .reason-description-container {
-        width: 100vw;
+        width: 100%;
         margin-top: 1px;
         height: 80px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        z-index: 2;
     }
 
     .reason-text-heading1 {
@@ -11770,7 +11719,7 @@ select:focus {
         align-items: center;
         font-family: "Montserrat";
         font-weight: 600;
-        font-size: 18px;
+        font-size: 17px;
         width: 240px;
         height: 33px;
         color: #f5f5f5;
@@ -11785,7 +11734,7 @@ select:focus {
         font-family: "Montserrat";
         text-align: center;
         line-height: 1.1rem;
-        font-size: 10px;
+        font-size: 11px;
         width: 200px;
         height: 104px;
         color: rgba(245, 245, 245, 0.5);
@@ -25671,7 +25620,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 325px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(30, 30, 30, 0.8);
         z-index: 2;
 
     }
