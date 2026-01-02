@@ -581,27 +581,6 @@ nav {
     height: 500px;
 
 }
-
-.hero-gif-container {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    max-width: 40%;
-    max-height: 80%;
-    /* Optional: Adds some padding around the image */
-    box-sizing: border-box;
-    mix-blend-mode: darken;
-}
-
-.hero-responsive-gif {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    /* Maintain aspect ratio */
-    width: auto;
-    /* Maintain aspect ratio */
-}
-
 .about {
     width: 100%;
     height: 600px;
@@ -11744,20 +11723,19 @@ select:focus {
     .showreel-container {
         display: flex;
         justify-content: center;
-        /* Center the video horizontally */
         align-items: center;
-        /* Center the video vertically */
         width: 100%;
         max-width: 100%;
-        /* Ensure the container does not exceed the viewport width */
         height: auto;
         overflow: hidden;
-        /* Hide any overflow content */
+        
     }
 
     .showreel-video {
         width: 100%;
         height: 100%;
+        max-width: auto;
+        max-height: auto;
     }
 
 
@@ -12485,7 +12463,7 @@ select:focus {
     }
 
     .footer-logo {
-        width: 185px;
+        width: 200px;
         height: auto;
         display: flex;
         align-items: center;
@@ -15080,7 +15058,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(30, 30, 30, 0.9);
         z-index: 2;
 
     }
@@ -15097,17 +15075,18 @@ select:focus {
     }
 
     .typewriter {
-        font-size: 32px;
-        font-weight: 700;
+        font-size: 60px;
+        font-weight: 800;
         white-space: nowrap;
         overflow: hidden;
     }
 
     .hero-heading {
-        font-family: "Montserrat";
+        font-family: "Inter";
         font-weight: 800;
-        font-size: 40px;
+        font-size: 60px;
         color: #f5f5f5;
+        height: 40px;
     }
 
     .hero-description {
@@ -15115,8 +15094,8 @@ select:focus {
         max-width: 595px;
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 14px;
-        line-height: 1.4rem;
+        font-size: 15px;
+        line-height: 1.3rem;
         color: #f5f5f5;
     }
 
@@ -15162,27 +15141,9 @@ select:focus {
 
     }
 
-    .hero-gif-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        width: 50%;
-        max-width: 40%;
-        height: auto;
-        /* Optional: Adds some padding around the image */
-        box-sizing: border-box;
-    }
-
-    .hero-responsive-gif {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-    }
-
     .about {
         width: 100%;
-        height: 500px;
+        height: 600px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -15248,7 +15209,7 @@ select:focus {
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 12px;
-        line-height: 1.1rem;
+        line-height: 1.2rem;
 
     }
 
@@ -15272,7 +15233,7 @@ select:focus {
 
     .why-choose-us {
         width: 100%;
-        height: 500px;
+        height: 600px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
@@ -15307,7 +15268,7 @@ select:focus {
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 12px;
-        line-height: 1.1rem;
+        line-height: 1.2rem;
     }
 
     .why-us-image-container {
@@ -15333,7 +15294,7 @@ select:focus {
 
     .reasons {
         width: 100%;
-        height: 450px;
+        height: 550px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -15343,8 +15304,8 @@ select:focus {
     .reason-overlay {
         position: absolute;
         width: 100%;
-        height: 450px;
-        background-color: rgba(10, 10, 10, 0.9);
+        height: 550px;
+        background-color: rgba(30, 30, 30, 0.9);
         z-index: 1;
     }
 
@@ -15371,6 +15332,7 @@ select:focus {
         height: 100%;
         box-sizing: border-box;
         padding: 21px 0 0 0;
+        filter: brightness(0) invert(1);
 
 
     }
@@ -15402,7 +15364,8 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #303030;
+        background-color: #f5f5f5;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6) inset;
         margin: 0 1rem 0 1rem;
     }
 
@@ -15413,7 +15376,8 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #303030;
+        background-color: #f5f5f5;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6) inset;
         margin: 0 1rem 0 1rem;
     }
 
@@ -15427,6 +15391,7 @@ select:focus {
         border-radius: 50%;
         background-color: #FB8500;
         border: 2px solid white;
+        box-shadow: 0 0 10px 0 rgba(30, 30, 30, 0.6);
 
     }
 
@@ -15437,7 +15402,6 @@ select:focus {
         font-size: 15px;
         color: #F5F7F5;
         margin-top: 4px;
-        justify-content: center;
         text-align: center;
     }
 
@@ -15463,6 +15427,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        z-index: 2;
     }
 
     .reason-description-container {
@@ -15474,6 +15439,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        z-index: 2;
     }
 
     .reason-text-heading1 {
@@ -15604,6 +15570,7 @@ select:focus {
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 12px;
+        line-height: 1.2rem;
 
     }
 
@@ -16281,7 +16248,7 @@ select:focus {
     }
 
     .footer-logo {
-        width: 185px;
+        width: 210px;
         height: auto;
         display: flex;
         align-items: center;
@@ -18916,23 +18883,6 @@ select:focus {
         box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
     }
 
-    .hero-gif-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        width: 50%;
-        max-width: 40%;
-        height: auto;
-        box-sizing: border-box;
-    }
-
-    .hero-responsive-gif {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-    }
-
     .about {
         width: 100%;
         height: 600px;
@@ -19000,7 +18950,7 @@ select:focus {
         font-family: "Montserrat";
         font-weight: 300;
         font-size: 13px;
-        line-height: 1.1rem;
+        line-height: 1.3rem;
 
     }
 
@@ -20041,7 +19991,7 @@ select:focus {
     }
 
     .footer-logo {
-        width: 250px;
+        width: 240px;
         height: auto;
         display: flex;
         align-items: center;
@@ -22535,24 +22485,6 @@ select:focus {
         fill: #1e1e1e;
     }
 
-
-    .hero-gif-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        width: 50%;
-        max-width: 40%;
-        height: auto;
-        box-sizing: border-box;
-    }
-
-    .hero-responsive-gif {
-        width: 100%;
-        max-width: 450px;
-        max-height: auto;
-    }
-
     .about {
         width: 100%;
         height: 700px;
@@ -23666,7 +23598,7 @@ select:focus {
     }
 
     .footer-logo {
-        width: 250px;
+        width: 240px;
         height: auto;
         display: flex;
         align-items: center;
@@ -27490,7 +27422,7 @@ select:focus {
     }
 
     .footer-logo {
-        width: 250px;
+        width: 240px;
         height: auto;
         display: flex;
         align-items: center;
@@ -30947,7 +30879,7 @@ select:focus {
     }
 
     .footer-logo {
-        width: 250px;
+        width: 240px;
         height: auto;
         display: flex;
         align-items: center;
