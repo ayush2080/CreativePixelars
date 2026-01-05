@@ -4374,7 +4374,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(25, 25, 25, 0.9);
+        background-color: rgba(20, 20, 20, 0.9);
         z-index: 2;
 
     }
@@ -4393,7 +4393,7 @@ select:focus {
     }
 
     .typewriter {
-        font-size: 30px;
+        font-size: 32px;
         font-weight: 800;
         white-space: nowrap;
         overflow: hidden;
@@ -4403,7 +4403,7 @@ select:focus {
         text-align: center;
         font-family: "Inter";
         font-weight: 800;
-        font-size: 30px;
+        font-size: 32px;
         color: #f5f5f5;
         height: 20px;
     }
@@ -4664,14 +4664,14 @@ select:focus {
         align-items: center;
         width: 100%;
         height: auto;
-        background-color: rgba(30, 30, 30, 0.9);
+        background-color: rgba(20, 20, 20, 0.9);
     }
 
     .reason-overlay {
         position: absolute;
         width: 100%;
         height: auto;
-        background-color: rgba(30, 30, 30, 0.9);
+        background-color: rgba(20, 20, 20, 0.9);
         z-index: 1;
     }
 
@@ -7824,7 +7824,7 @@ select:focus {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(25, 25, 25, 0.9);
+        background-color: rgba(20, 20, 20, 0.9);
         z-index: 2;
 
     }
@@ -7843,7 +7843,7 @@ select:focus {
     }
 
     .typewriter {
-        font-size: 43px;
+        font-size: 44px;
         font-weight: 800;
         white-space: nowrap;
         overflow: hidden;
@@ -7853,7 +7853,7 @@ select:focus {
         text-align: center;
         font-family: "Inter";
         font-weight: 800;
-        font-size: 43px;
+        font-size: 44px;
         color: #f5f5f5;
         height: 30px;
     }
@@ -8113,14 +8113,14 @@ select:focus {
         align-items: center;
         width: 100%;
         height: auto;
-        background-color: rgba(25, 25, 25, 0.9);
+        background-color: rgba(20, 20, 20, 0.9);
     }
 
     .reason-overlay {
         position: absolute;
         width: 100%;
         height: auto;
-        background-color: rgba(25, 25, 25, 0.9);
+        background-color: rgba(20, 20, 20, 0.9);
         z-index: 2;
     }
 
