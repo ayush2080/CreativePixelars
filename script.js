@@ -22,12 +22,12 @@ window.addEventListener('scroll', function () {
 });
 
 
-  // Lock scroll
-  document.body.classList.add('lock-scroll');
+// Lock scroll
+document.body.classList.add('lock-scroll');
 
 
-  // Unlock scroll
-  document.body.classList.remove('lock-scroll');
+// Unlock scroll
+document.body.classList.remove('lock-scroll');
 
 
 
@@ -85,39 +85,30 @@ function openQuoteForm() {
 // JavaScript to type the text
 const text = "Your Brand, Our Canvas";
 let index = 0;
-const speed = 100; // Speed of typing in milliseconds
-const waitTime = 2000; // Time to wait before resetting
+const speed = 100; // typing speed in ms
+const waitTime = 2000; // wait before resetting
 
-// Get the element where text will be displayed
-const typewriterElement = document.getElementById('typewriter');
+function typewriter() {
+  const typewriterElement = document.getElementById('typewriter');
 
-// Function to type out the text
-function type() {
+  // Only proceed if the element exists
+  if (!typewriterElement) return;
+
   if (index < text.length) {
-    // Add the next character to the content
     typewriterElement.innerHTML += text.charAt(index);
     index++;
-    setTimeout(type, speed); // Call the function again after the delay
+    setTimeout(typewriter, speed);
   } else {
-    // Reset after the full text is typed
     setTimeout(() => {
-      typewriterElement.innerHTML = ''; // Clear the text
-      index = 0; // Reset the index
-      type(); // Start typing again
-    }, waitTime); // Wait for the specified time before starting over
+      typewriterElement.innerHTML = ''; // Clear text
+      index = 0;
+      typewriter(); // Start again
+    }, waitTime);
   }
 }
 
-// Start typing when the page loads
-window.onload = () => {
-  type();
-};
-
-document.addEventListener('DOMContentLoaded', function () {
-  type(); // Call the typewriter effect when the DOM is ready
-});
-
-
+// Start typing **after DOM is fully loaded
+document.addEventListener('DOMContentLoaded', typewriter);
 
 
 
@@ -177,5 +168,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-
