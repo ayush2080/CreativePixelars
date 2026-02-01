@@ -24132,7 +24132,7 @@ select:focus {
 
     .footer {
         width: 100%;
-        height: 300px;
+        height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -24141,6 +24141,8 @@ select:focus {
     }
 
     .footer-main {
+        width: 100%;
+        height: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -24148,7 +24150,7 @@ select:focus {
 
     .footer-content-container {
         width: 100%;
-        height: 100%;
+        height: 300px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -24157,7 +24159,7 @@ select:focus {
     }
 
     .footer-left-content {
-        width: 30%;
+        width: 100%;
         max-width: 20%;
         display: flex;
         flex-direction: column;
@@ -24191,12 +24193,12 @@ select:focus {
     }
 
     .footer-right-content {
-        width: 70%;
+        width: 100%;
         max-width: 50%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
         margin: 0 10px 0 0;
 
     }
@@ -24229,6 +24231,11 @@ select:focus {
     .contact-info-icon {
         width: 17px;
         height: 17px;
+        display: flex;
+        align-items: center;
+    }
+    .contact-info-icon span{
+        color: #f5f5f5;
     }
 
     .contact-info-main p {
@@ -24257,7 +24264,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        width: 105px;
+        width: 150px;
 
     }
 
@@ -24269,8 +24276,13 @@ select:focus {
     }
 
     .visit-us-icon {
+        display: flex;
+        align-items: center;
         width: 12px;
         height: 16px;
+    }
+    .visit-us-icon span{
+        color:#f5f5f5;
     }
 
     .visit-us-main p {
@@ -24290,7 +24302,6 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
         margin: 0 10px;
-        padding: 25px 0 0 0;
 
 
     }
@@ -24319,8 +24330,13 @@ select:focus {
     }
 
     .on-socials-icon {
+        display: flex;
+        align-items: center;
         width: 14px;
         height: 16px;
+    }
+    .on-socials-icon span{
+        color: #f5f5f5;
     }
 
     .on-socials-main p {
@@ -24339,6 +24355,20 @@ select:focus {
         cursor: pointer;
     }
 
+    .footer-navlinks {
+        text-decoration: none;
+        cursor: pointer;
+        color: rgba(245, 245, 245, 0.5);
+        transition: transform 0.2s ease;
+    }
+
+    .footer-navlinks:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: #f5f5f5;
+        transform: scale(1.2);
+    }
+
     hr {
         width: 95%;
         height: 0.7px;
@@ -24347,8 +24377,13 @@ select:focus {
     }
 
     .copyright-text {
-        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 90%;
         height: auto;
+        gap: 8px;
     }
 
     .copyright-text p {
@@ -24392,6 +24427,8 @@ select:focus {
     #myBtn:hover span {
         transform: translateY(-2px);
     }
+
+
 
     /*About Us Page*/
 
@@ -26594,9 +26631,37 @@ select:focus {
         height: 12px;
     }
 
+    .terms-page-link {
+        color: #007bff;
+    }
+
+    .terms-page-link:hover {
+        color: #FB8500;
+    }
+
     .bordered {
         border-bottom: 1px solid #e0e0e0;
         padding-bottom: 20px;
+    }
+
+
+    /*Privacy Policy*/
+
+    .privacy-policy-link {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 13px;
+        color: #f5f5f5;
+        opacity: 30%;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+    }
+
+    .privacy-policy-link:hover {
+        text-decoration: none;
+        color: #f5f5f5;
+        opacity: 100%;
+        transform: scale(1.1);
     }
 
 }
