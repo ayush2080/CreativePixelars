@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5473,7 +5477,7 @@ select:focus {
 
     .footer {
         width: 100%;
-        height: 850px;
+        height: 950px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -5483,7 +5487,7 @@ select:focus {
 
     .footer-main {
         width: 100%;
-        height: 800px;
+        height: 900px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5492,7 +5496,7 @@ select:focus {
 
     .footer-content-container {
         width: 100%;
-        height: 800px;
+        height: 900px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5559,7 +5563,7 @@ select:focus {
     }
 
     .contact-info {
-        width: 155px;
+        width: 170px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -5577,6 +5581,11 @@ select:focus {
     .contact-info-icon {
         width: 19px;
         height: 19px;
+        display: flex;
+        align-items: center;
+    }
+    .contact-info-icon span{
+        color: #f5f5f5;
     }
 
     .contact-info-main p {
@@ -5603,8 +5612,8 @@ select:focus {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
-        width: 100px;
+        align-items: center;
+        width: 145px;
 
     }
 
@@ -5616,9 +5625,13 @@ select:focus {
     }
 
     .visit-us-icon {
-        margin: 22px 0 0 0;
         width: 13px;
         height: 19px;
+        display: flex;
+        align-items: center;
+    }
+    .visit-us-icon span{
+        color:#f5f5f5;
     }
 
     .visit-us-main p {
@@ -5646,7 +5659,7 @@ select:focus {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         width: 135px;
     }
 
@@ -5667,9 +5680,13 @@ select:focus {
     }
 
     .on-socials-icon {
-        margin: 22px 0 0 0;
         width: 17px;
         height: 19px;
+        display: flex;
+        align-items: center;
+    }
+    .on-socials-icon span{
+        color:#f5f5f5;
     }
 
     .on-socials-main p {
@@ -5701,14 +5718,29 @@ select:focus {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 5px;
     }
 
     .copyright-text p {
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 13px;
+        font-size: 11px;
         color: #F5F7F5;
         opacity: 30%;
+    }
+
+    .footer-navlinks {
+        text-decoration: none;
+        cursor: pointer;
+        color: rgba(245, 245, 245, 0.5);
+        transition: transform 0.2s ease;
+    }
+
+    .footer-navlinks:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: #f5f5f5;
+        transform: scale(1.2);
     }
 
 
@@ -7539,6 +7571,177 @@ select:focus {
         padding-bottom: 20px;
     }
 
+    /* Terms & Condition Page*/
+
+    .terms-page-content-container {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .terms-page-content {
+        width: 100%;
+        max-width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .terms-section-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .terms-purpose-main {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .changes-terms-main {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .terms-purpose {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .note {
+        font-family: 'Montserrat';
+        text-align: left;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .terms-purpose p {
+        font-family: 'Montserrat';
+        text-align: left;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .terms-purpose ul {
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-family: 'Montserrat';
+        text-align: left;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0 0 0 15px;
+    }
+
+    .terms-purpose-contact-main {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .terms-purpose-contact {
+        width: 100%;
+        max-width: 90%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .terms-contact {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .terms-contact p {
+        height: 12px;
+    }
+
+    .terms-page-link {
+        color: #007bff;
+    }
+
+    .terms-page-link:hover {
+        color: #FB8500;
+    }
+
+    .bordered {
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 20px;
+    }
+
+
+    /*Privacy Policy*/
+
+    .privacy-policy-content-main {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .privacy-policy-content {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .privacy-policy-content ul{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .privacy-policy-link {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 11px;
+        color: #f5f5f5;
+        opacity: 30%;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+    }
+
+    .privacy-policy-link:hover {
+        text-decoration: none;
+        color: #f5f5f5;
+        opacity: 100%;
+        transform: scale(1.1);
+    }
+
 }
 
 
@@ -9086,7 +9289,7 @@ select:focus {
 
     .footer {
         width: 100%;
-        height: 850px;
+        height: 950px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -9096,7 +9299,7 @@ select:focus {
 
     .footer-main {
         width: 100%;
-        height: 800px;
+        height: 900px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -9105,7 +9308,7 @@ select:focus {
 
     .footer-content-container {
         width: 100%;
-        height: 800px;
+        height: 900px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -9171,7 +9374,7 @@ select:focus {
     }
 
     .contact-info {
-        width: 155px;
+        width: 170px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -9189,8 +9392,12 @@ select:focus {
     .contact-info-icon {
         width: 19px;
         height: 19px;
+        display: flex;
+        align-items: center;
     }
-
+    .contact-info-icon span{
+        color: #f5f5f5;
+    }
     .contact-info-main p {
         display: flex;
         flex-direction: column;
@@ -9215,8 +9422,8 @@ select:focus {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
-        width: 100px;
+        align-items: center;
+        width: 145px;
 
     }
 
@@ -9228,9 +9435,13 @@ select:focus {
     }
 
     .visit-us-icon {
-        margin: 22px 0 0 0;
         width: 13px;
         height: 19px;
+        display: flex;
+        align-items: center;
+    }
+    .visit-us-icon span{
+        color: #f5f5f5;
     }
 
     .visit-us-main p {
@@ -9250,15 +9461,12 @@ select:focus {
         justify-content: space-evenly;
         align-items: flex-start;
         margin-top: 0px;
-
-
     }
-
     .on-socials {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         width: 135px;
     }
 
@@ -9267,10 +9475,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        background-color: pink;
-
     }
-
     .on-socials-heading {
         font-family: "Montserrat";
         font-weight: 600;
@@ -9279,9 +9484,13 @@ select:focus {
     }
 
     .on-socials-icon {
-        margin: 22px 0 0 0;
         width: 17px;
         height: 19px;
+        display: flex;
+        align-items: center;
+    }
+    .on-socials-icon span{
+        color: #f5f5f5;
     }
 
     .on-socials-main p {
@@ -9313,14 +9522,29 @@ select:focus {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 5px;
     }
 
     .copyright-text p {
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 13px;
+        font-size: 12px;
         color: #F5F7F5;
         opacity: 30%;
+    }
+
+    .footer-navlinks {
+        text-decoration: none;
+        cursor: pointer;
+        color: rgba(245, 245, 245, 0.5);
+        transition: transform 0.2s ease;
+    }
+
+    .footer-navlinks:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: #f5f5f5;
+        transform: scale(1.2);
     }
 
 
@@ -11071,7 +11295,7 @@ select:focus {
 
     .changes-terms-main {
         width: 100%;
-        height: 180px;
+        height: 220px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -11149,7 +11373,50 @@ select:focus {
 
     .bordered {
         border-bottom: 1px solid #e0e0e0;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
+    }
+
+
+    /*Privacy Policy*/
+
+    .privacy-policy-content-main {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .privacy-policy-content {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .privacy-policy-content ul{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .privacy-policy-link {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 12px;
+        color: #f5f5f5;
+        opacity: 30%;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+    }
+
+    .privacy-policy-link:hover {
+        text-decoration: none;
+        color: #f5f5f5;
+        opacity: 100%;
+        transform: scale(1.1);
     }
 
 }
@@ -15088,6 +15355,47 @@ select:focus {
         padding-bottom: 20px;
     }
 
+    /*Privacy Policy*/
+
+    .privacy-policy-content-main {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .privacy-policy-content {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .privacy-policy-content ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .privacy-policy-link {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 13px;
+        color: #f5f5f5;
+        opacity: 30%;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+    }
+
+    .privacy-policy-link:hover {
+        text-decoration: none;
+        color: #f5f5f5;
+        opacity: 100%;
+        transform: scale(1.1);
+    }
+
 }
 
 
@@ -18930,6 +19238,47 @@ select:focus {
         padding-bottom: 20px;
     }
 
+    /*Privacy Policy*/
+
+    .privacy-policy-content-main {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .privacy-policy-content {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .privacy-policy-content ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .privacy-policy-link {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 13px;
+        color: #f5f5f5;
+        opacity: 30%;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+    }
+
+    .privacy-policy-link:hover {
+        text-decoration: none;
+        color: #f5f5f5;
+        opacity: 100%;
+        transform: scale(1.1);
+    }
+
 }
 
 /*Extra Large Desktops*/
@@ -22604,6 +22953,47 @@ select:focus {
     .bordered {
         border-bottom: 1px solid #e0e0e0;
         padding-bottom: 20px;
+    }
+
+    /*Privacy Policy*/
+
+    .privacy-policy-content-main {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .privacy-policy-content {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .privacy-policy-content ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .privacy-policy-link {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 13px;
+        color: #f5f5f5;
+        opacity: 30%;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+    }
+
+    .privacy-policy-link:hover {
+        text-decoration: none;
+        color: #f5f5f5;
+        opacity: 100%;
+        transform: scale(1.1);
     }
 
 }
@@ -26578,6 +26968,7 @@ select:focus {
         text-align: left;
         font-size: 17px;
         font-weight: 500;
+        line-height: 1.7rem;
     }
 
     .terms-purpose p {
@@ -26647,6 +27038,28 @@ select:focus {
 
     /*Privacy Policy*/
 
+    .privacy-policy-content-main {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .privacy-policy-content {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .privacy-policy-content ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
     .privacy-policy-link {
         font-family: "Montserrat";
         font-weight: 300;
