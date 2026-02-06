@@ -5477,7 +5477,7 @@ select:focus {
 
     .footer {
         width: 100%;
-        height: 950px;
+        height: 900px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -5487,7 +5487,7 @@ select:focus {
 
     .footer-main {
         width: 100%;
-        height: 900px;
+        height: 850px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5496,10 +5496,10 @@ select:focus {
 
     .footer-content-container {
         width: 100%;
-        height: 900px;
+        height: 800px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: flex-start;
 
     }
@@ -5511,7 +5511,7 @@ select:focus {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 20px 0 0 20px;
+        margin: 0 0 0 20px;
         gap: 20px;
 
     }
@@ -5549,7 +5549,7 @@ select:focus {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 20px 0 0 20px;
+        margin: 0 0 0 20px;
 
 
     }
@@ -5716,18 +5716,48 @@ select:focus {
         width: 100%;
         height: 60px;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 5px;
     }
 
     .copyright-text p {
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 11px;
+        font-size: 13px;
         color: #F5F7F5;
         opacity: 30%;
     }
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #FB8500;
+        color: white;
+        cursor: pointer;
+        padding: 11px;
+        border-radius: 4px;
+        transition: 0.2s ease-out;
+    }
+
+    #myBtn span {
+        font-size: 1.2rem;
+        transition: 0.2s ease-out;
+    }
+
+    #myBtn:hover {
+        background-color: #2a2a2a;
+    }
+
+    #myBtn:hover span {
+        transform: translateY(-2px);
+    }
+
 
     .footer-navlinks {
         text-decoration: none;
@@ -7728,7 +7758,7 @@ select:focus {
     .privacy-policy-link {
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 11px;
+        font-size: 13px;
         color: #f5f5f5;
         opacity: 30%;
         text-decoration: none;
@@ -9289,7 +9319,7 @@ select:focus {
 
     .footer {
         width: 100%;
-        height: 950px;
+        height: 900px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -9299,7 +9329,7 @@ select:focus {
 
     .footer-main {
         width: 100%;
-        height: 900px;
+        height: 850px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -9308,10 +9338,10 @@ select:focus {
 
     .footer-content-container {
         width: 100%;
-        height: 900px;
+        height: 800px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: flex-start;
 
     }
@@ -9323,7 +9353,7 @@ select:focus {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 20px 0 0 20px;
+        margin: 0 0 0 20px;
         gap: 20px;
 
     }
@@ -9360,7 +9390,7 @@ select:focus {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 20px 0 0 20px;
+        margin: 0 0 0 20px;
 
 
     }
@@ -9520,18 +9550,48 @@ select:focus {
         width: 100%;
         height: 60px;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 5px;
     }
 
     .copyright-text p {
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 12px;
+        font-size: 13px;
         color: #F5F7F5;
         opacity: 30%;
     }
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #FB8500;
+        color: white;
+        cursor: pointer;
+        padding: 11px;
+        border-radius: 4px;
+        transition: 0.2s ease-out;
+    }
+
+    #myBtn span {
+        font-size: 1.2rem;
+        transition: 0.2s ease-out;
+    }
+
+    #myBtn:hover {
+        background-color: #2a2a2a;
+    }
+
+    #myBtn:hover span {
+        transform: translateY(-2px);
+    }
+
 
     .footer-navlinks {
         text-decoration: none;
@@ -11405,7 +11465,7 @@ select:focus {
     .privacy-policy-link {
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 12px;
+        font-size: 13px;
         color: #f5f5f5;
         opacity: 30%;
         text-decoration: none;
@@ -13167,6 +13227,20 @@ select:focus {
 
     #myBtn:hover span {
         transform: translateY(-2px);
+    }
+
+    .footer-navlinks {
+        text-decoration: none;
+        cursor: pointer;
+        color: rgba(245, 245, 245, 0.5);
+        transition: transform 0.2s ease;
+    }
+
+    .footer-navlinks:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: #f5f5f5;
+        transform: scale(1.2);
     }
 
 
