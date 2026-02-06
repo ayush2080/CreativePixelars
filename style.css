@@ -7511,127 +7511,6 @@ select:focus {
 
     .terms-purpose-main {
         width: 100%;
-        height: 280px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .changes-terms-main {
-        width: 100%;
-        height: 180px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .terms-purpose {
-        width: 100%;
-        max-width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    .note {
-        font-family: 'Montserrat';
-        text-align: left;
-        font-size: 17px;
-        font-weight: 500;
-        line-height: 1.7rem;
-    }
-
-    .terms-purpose p {
-        font-family: 'Montserrat';
-        text-align: left;
-        font-size: 17px;
-        font-weight: 400;
-        line-height: 1.7rem;
-    }
-
-    .terms-purpose ul {
-        height: 80px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        font-family: 'Montserrat';
-        text-align: left;
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    .terms-purpose-contact-main {
-        width: 100%;
-        height: 280px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .terms-purpose-contact {
-        width: 100%;
-        max-width: 90%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    .terms-contact {
-        width: 100%;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    .terms-contact p {
-        height: 12px;
-    }
-
-    .bordered {
-        border-bottom: 1px solid #e0e0e0;
-        padding-bottom: 20px;
-    }
-
-    /* Terms & Condition Page*/
-
-    .terms-page-content-container {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .terms-page-content {
-        width: 100%;
-        max-width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    .terms-section-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 40px;
-    }
-
-    .terms-purpose-main {
-        width: 100%;
         height: 300px;
         display: flex;
         flex-direction: column;
@@ -7662,6 +7541,7 @@ select:focus {
         text-align: left;
         font-size: 17px;
         font-weight: 500;
+        line-height: 1.7rem;
     }
 
     .terms-purpose p {
@@ -7669,6 +7549,7 @@ select:focus {
         text-align: left;
         font-size: 17px;
         font-weight: 400;
+        line-height: 1.7rem;
     }
 
     .terms-purpose ul {
@@ -7702,6 +7583,9 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
     }
+    .terms-purpose-contact p{
+        line-height: 1.7rem;
+    }
 
     .terms-contact {
         width: 100%;
@@ -7726,7 +7610,7 @@ select:focus {
 
     .bordered {
         border-bottom: 1px solid #e0e0e0;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
 
@@ -7734,7 +7618,7 @@ select:focus {
 
     .privacy-policy-content-main {
         width: 100%;
-        height: 280px;
+        height: 380px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -7752,7 +7636,11 @@ select:focus {
     .privacy-policy-content ul{
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 8px;
+    }
+    .privacy-policy-content p{
+        font-family: 'Montserrat'sans-serif;
+        line-height: 1.7rem;
     }
 
     .privacy-policy-link {
@@ -11417,6 +11305,9 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
     }
+    .terms-purpose-contact p{
+        line-height: 1.7rem;
+    }
 
     .terms-contact {
         width: 100%;
@@ -11437,11 +11328,9 @@ select:focus {
     }
 
 
-    /*Privacy Policy*/
-
     .privacy-policy-content-main {
         width: 100%;
-        height: 280px;
+        height: 380px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -11459,7 +11348,11 @@ select:focus {
     .privacy-policy-content ul{
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 8px;
+    }
+    .privacy-policy-content p{
+        font-family: 'Montserrat'sans-serif;
+        line-height: 1.7rem;
     }
 
     .privacy-policy-link {
