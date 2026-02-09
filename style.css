@@ -7364,12 +7364,15 @@ select:focus {
     }
 
     .checkbox-container p {
-        width: 90%;
+        width: 100%;
+        max-width: 80%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 12px;
+        line-height: 1.1rem;
     }
 
     .checkbox-container input {
@@ -11090,12 +11093,15 @@ select:focus {
     }
 
     .checkbox-container p {
-        width: 90%;
+        width: 100%;
+        max-width: 80%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 12px;
+        line-height: 1.1rem;
     }
 
     .checkbox-container input {
