@@ -7371,7 +7371,7 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
         font-family: 'Montserrat', sans-serif;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 1.1rem;
     }
 
@@ -11100,7 +11100,7 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
         font-family: 'Montserrat', sans-serif;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 1.1rem;
     }
 
@@ -15235,8 +15235,8 @@ select:focus {
     }
 
     .checkbox-container p {
-        width: 65%;
-        max-width: 320px;
+        width: 80%;
+        max-width: 400px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -19163,8 +19163,8 @@ select:focus {
     }
 
     .checkbox-container p {
-        width: 65%;
-        max-width: 320px;
+        width: 80%;
+        max-width: 400px;
         display: flex;
         align-items: center;
         justify-content: center;
