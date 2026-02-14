@@ -7371,8 +7371,8 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
         font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
-        line-height: 1.1rem;
+        font-size: 14px;
+        line-height: 1.2rem;
     }
 
     .checkbox-container input {
@@ -11100,8 +11100,8 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
         font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
-        line-height: 1.1rem;
+        font-size: 14px;
+        line-height: 1.2rem;
     }
 
     .checkbox-container input {
