@@ -168,3 +168,93 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+/* Work Page Script */
+
+
+
+const motionVideos = document.querySelectorAll(".card.motion video");
+const editVideos = document.querySelectorAll(".card.video video");
+
+const allTab = document.getElementById("all");
+const filters = document.querySelectorAll('input[name="filter"]');
+
+function updateVideos(){
+
+  if(allTab.checked){
+
+    // autoplay both types in ALL tab
+    motionVideos.forEach(video => video.play());
+    editVideos.forEach(video => video.play());
+
+  } else {
+
+    // pause everything when not ALL
+    motionVideos.forEach(video => {
+      video.pause();
+      video.currentTime = 0;
+    });
+
+    editVideos.forEach(video => {
+      video.pause();
+      video.currentTime = 0;
+    });
+
+  }
+
+}
+
+filters.forEach(filter=>{
+  filter.addEventListener("change", updateVideos);
+});
+
+updateVideos();
+
+/* Hover Play (for individual tabs) */
+
+function hoverPlay(selector){
+
+  document.querySelectorAll(selector).forEach(card=>{
+
+    const video = card.querySelector("video");
+
+    card.addEventListener("mouseenter", ()=>{
+      if(!allTab.checked){
+        video.play();
+      }
+    });
+
+    card.addEventListener("mouseleave", ()=>{
+      if(!allTab.checked){
+        video.pause();
+        video.currentTime = 0;
+      }
+    });
+
+  });
+
+}
+
+hoverPlay(".card.motion");
+hoverPlay(".card.video");
+
+
+/* COUNTER SCRIPT */
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    const increment = target / 100;
+
+    if(count < target){
+      counter.innerText = Math.ceil(count + increment);
+      setTimeout(updateCount, 20);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  updateCount();
+});
