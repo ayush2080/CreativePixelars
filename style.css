@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light;
+    color-scheme: light;
 }
 
 body {
@@ -2926,6 +2926,452 @@ nav {
 
 /* Our Work Page Css*/
 
+.Our-Work-Container {
+    background: #0d0d0d;
+    color: #fff;
+}
+
+.portfolio-section {
+    padding: 120px 8%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.portfolio-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+/* ========================= */
+/* HIDE RADIO BUTTONS */
+/* ========================= */
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+    /* move completely off screen */
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+}
+
+/* ========================= */
+/* FILTER TABS */
+/* ========================= */
+.tab-labels {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.tab-labels label {
+    padding: 10px 24px;
+    border-radius: 30px;
+    background: #151515;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    font-size: 14px;
+    transition: .3s ease;
+    color: #f5f5f5;
+}
+
+.tab-labels label:hover {
+    background: #fd5000;
+}
+
+/* Active Tab */
+#all:checked~.tab-labels label[for="all"],
+#graphic:checked~.tab-labels label[for="graphic"],
+#motion:checked~.tab-labels label[for="motion"],
+#video:checked~.tab-labels label[for="video"],
+
+#web:checked~.tab-labels label[for="web"],
+#uiux:checked~.tab-labels label[for="uiux"] {
+    background: #fd5000;
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+.card {
+
+    flex: 1 1 300px;
+    max-width: 340px;
+    background: #151515;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: .4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border: 1px solid rgba(253, 80, 0, .4);
+    box-shadow: 0 10px 40px rgba(253, 80, 0, .15);
+}
+
+/* ========================= */
+/* IMAGE BOX */
+/* ========================= */
+.image-box {
+    position: relative;
+
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 4/5;
+    /* UNIFIED RATIO FOR ALL TAB */
+    transition: aspect-ratio .4s ease;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.image-box video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+/* ========================= */
+/* PLAY BUTTON */
+/* ========================= */
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fd5000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: .3s ease;
+}
+
+.image-box:hover .play-btn {
+    opacity: 0;
+}
+
+.card:hover .play-btn {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+}
+
+#all:checked~.portfolio-wrapper .card.motion .play-btn,
+#all:checked~.portfolio-wrapper .card.video .play-btn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+.card-content {
+    padding: 20px;
+}
+
+
+.card-content h3 {
+    font-size: 18px;
+    color: #f5f5f5;
+}
+
+/* ========================= */
+/* FILTER LOGIC */
+/* ========================= */
+#graphic:checked~.portfolio-wrapper .card-grid .card:not(.graphic) {
+    display: none;
+}
+
+#motion:checked~.portfolio-wrapper .card-grid .card:not(.motion) {
+    display: none;
+}
+
+#video:checked~.portfolio-wrapper .card-grid .card:not(.video) {
+    display: none;
+}
+
+#web:checked~.portfolio-wrapper .card-grid .card:not(.web) {
+    display: none;
+}
+
+#uiux:checked~.portfolio-wrapper .card-grid .card:not(.uiux) {
+    display: none;
+}
+
+/* ========================= */
+/* SERVICE-SPECIFIC RATIOS */
+
+/* ========================= */
+
+/* Graphic */
+#graphic:checked~.card-grid .graphic .image-box {
+    aspect-ratio: 4/5;
+}
+
+/* Motion */
+#motion:checked~.card-grid .motion .image-box {
+    aspect-ratio: 16/9;
+}
+
+/* Video */
+#video:checked~.card-grid .video .image-box {
+    aspect-ratio: 16/9;
+}
+
+/* Web */
+
+#web:checked~.card-grid .web .image-box {
+    aspect-ratio: 3/4;
+}
+
+/* UI/UX */
+#uiux:checked~.card-grid .uiux .image-box {
+    aspect-ratio: 3/4;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 60px;
+    color: #f5f5f5;
+}
+
+/* ============================= */
+/* TESTIMONIALS */
+/* ============================= */
+
+.testimonial-section {
+    padding: 100px 30px;
+    background: #0d0d0d;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.testimonial-card {
+    flex: 1 1 300px;
+    max-width: 360px;
+    background: #151515;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: .3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    border: 1px solid rgba(253, 80, 0, .4);
+    box-shadow: 0 10px 30px rgba(253, 80, 0, .15);
+}
+
+.testimonial-text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.testimonial-card h4 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.testimonial-card span {
+    font-size: 13px;
+    color: #888;
+}
+
+
+
+.tools-section {
+    padding: 100px 20px;
+    background: #111;
+}
+
+.tools-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.tool-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 20px;
+    background: #151515;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #f5f5f5;
+    font-size: 14px;
+    width: 100px;
+    text-align: center;
+    transition: .3s;
+}
+
+.tool-card span.material-symbols-outlined {
+    font-size: 36px;
+    margin-bottom: 8px;
+    color: #fd5000;
+}
+
+.tool-card span:last-child {
+    font-size: 13px;
+}
+
+.tool-card:hover {
+    background: #fd5000;
+    color: #fff;
+}
+
+.tool-card:hover span.material-symbols-outlined {
+    color: #fff;
+}
+
+/* =============================
+   STATS / COUNTERS
+============================= */
+.stats-section {
+    background: #111;
+    padding: 100px 20px;
+}
+
+.stats-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.stat-card {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.stat-card p {
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 8px;
+}
+
+/* =============================
+   CTA
+============================= */
+.cta-section {
+    width: 100%;
+    max-width: 90%;
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+    border-radius: 25px;
+    box-shadow: 0 15px 50px rgba(253, 80, 0, 0.3);
+    box-sizing: border-box;
+    margin: 60px auto;
+}
+
+.cta-container {
+    max-width: 1200px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.cta-container h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.cta-container p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #f5f5f5;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 16px 36px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Primary Button – White on Gradient */
+.btn-primary {
+    background: #fb8500;
+    color: #f5f5f5;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background: #f5f5f5;
+    color: #ff5b2e;
+    transform: translateY(-3px);
+}
+
+/* Secondary Button – Transparent with border */
+.btn-secondary {
+    background: transparent;
+    color: #f5f5f5;
+    border: 2px solid #f5f5f5;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #fd5000;
+    transform: translateY(-3px);
+}
+
+
 .project-graphic-main-container {
     width: 100%;
     height: 1650px;
@@ -3431,14 +3877,16 @@ nav {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-}    
+}
 
 /* Responsive image styling */
 .contact-us-page-heading-bg-responsive-image {
     max-width: 100%;
     max-height: 100%;
-    height: auto; /* Maintain aspect ratio */
-    width: auto; /* Maintain aspect ratio */
+    height: auto;
+    /* Maintain aspect ratio */
+    width: auto;
+    /* Maintain aspect ratio */
     object-fit: cover;
 }
 
@@ -5578,7 +6026,8 @@ select:focus {
         display: flex;
         align-items: center;
     }
-    .contact-info-icon span{
+
+    .contact-info-icon span {
         color: #f5f5f5;
     }
 
@@ -5624,8 +6073,9 @@ select:focus {
         display: flex;
         align-items: center;
     }
-    .visit-us-icon span{
-        color:#f5f5f5;
+
+    .visit-us-icon span {
+        color: #f5f5f5;
     }
 
     .visit-us-main p {
@@ -5679,8 +6129,9 @@ select:focus {
         display: flex;
         align-items: center;
     }
-    .on-socials-icon span{
-        color:#f5f5f5;
+
+    .on-socials-icon span {
+        color: #f5f5f5;
     }
 
     .on-socials-main p {
@@ -6485,6 +6936,73 @@ select:focus {
 
 
     /* Our Work Page Css*/
+
+    .portfolio-section {
+        padding: 80px 5%;
+    }
+
+    .portfolio-title {
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+
+    .tab-labels {
+        gap: 10px;
+    }
+
+    .tab-labels label {
+        font-size: 12px;
+        padding: 7px 16px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+
+    .testimonial-card {
+        flex: 1 1 100%;
+    }
+
+    .card-grid {
+        gap: 20px;
+    }
+
+    .tools-wrapper {
+        gap: 12px;
+    }
+
+    .tool-card {
+        width: 80px;
+        padding: 10px;
+    }
+
+    .play-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .card-content {
+        padding: 16px;
+    }
+
+    .card-content h3 {
+        font-size: 16px;
+    }
+
+    .cta-container h2 {
+        font-size: 32px;
+    }
+
+    .cta-container p {
+        font-size: 16px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 14px 28px;
+        font-size: 15px;
+    }
 
     .project-graphic-main-container {
         width: 100%;
@@ -7580,7 +8098,8 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
     }
-    .terms-purpose-contact p{
+
+    .terms-purpose-contact p {
         line-height: 1.7rem;
     }
 
@@ -7631,13 +8150,15 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
     }
-    .privacy-policy-content ul{
+
+    .privacy-policy-content ul {
         display: flex;
         flex-direction: column;
         gap: 8px;
     }
-    .privacy-policy-content p{
-        font-family: 'Montserrat'sans-serif;
+
+    .privacy-policy-content p {
+        font-family: 'Montserrat' sans-serif;
         line-height: 1.7rem;
     }
 
@@ -9311,9 +9832,11 @@ select:focus {
         display: flex;
         align-items: center;
     }
-    .contact-info-icon span{
+
+    .contact-info-icon span {
         color: #f5f5f5;
     }
+
     .contact-info-main p {
         display: flex;
         flex-direction: column;
@@ -9356,7 +9879,8 @@ select:focus {
         display: flex;
         align-items: center;
     }
-    .visit-us-icon span{
+
+    .visit-us-icon span {
         color: #f5f5f5;
     }
 
@@ -9378,6 +9902,7 @@ select:focus {
         align-items: flex-start;
         margin-top: 0px;
     }
+
     .on-socials {
         display: flex;
         flex-direction: row;
@@ -9392,6 +9917,7 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
     }
+
     .on-socials-heading {
         font-family: "Montserrat";
         font-weight: 600;
@@ -9405,7 +9931,8 @@ select:focus {
         display: flex;
         align-items: center;
     }
-    .on-socials-icon span{
+
+    .on-socials-icon span {
         color: #f5f5f5;
     }
 
@@ -10212,6 +10739,60 @@ select:focus {
 
 
     /* Our Work Page Css*/
+
+    .portfolio-section {
+        padding: 100px 6%;
+    }
+
+    .portfolio-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        flex: 1 1 45%;
+        max-width: 50%;
+    }
+
+    .testimonial-card {
+        flex: 1 1 100%;
+    }
+
+    .card-grid {
+        gap: 25px;
+    }
+
+    .tab-labels {
+        gap: 12px;
+    }
+
+    .tab-labels label {
+        font-size: 13px;
+        padding: 8px 18px;
+    }
+
+    .play-btn {
+        width: 48px;
+        height: 48px;
+    }
+
+    .card-content {
+        padding: 18px;
+    }
+
+    .cta-container h2 {
+        font-size: 32px;
+    }
+
+    .cta-container p {
+        font-size: 16px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 14px 28px;
+        font-size: 15px;
+    }
 
     .project-graphic-main-container {
         width: 100%;
@@ -11306,7 +11887,8 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
     }
-    .terms-purpose-contact p{
+
+    .terms-purpose-contact p {
         line-height: 1.7rem;
     }
 
@@ -11322,6 +11904,7 @@ select:focus {
     .terms-contact p {
         height: 12px;
     }
+
     .terms-page-link {
         color: #007bff;
         text-decoration: none;
@@ -11354,13 +11937,15 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
     }
-    .privacy-policy-content ul{
+
+    .privacy-policy-content ul {
         display: flex;
         flex-direction: column;
         gap: 8px;
     }
-    .privacy-policy-content p{
-        font-family: 'Montserrat'sans-serif;
+
+    .privacy-policy-content p {
+        font-family: 'Montserrat' sans-serif;
         line-height: 1.7rem;
     }
 
@@ -12973,7 +13558,8 @@ select:focus {
         display: flex;
         align-items: center;
     }
-    .contact-info-icon span{
+
+    .contact-info-icon span {
         color: #f5f5f5;
         font-size: 18px;
     }
@@ -13021,8 +13607,9 @@ select:focus {
         width: 20px;
         height: 16px;
     }
-    .visit-us-icon span{
-        color:#f5f5f5;
+
+    .visit-us-icon span {
+        color: #f5f5f5;
         font-size: 18px;
     }
 
@@ -13076,7 +13663,8 @@ select:focus {
         width: 14px;
         height: 16px;
     }
-    .on-socials-icon span{
+
+    .on-socials-icon span {
         color: #f5f5f5;
         font-size: 18px;
     }
@@ -14142,6 +14730,38 @@ select:focus {
 
 
     /* Our Work Page Css*/
+
+    .portfolio-section {
+        padding: 100px 6%;
+    }
+
+
+    .portfolio-title {
+        font-size: 30px;
+    }
+
+    .card {
+        flex: 1 1 45%;
+        max-width: 50%;
+    }
+
+    .card-grid {
+        gap: 25px;
+    }
+
+    .tab-labels {
+        gap: 15px;
+    }
+
+    .tab-labels label {
+        font-size: 13px;
+        padding: 8px 20px;
+    }
+
+    .play-btn {
+        width: 50px;
+        height: 50px;
+    }
 
     .project-graphic-main-container {
         width: 100%;
@@ -15364,6 +15984,7 @@ select:focus {
     .terms-contact p {
         height: 12px;
     }
+
     .terms-page-link {
         color: #007bff;
         text-decoration: none;
@@ -15397,11 +16018,13 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
     }
-    .privacy-policy-content ul{
+
+    .privacy-policy-content ul {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+
     .privacy-policy-link {
         font-family: "Montserrat";
         font-weight: 300;
@@ -16979,7 +17602,8 @@ select:focus {
         display: flex;
         align-items: center;
     }
-    .contact-info-icon span{
+
+    .contact-info-icon span {
         color: #f5f5f5;
     }
 
@@ -17026,8 +17650,9 @@ select:focus {
         width: 12px;
         height: 16px;
     }
-    .visit-us-icon span{
-        color:#f5f5f5;
+
+    .visit-us-icon span {
+        color: #f5f5f5;
     }
 
     .visit-us-main p {
@@ -17080,7 +17705,8 @@ select:focus {
         width: 14px;
         height: 16px;
     }
-    .on-socials-icon span{
+
+    .on-socials-icon span {
         color: #f5f5f5;
     }
 
@@ -18090,6 +18716,7 @@ select:focus {
 
 
     /* Our Work Page Css*/
+
 
     .project-graphic-main-container {
         width: 100%;
@@ -19291,6 +19918,7 @@ select:focus {
     .terms-contact p {
         height: 12px;
     }
+
     .terms-page-link {
         color: #007bff;
         text-decoration: none;
@@ -19324,11 +19952,13 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
     }
-    .privacy-policy-content ul{
+
+    .privacy-policy-content ul {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+
     .privacy-policy-link {
         font-family: "Montserrat";
         font-weight: 300;
@@ -20925,7 +21555,8 @@ select:focus {
         display: flex;
         align-items: center;
     }
-    .contact-info-icon span{
+
+    .contact-info-icon span {
         color: #f5f5f5;
     }
 
@@ -20972,8 +21603,9 @@ select:focus {
         width: 12px;
         height: 16px;
     }
-    .visit-us-icon span{
-        color:#f5f5f5;
+
+    .visit-us-icon span {
+        color: #f5f5f5;
     }
 
     .visit-us-main p {
@@ -21026,7 +21658,8 @@ select:focus {
         width: 14px;
         height: 16px;
     }
-    .on-socials-icon span{
+
+    .on-socials-icon span {
         color: #f5f5f5;
     }
 
@@ -23050,6 +23683,7 @@ select:focus {
     .terms-contact p {
         height: 12px;
     }
+
     .terms-page-link {
         color: #007bff;
         text-decoration: none;
@@ -23083,11 +23717,13 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
     }
-    .privacy-policy-content ul{
+
+    .privacy-policy-content ul {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+
     .privacy-policy-link {
         font-family: "Montserrat";
         font-weight: 300;
@@ -24733,7 +25369,8 @@ select:focus {
         display: flex;
         align-items: center;
     }
-    .contact-info-icon span{
+
+    .contact-info-icon span {
         color: #f5f5f5;
     }
 
@@ -24780,8 +25417,9 @@ select:focus {
         width: 12px;
         height: 16px;
     }
-    .visit-us-icon span{
-        color:#f5f5f5;
+
+    .visit-us-icon span {
+        color: #f5f5f5;
     }
 
     .visit-us-main p {
@@ -24834,7 +25472,8 @@ select:focus {
         width: 14px;
         height: 16px;
     }
-    .on-socials-icon span{
+
+    .on-socials-icon span {
         color: #f5f5f5;
     }
 
@@ -25887,9 +26526,13 @@ select:focus {
 
     /* Our Work Page Css*/
 
+    .portfolio-section {
+        max-width: 1300px;
+    }
+
     .project-graphic-main-container {
         width: 100%;
-        height: 1650px;
+        height: 2250px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -25921,7 +26564,7 @@ select:focus {
 
     .project-graphic-tiles-main {
         width: 100%;
-        height: 1450px;
+        height: 2050px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -25938,12 +26581,35 @@ select:focus {
 
     .project-graphic-tiles-card {
         width: 400px;
-        height: 400px;
+        height: 420px;
         background-color: #fff;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         box-shadow: 0 0 15px 0 rgba(16, 16, 16, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        overflow: hidden;
+    }
+
+    .project-graphic-tiles-card img {
+        width: 400px;
+        height: 370px;
+        transition: transform 0.5s ease;
+
+    }
+
+    .project-graphic-tiles-card:hover {
+        box-shadow: 0 0 15px 0 rgba(253, 80, 0, 0.25);
+    }
+
+    .project-graphic-tiles-card:hover img {
+        transform: scale(1.03);
+    }
+
+    .project-graphic-tiles-card:hover h3 {
+        color: #fb8500;
     }
 
     .project-graphic-tiles-card h3 {
@@ -26079,12 +26745,31 @@ select:focus {
 
     .project-ui-ux-tiles-card {
         width: 400px;
-        height: 400px;
+        height: 420px;
         background-color: #fff;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         box-shadow: 0 0 15px 0 rgba(16, 16, 16, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        overflow: hidden;
+    }
+
+    .project-ui-ux-tiles-card img {
+        width: 400px;
+        height: 400px;
+        transition: transform 0.5s ease;
+
+    }
+
+    .project-ui-ux-tiles-card:hover {
+        box-shadow: 0 0 15px 0 rgba(253, 80, 0, 0.25);
+    }
+
+    .project-ui-ux-tiles-card:hover img {
+        transform: scale(1.03);
     }
 
     .project-ui-ux-tiles-card h3 {
@@ -27165,11 +27850,13 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
     }
-    .privacy-policy-content ul{
+
+    .privacy-policy-content ul {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+
     .privacy-policy-link {
         font-family: "Montserrat";
         font-weight: 300;
@@ -29639,6 +30326,10 @@ select:focus {
 
     /* Our Work Page Css*/
 
+    .portfolio-section {
+        max-width: 1300px;
+    }
+
     .project-graphic-main-container {
         width: 100%;
         height: 1650px;
@@ -30812,6 +31503,7 @@ select:focus {
     .terms-contact p {
         height: 12px;
     }
+
     .terms-page-link {
         color: #007bff;
         text-decoration: none;
@@ -30845,11 +31537,13 @@ select:focus {
         align-items: flex-start;
         justify-content: center;
     }
-    .privacy-policy-content ul{
+
+    .privacy-policy-content ul {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+
     .privacy-policy-link {
         font-family: "Montserrat";
         font-weight: 300;
