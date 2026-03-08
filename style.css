@@ -6957,6 +6957,7 @@ select:focus {
 
     .card {
         flex: 1 1 100%;
+        max-width: 320px;
     }
 
     .testimonial-card {
@@ -6964,7 +6965,7 @@ select:focus {
     }
 
     .card-grid {
-        gap: 20px;
+        gap: 30px;
     }
 
     .tools-wrapper {
@@ -6990,6 +6991,13 @@ select:focus {
         font-size: 16px;
     }
 
+    .stats-wrapper {
+        flex-direction: column;
+    }
+
+    .cta-section {
+        max-width: 89%;
+    }
     .cta-container h2 {
         font-size: 32px;
     }
@@ -10759,7 +10767,7 @@ select:focus {
     }
 
     .card-grid {
-        gap: 25px;
+        gap: 30px;
     }
 
     .tab-labels {
