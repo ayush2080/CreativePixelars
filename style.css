@@ -1172,12 +1172,12 @@ nav {
 
 .work-together {
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color: #2A2A2A;
+    background-color: #f5f5f5;
 }
 
 .work-together-content-left {
@@ -2385,12 +2385,12 @@ nav {
 
 .about-us-work-together {
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color: #2A2A2A;
+    background-color: #f5f5f5;
 }
 
 .about-us-work-together-content-left {
@@ -2802,12 +2802,12 @@ nav {
 
 .Our-services-work-together {
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color: #2A2A2A;
+    background-color: #f5f5f5;
 }
 
 .Our-services-work-together-content-left {
@@ -2998,28 +2998,35 @@ input[type="radio"] {
 /* GRID */
 /* ========================= */
 .card-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
+    column-width: 280px;
+    /* preferred card width */
+    column-gap: 30px;
+    max-width: 1200px;
+    /* centers the whole portfolio */
+    margin: 0 auto;
 }
 
 /* ========================= */
 /* CARD */
 /* ========================= */
 .card {
+    display: inline-block;
+    /* required for column masonry */
+    width: 100%;
+    margin-bottom: 30px;
 
-    flex: 1 1 300px;
-    max-width: 340px;
     background: #151515;
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: .4s ease;
+    transition: 0.4s ease;
+
+    break-inside: avoid;
+    /* prevents card from breaking across columns */
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     border: 1px solid rgba(253, 80, 0, .4);
     box-shadow: 0 10px 40px rgba(253, 80, 0, .15);
 }
@@ -3028,29 +3035,21 @@ input[type="radio"] {
 /* IMAGE BOX */
 /* ========================= */
 .image-box {
-    position: relative;
-
     width: 100%;
     overflow: hidden;
-    aspect-ratio: 4/5;
-    /* UNIFIED RATIO FOR ALL TAB */
-    transition: aspect-ratio .4s ease;
 }
 
 .image-box img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
     transition: .5s ease;
 }
 
 .image-box video {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
 }
 
 .card:hover img {
@@ -3720,12 +3719,12 @@ input[type="radio"] {
 
 .project-work-together {
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color: #2A2A2A;
+    background-color: #f5f5f5;
 }
 
 .project-work-together-content-left {
@@ -5499,12 +5498,12 @@ select:focus {
 
     .work-together {
         width: 100%;
-        height: 250px;
+        height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .work-together-content-left {
@@ -6427,12 +6426,12 @@ select:focus {
 
     .about-us-work-together {
         width: 100%;
-        height: 250px;
+        height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .about-us-work-together-content-left {
@@ -6820,12 +6819,12 @@ select:focus {
 
     .Our-services-work-together {
         width: 100%;
-        height: 250px;
+        height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .Our-services-work-together-content-left {
@@ -6955,17 +6954,14 @@ select:focus {
         padding: 7px 16px;
     }
 
-    .card {
-        flex: 1 1 100%;
-        max-width: 320px;
-    }
-
     .testimonial-card {
         flex: 1 1 100%;
     }
 
     .card-grid {
+        column-width: 180px;
         gap: 30px;
+        margin: 0 20px;
     }
 
     .tools-wrapper {
@@ -6998,6 +6994,7 @@ select:focus {
     .cta-section {
         max-width: 89%;
     }
+
     .cta-container h2 {
         font-size: 32px;
     }
@@ -7365,12 +7362,12 @@ select:focus {
 
     .project-work-together {
         width: 100%;
-        height: 250px;
+        height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .project-work-together-content-left {
@@ -9313,12 +9310,12 @@ select:focus {
 
     .work-together {
         width: 100%;
-        height: 250px;
+        height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .work-together-content-left {
@@ -10236,12 +10233,12 @@ select:focus {
 
     .about-us-work-together {
         width: 100%;
-        height: 250px;
+        height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .about-us-work-together-content-left {
@@ -10630,12 +10627,12 @@ select:focus {
 
     .Our-services-work-together {
         width: 100%;
-        height: 250px;
+        height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .Our-services-work-together-content-left {
@@ -10756,18 +10753,14 @@ select:focus {
         font-size: 28px;
         margin-bottom: 40px;
     }
-
-    .card {
-        flex: 1 1 45%;
-        max-width: 50%;
-    }
-
     .testimonial-card {
         flex: 1 1 100%;
     }
 
     .card-grid {
         gap: 30px;
+        column-width: 180px;
+        margin: 0 20px;
     }
 
     .tab-labels {
@@ -11155,12 +11148,12 @@ select:focus {
 
     .project-work-together {
         width: 100%;
-        height: 250px;
+        height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .project-work-together-content-left {
@@ -13007,12 +13000,12 @@ select:focus {
 
     .work-together {
         width: 100vw;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .work-together-content-left {
@@ -14239,12 +14232,12 @@ select:focus {
 
     .about-us-work-together {
         width: 100vw;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .about-us-work-together-content-left {
@@ -14628,12 +14621,12 @@ select:focus {
 
     .Our-services-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .Our-services-work-together-content-left {
@@ -14748,13 +14741,9 @@ select:focus {
         font-size: 30px;
     }
 
-    .card {
-        flex: 1 1 45%;
-        max-width: 50%;
-    }
-
     .card-grid {
         gap: 25px;
+        column-width: 180px;
     }
 
     .tab-labels {
@@ -15120,12 +15109,12 @@ select:focus {
 
     .project-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .project-work-together-content-left {
@@ -17052,12 +17041,12 @@ select:focus {
 
     .work-together {
         width: 100vw;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .work-together-content-left {
@@ -18220,12 +18209,12 @@ select:focus {
 
     .about-us-work-together {
         width: 100vw;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .about-us-work-together-content-left {
@@ -18614,12 +18603,12 @@ select:focus {
 
     .Our-services-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .Our-services-work-together-content-left {
@@ -18724,6 +18713,15 @@ select:focus {
 
 
     /* Our Work Page Css*/
+
+    .portfolio-section {
+        padding: 100px 6%;
+
+    }
+
+    .card-grid {
+        max-width: 1100px;
+    }
 
 
     .project-graphic-main-container {
@@ -19074,12 +19072,12 @@ select:focus {
 
     .project-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .project-work-together-content-left {
@@ -21002,12 +21000,12 @@ select:focus {
 
     .work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .work-together-content-left {
@@ -21952,12 +21950,12 @@ select:focus {
 
     .about-us-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .about-us-work-together-content-left {
@@ -22346,12 +22344,12 @@ select:focus {
 
     .Our-services-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .Our-services-work-together-content-left {
@@ -22455,6 +22453,10 @@ select:focus {
     }
 
     /* Our Work Page Css*/
+
+    .portfolio-section {
+        max-width: 1400px;
+    }
 
     .project-graphic-main-container {
         width: 100%;
@@ -22804,12 +22806,12 @@ select:focus {
 
     .project-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .project-work-together-content-left {
@@ -24816,12 +24818,12 @@ select:focus {
 
     .work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .work-together-content-left {
@@ -26026,12 +26028,12 @@ select:focus {
 
     .about-us-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .about-us-work-together-content-left {
@@ -26422,12 +26424,12 @@ select:focus {
 
     .Our-services-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .Our-services-work-together-content-left {
@@ -26535,7 +26537,7 @@ select:focus {
     /* Our Work Page Css*/
 
     .portfolio-section {
-        max-width: 1300px;
+        max-width: 1400px;
     }
 
     .project-graphic-main-container {
@@ -26933,12 +26935,12 @@ select:focus {
 
     .project-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .project-work-together-content-left {
@@ -28901,12 +28903,12 @@ select:focus {
 
     .work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .work-together-content-left {
@@ -29829,12 +29831,12 @@ select:focus {
 
     .about-us-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .about-us-work-together-content-left {
@@ -30225,12 +30227,12 @@ select:focus {
 
     .Our-services-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .Our-services-work-together-content-left {
@@ -30686,12 +30688,12 @@ select:focus {
 
     .project-work-together {
         width: 100%;
-        height: 200px;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #2A2A2A;
+        background-color: #f5f5f5;
     }
 
     .project-work-together-content-left {

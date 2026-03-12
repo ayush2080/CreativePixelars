@@ -63,18 +63,18 @@ window.addEventListener("scroll", function () {
 
 // Function to open a webpage when button is clicked
 function openWebPage() {
-  window.open("Contact Us.html", "_blank");
+  window.open("Contact.html", "_blank");
 }
 
 function openAboutPage() {
-  window.open("About Us.html", "_blank");
+  window.open("About.html", "_blank");
 }
 function openServices() {
-  window.open("Our Services.html", "_blank");
+  window.open("Services.html", "_blank");
 }
 
 function openWork() {
-  window.open("Our Work.html", "_blank");
+  window.open("Work.html", "_blank");
 }
 
 function openQuoteForm() {
@@ -258,3 +258,6 @@ counters.forEach(counter => {
   };
   updateCount();
 });
+
+
+
