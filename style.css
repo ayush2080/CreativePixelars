@@ -2663,6 +2663,140 @@ nav {
     color: #1e1e1e;
 }
 
+/* ================= SERVICES SECTION ================= */
+.services-section {
+    padding: 80px 8%;
+    background: #0d0d0d;
+    color: #f5f5f5;
+}
+
+/* Section title */
+.service-section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-section-title h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #f5f5f5;
+}
+
+.service-section-title p {
+    color: #bdbdbd;
+}
+
+/* ================= TABS ================= */
+.tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background: #151515;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* dark card-like */
+    border: none;
+    color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-size: 14px;
+
+}
+
+.tab-btn:hover {
+    background: #fb8500;
+
+}
+
+.tab-btn.active {
+    background: #fb8500;
+}
+
+/* ================= FLEX WRAPPER ================= */
+.services-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+
+/* ================= CARD ================= */
+.service-card {
+    background: #151515;
+    border-radius: 20px;
+    padding: 35px;
+    width: calc(27.333% - 20px);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.4s ease;
+}
+
+.service-card.hide {
+    display: none;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid #fd5000;
+    box-shadow: 0 20px 40px rgba(253, 80, 0, 0.25);
+    background: linear-gradient(145deg, #151515, #1f1f29);
+}
+
+.service-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #f5f5f5;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #bdbdbd;
+    margin-bottom: 25px;
+}
+
+.service-card button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #fb8500, #ffb703);
+    color: #111;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service-card button:hover {
+    opacity: 0.85;
+}
+
+/* ================= COUNTERS ================= */
+
+
+
 .Our-services-content-container {
     width: 100%;
     height: auto;
@@ -6676,6 +6810,15 @@ select:focus {
         color: #1e1e1e;
     }
 
+    .service-card {
+        width: 100%;
+    }
+
+    .counters {
+        width: 50%;
+        gap: 30px;
+    }
+
     .Our-services-content-container {
         width: 100%;
         height: 2800px;
@@ -10483,6 +10626,14 @@ select:focus {
         height: 30px;
         color: #1e1e1e;
     }
+    
+    .service-card {
+        width: 60%;
+      }
+
+      .counters {
+        gap: 30px;
+    }
 
     .Our-services-content-container {
         width: 100%;
@@ -10753,6 +10904,7 @@ select:focus {
         font-size: 28px;
         margin-bottom: 40px;
     }
+
     .testimonial-card {
         flex: 1 1 100%;
     }
@@ -14480,6 +14632,12 @@ select:focus {
         height: 30px;
         color: #1e1e1e;
     }
+
+    
+
+    .service-card {
+        width: calc(50% - 20px);
+      }
 
     .Our-services-content-container {
         width: 100%;
@@ -18463,6 +18621,10 @@ select:focus {
         color: #1e1e1e;
     }
 
+    .service-card {
+        width: calc(32.333% - 20px);
+    }
+
     .Our-services-content-container {
         width: 100%;
         height: 1550px;
@@ -22202,6 +22364,10 @@ select:focus {
         width: 30px;
         height: 30px;
         color: #1e1e1e;
+    }
+    
+    .service-card {
+        width: calc(26.333% - 20px);
     }
 
     .Our-services-content-container {
@@ -26284,6 +26450,10 @@ select:focus {
         color: #1e1e1e;
     }
 
+    .service-card {
+        width: calc(27.333% - 20px);
+    }
+
     .Our-services-content-container {
         width: 100%;
         height: 1700px;
@@ -30085,6 +30255,9 @@ select:focus {
         width: 30px;
         height: 30px;
         color: #1e1e1e;
+    }
+    .service-card {
+        max-width: calc(27.333% - 20px);
     }
 
     .Our-services-content-container {

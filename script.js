@@ -241,23 +241,46 @@ hoverPlay(".card.video");
 
 /* COUNTER SCRIPT */
 
-const counters = document.querySelectorAll('.counter');
+const counters = document.querySelectorAll(".counter");
+const section = document.querySelector(".stats-section");
 
-counters.forEach(counter => {
-  const updateCount = () => {
-    const target = +counter.getAttribute('data-target');
-    const count = +counter.innerText;
+function runCounters() {
+
+  counters.forEach(counter => {
+
+    const target = +counter.getAttribute("data-target");
+    let count = 0;
+
     const increment = target / 100;
 
-    if(count < target){
-      counter.innerText = Math.ceil(count + increment);
-      setTimeout(updateCount, 20);
-    } else {
-      counter.innerText = target;
-    }
-  };
-  updateCount();
-});
+    const updateCount = () => {
+      if (count < target) {
+        count += increment;
+        counter.innerText = Math.ceil(count);
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.innerText = target;
+      }
+    };
 
+    updateCount();
+  });
+
+}
+
+const observer = new IntersectionObserver((entries) => {
+
+  entries.forEach(entry => {
+
+    if (entry.isIntersecting) {
+      counters.forEach(counter => counter.innerText = "0"); // reset
+      runCounters();
+    }
+
+  });
+
+}, { threshold: 0.5 });
+
+observer.observe(section);
 
 
