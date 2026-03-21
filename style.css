@@ -3381,21 +3381,22 @@ input[type="radio"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 14px 20px;
+    padding: 18px 20px;
     background: #151515;
-    border-radius: 30px;
+    border-radius: 22px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     color: #f5f5f5;
     font-size: 14px;
     width: 100px;
     text-align: center;
-    transition: .3s;
+    transition: .3s ease-in;
 }
 
-.tool-card span.material-symbols-outlined {
-    font-size: 36px;
+.tool-card svg {
+    width: 36px;
+    height: 36px;
     margin-bottom: 8px;
-    color: #fd5000;
+    transition: .3s ease-in;
 }
 
 .tool-card span:last-child {
@@ -3407,8 +3408,9 @@ input[type="radio"] {
     color: #fff;
 }
 
-.tool-card:hover span.material-symbols-outlined {
+.tool-card:hover svg path {
     color: #fff;
+    fill: #fff;
 }
 
 /* =============================
@@ -28623,11 +28625,13 @@ select:focus {
 
     .reasons {
         width: 100%;
+        max-width: 1200px;
         height: 550px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0 auto;
 
 
     }
@@ -29544,7 +29548,7 @@ select:focus {
 
     .footer {
         width: 100%;
-        height: 300px;
+        height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -29553,6 +29557,8 @@ select:focus {
     }
 
     .footer-main {
+        width: 100%;
+        height: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -29560,7 +29566,7 @@ select:focus {
 
     .footer-content-container {
         width: 100%;
-        height: 100%;
+        height: 300px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -29569,7 +29575,7 @@ select:focus {
     }
 
     .footer-left-content {
-        width: 30%;
+        width: 100%;
         max-width: 20%;
         display: flex;
         flex-direction: column;
@@ -29603,12 +29609,12 @@ select:focus {
     }
 
     .footer-right-content {
-        width: 70%;
+        width: 100%;
         max-width: 50%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
         margin: 0 10px 0 0;
 
     }
@@ -29641,6 +29647,12 @@ select:focus {
     .contact-info-icon {
         width: 17px;
         height: 17px;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-info-icon span {
+        color: #f5f5f5;
     }
 
     .contact-info-main p {
@@ -29669,7 +29681,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        width: 105px;
+        width: 150px;
 
     }
 
@@ -29681,8 +29693,14 @@ select:focus {
     }
 
     .visit-us-icon {
+        display: flex;
+        align-items: center;
         width: 12px;
         height: 16px;
+    }
+
+    .visit-us-icon span {
+        color: #f5f5f5;
     }
 
     .visit-us-main p {
@@ -29702,7 +29720,6 @@ select:focus {
         justify-content: space-evenly;
         align-items: center;
         margin: 0 10px;
-        padding: 25px 0 0 0;
 
 
     }
@@ -29731,8 +29748,14 @@ select:focus {
     }
 
     .on-socials-icon {
+        display: flex;
+        align-items: center;
         width: 14px;
         height: 16px;
+    }
+
+    .on-socials-icon span {
+        color: #f5f5f5;
     }
 
     .on-socials-main p {
@@ -29746,11 +29769,23 @@ select:focus {
         color: rgba(245, 247, 245, 0.5);
     }
 
-    .on-socials-main a:hover {
+    .on-socials-main a:-webkit-any-link {
+        text-decoration: none !important;
         cursor: pointer;
-        text-decoration: none;
-        all: unset;
+    }
 
+    .footer-navlinks {
+        text-decoration: none;
+        cursor: pointer;
+        color: rgba(245, 245, 245, 0.5);
+        transition: transform 0.2s ease;
+    }
+
+    .footer-navlinks:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: #f5f5f5;
+        transform: scale(1.2);
     }
 
     hr {
@@ -29761,8 +29796,13 @@ select:focus {
     }
 
     .copyright-text {
-        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 90%;
         height: auto;
+        gap: 8px;
     }
 
     .copyright-text p {
@@ -29807,19 +29847,6 @@ select:focus {
         transform: translateY(-2px);
     }
 
-    .footer-navlinks {
-        text-decoration: none;
-        cursor: pointer;
-        color: rgba(245, 245, 245, 0.5);
-        transition: transform 0.2s ease;
-    }
-
-    .footer-navlinks:hover {
-        text-decoration: none;
-        cursor: pointer;
-        color: #f5f5f5;
-        transform: scale(1.2);
-    }
 
     /*About Us Page*/
 
