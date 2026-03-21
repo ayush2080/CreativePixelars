@@ -171,8 +171,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* Work Page Script */
 
-
-
 const motionVideos = document.querySelectorAll(".card.motion video");
 const editVideos = document.querySelectorAll(".card.video video");
 
@@ -180,6 +178,9 @@ const allTab = document.getElementById("all");
 const filters = document.querySelectorAll('input[name="filter"]');
 
 function updateVideos(){
+
+  // ✅ guard (prevents crash)
+  if (!allTab) return;
 
   if(allTab.checked){
 
@@ -235,8 +236,35 @@ function hoverPlay(selector){
 
 }
 
-hoverPlay(".card.motion");
-hoverPlay(".card.video");
+function clickPlay(selector){
+
+  document.querySelectorAll(selector).forEach(card => {
+
+    const video = card.querySelector("video");
+    const btn = card.querySelector(".play-btn");
+
+    card.addEventListener("click", () => {
+
+      // ❗ ignore clicks in ALL tab
+      if (allTab && allTab.checked) return;
+
+      if (video.paused) {
+        video.play();
+        if (btn) btn.innerText = "❚❚";
+      } else {
+        video.pause();
+        video.currentTime = 0;
+        if (btn) btn.innerText = "▶";
+      }
+
+    });
+
+  });
+
+}
+
+clickPlay(".card.motion");
+clickPlay(".card.video");
 
 
 /* COUNTER SCRIPT */
@@ -281,6 +309,29 @@ const observer = new IntersectionObserver((entries) => {
 
 }, { threshold: 0.5 });
 
-observer.observe(section);
+if (section) {
+  observer.observe(section);
+}
+
+ // Tab filter logic for Services Page
+    const buttons = document.querySelectorAll('.tab-btn');
+    const cards = document.querySelectorAll('.service-card');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelector('.tab-btn.active').classList.remove('active');
+        button.classList.add('active');
+
+        const filter = button.getAttribute('data-filter');
+        cards.forEach(card => {
+          if (filter === 'all') {
+            card.classList.remove('hide');
+          } else {
+            card.classList.toggle('hide', !card.classList.contains(filter));
+          }
+        });
+      });
+    });
+
 
 
