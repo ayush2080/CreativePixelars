@@ -177,12 +177,12 @@ const editVideos = document.querySelectorAll(".card.video video");
 const allTab = document.getElementById("all");
 const filters = document.querySelectorAll('input[name="filter"]');
 
-function updateVideos(){
+function updateVideos() {
 
   // ✅ guard (prevents crash)
   if (!allTab) return;
 
-  if(allTab.checked){
+  if (allTab.checked) {
 
     // autoplay both types in ALL tab
     motionVideos.forEach(video => video.play());
@@ -205,7 +205,7 @@ function updateVideos(){
 
 }
 
-filters.forEach(filter=>{
+filters.forEach(filter => {
   filter.addEventListener("change", updateVideos);
 });
 
@@ -213,20 +213,20 @@ updateVideos();
 
 /* Hover Play (for individual tabs) */
 
-function hoverPlay(selector){
+function hoverPlay(selector) {
 
-  document.querySelectorAll(selector).forEach(card=>{
+  document.querySelectorAll(selector).forEach(card => {
 
     const video = card.querySelector("video");
 
-    card.addEventListener("mouseenter", ()=>{
-      if(!allTab.checked){
+    card.addEventListener("mouseenter", () => {
+      if (!allTab.checked) {
         video.play();
       }
     });
 
-    card.addEventListener("mouseleave", ()=>{
-      if(!allTab.checked){
+    card.addEventListener("mouseleave", () => {
+      if (!allTab.checked) {
         video.pause();
         video.currentTime = 0;
       }
@@ -236,7 +236,7 @@ function hoverPlay(selector){
 
 }
 
-function clickPlay(selector){
+function clickPlay(selector) {
 
   document.querySelectorAll(selector).forEach(card => {
 
@@ -313,25 +313,107 @@ if (section) {
   observer.observe(section);
 }
 
- // Tab filter logic for Services Page
-    const buttons = document.querySelectorAll('.tab-btn');
-    const cards = document.querySelectorAll('.service-card');
+// Tab filter logic for Services Page
+const buttons = document.querySelectorAll('.tab-btn');
+const cards = document.querySelectorAll('.service-card');
 
-    buttons.forEach(button => {
-      button.addEventListener('click', () => {
-        document.querySelector('.tab-btn.active').classList.remove('active');
-        button.classList.add('active');
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelector('.tab-btn.active').classList.remove('active');
+    button.classList.add('active');
 
-        const filter = button.getAttribute('data-filter');
-        cards.forEach(card => {
-          if (filter === 'all') {
-            card.classList.remove('hide');
-          } else {
-            card.classList.toggle('hide', !card.classList.contains(filter));
-          }
-        });
-      });
+    const filter = button.getAttribute('data-filter');
+    cards.forEach(card => {
+      if (filter === 'all') {
+        card.classList.remove('hide');
+      } else {
+        card.classList.toggle('hide', !card.classList.contains(filter));
+      }
+    });
+  });
+});
+
+/*Work Page */
+
+const workItems = document.querySelectorAll(".work-item");
+
+workItems.forEach(item => {
+  item.addEventListener("mousemove", (e) => {
+    const rect = item.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = -(y - centerY) / 15;
+    const rotateY = (x - centerX) / 15;
+
+    item.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
+
+    item.style.setProperty("--x", `${x}px`);
+    item.style.setProperty("--y", `${y}px`);
+  });
+
+  item.addEventListener("mouseleave", () => {
+    item.style.transform = "rotateX(0) rotateY(0) scale(1)";
+  });
+});
+
+
+/*Work Section on Homepage */
+
+document.querySelectorAll('.work-card').forEach(card => {
+    const shine = card.querySelector('.shine');
+
+    card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        // Soft tilt
+        const rotateX = -(y - centerY) / 50; 
+        const rotateY = (x - centerX) / 50;  
+
+        card.style.transform = `
+            rotateX(${rotateX}deg)
+            rotateY(${rotateY}deg)
+            scale(1.02)
+        `;
+
+        // Cursor-following shine
+        if (shine) {
+            shine.style.background = `radial-gradient(
+                circle at ${x}px ${y}px,
+                rgba(255,255,255,0.15),
+                transparent 40%
+            )`;
+        }
     });
 
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = `rotateX(0deg) rotateY(0deg) scale(1.02)`;
+        if (shine) shine.style.background = 'transparent';
+    });
+});
 
 
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    const tab = location.hash.replace('#', '').trim();
+
+    if (!tab) return;
+
+    const radio = document.getElementById(tab);
+
+    if (radio) {
+        radio.checked = true;
+    } else {
+        console.warn("No radio found for:", tab);
+    }
+});
