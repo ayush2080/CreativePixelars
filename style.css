@@ -1820,6 +1820,16 @@ nav {
     border-radius: 8px;
 }
 
+.work-card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.work-card a:hover {
+    text-decoration: none;
+    color: #ffb703;
+}
+
 /* Increase height of second row cards */
 .work-bento .work-card:nth-child(3),
 .work-bento .work-card:nth-child(4),
