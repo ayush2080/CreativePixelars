@@ -1,3 +1,5 @@
+document.documentElement.setAttribute('data-theme', 'light');
+
 document.getElementById('menuToggle').addEventListener('click', function () {
   const navbarContent = document.getElementById('navbarContent');
   navbarContent.classList.toggle('show');

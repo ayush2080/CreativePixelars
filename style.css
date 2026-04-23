@@ -24,7 +24,6 @@ body.lock-scroll {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    /* Smooth transition for fade-in */
     margin: 0;
     padding: 0;
 }
@@ -1853,7 +1852,6 @@ nav {
 
 .lets-talk-button:hover {
     background-position: right center;
-    /* change the direction of the change here */
     text-decoration: none;
 }
 
