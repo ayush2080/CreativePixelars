@@ -1,4 +1,21 @@
-document.documentElement.setAttribute('data-theme', 'light');
+const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+}
+
+function detectSystemTheme() {
+  return mediaQuery.matches ? 'dark' : 'light';
+}
+
+// Initial load
+applyTheme(detectSystemTheme());
+
+// Listen for changes
+mediaQuery.addEventListener('change', (e) => {
+  applyTheme(e.matches ? 'dark' : 'light');
+});
+
 
 document.getElementById('menuToggle').addEventListener('click', function () {
   const navbarContent = document.getElementById('navbarContent');
