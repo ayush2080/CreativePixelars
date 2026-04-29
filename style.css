@@ -3,7 +3,10 @@
   --bg: #f5f5f5;
   --surface: #1e1e1e;
   --primary-overlay: rgba(0, 0, 0, 0.7);
-  --secondary-card: #1e1e1e;
+  --nav: #fff;
+  --nav-link: #1e1e1e;
+  --footer-nav-link: rgba(245, 245, 245, 0.5);
+  --secondary-card: #1d1d1d;
   --secondary-card-text: #f5f5f5;
   --secondary-card-icon: #f5f5f5;
   --text: #1e1e1e;
@@ -16,6 +19,14 @@
   --get-started-btn: linear-gradient(to right, #FB8500, #FFB703);
   --border: #e0e0e0;
   --work-bento-border: 2px solid rgba(255, 255, 255, 0.7);
+  --reason-circle: #f5f5f5;
+  --reason-no: #fb8500;
+  --reason-border: 2px solid white;
+  --reason-box-shadow: 0 0 10px 0 rgba(30, 30, 30, 0.6);
+  --reason-text: #f5f5f5;
+  .cta-section {
+    box-shadow: 0 15px 50px rgba(253, 80, 0, 0.3);
+  }
   .logo img {
   content: url("images/CP\ Logo\ white-01.png");
 }
@@ -23,9 +34,12 @@
 
 html[data-theme="dark"] {
   /* DARK THEME */
-  --bg: #1e1e1e;
-  --surface: #121212;
-  --primary-overlay: rgba(0, 0, 0, 0.82);
+  --bg: #121212;
+  --surface: #1e1e1e;
+  --primary-overlay: rgba(0, 0, 0, 0.7);
+  --nav: #1e1e1e;
+  --nav-link: #f5f5f5;
+  --footer-nav-link: rgba(245, 245, 245, 0.5);
   --text: #f5f1ea;
   --text-muted: #b8b2a7;
   --h1: #eaeaea;
@@ -39,9 +53,21 @@ html[data-theme="dark"] {
   --get-started-btn: linear-gradient(to right, #f97300, #ffb703);
   --border: rgba(255, 255, 255, 0.3);
   --work-bento-border: 1px solid rgba(255, 255, 255, 0.05);
+  --reason-circle: #f5f5f5;
+  --reason-no: #fb8500;
+  --reason-border: 2px solid white;
+  --reason-box-shadow: 0 0 10px 0 rgba(30, 30, 30, 0.6);
+  --reason-text: #f5f5f5;
+  --home-page-bar: #f5f5f5;
+  .cta-section {
+    box-shadow: 0 15px 50px rgba(253, 80, 0, 0.3);
+    border: 1px solid rgb(251, 133, 0, 0.6);
+  }
   .logo img {
-  content: url("images/CP\ Logo\ white-01.png");
-}
+  content: url("images/CP\ Logo\ white-01.png");}
+  .home-header.sticky .logo img {
+  filter: brightness(0) invert(1);
+} 
 }
 
 body {
@@ -146,7 +172,7 @@ body.lock-scroll {
 }
 
 .home-header.sticky {
-    background-color: #fff;
+    background-color: var(--nav);
     box-shadow: 4px 0 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -586,8 +612,6 @@ nav {
     max-height: 100%;
     height: auto;
     width: auto;
-    border: 2px solid var(--border);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
     border-radius: 15px;
 }
 
@@ -785,7 +809,7 @@ nav {
     z-index: 2;
     top: 1rem;
     border-radius: 50%;
-    background-color: #303030;
+    background-color: var(--reason-circle);
     margin: 0 4rem 0 4rem;
 }
 
@@ -796,7 +820,7 @@ nav {
     z-index: 2;
     top: 1rem;
     border-radius: 50%;
-    background-color: #303030;
+    background-color: var(--reason-circle);
     margin: 0 4rem 0 4rem;
 }
 
@@ -830,7 +854,7 @@ nav {
     width: 63px;
     height: 64px;
     margin: 0.3rem 0 0 2.7rem;
-    fill: #fb8500;
+    fill: var(--reason-no);
 }
 
 .reason-icon:hover {
@@ -2993,7 +3017,7 @@ input[type="radio"] {
     padding: 120px 20px;
     display: flex;
     justify-content: center;
-    background-color: #1e1e1e;
+    background-color: var(--surface);
     border-radius: 25px;
     box-shadow: 0 15px 50px rgba(253, 80, 0, 0.3);
     box-sizing: border-box;
@@ -4198,7 +4222,7 @@ select:focus {
     header.sticky .home-page-bar {
         width: 28px;
         height: 4px;
-        background-color: #1e1e1e;
+        background-color: var(--home-page-bar);
         margin: 2px 0;
         border-radius: 3px;
     }
@@ -4484,7 +4508,7 @@ select:focus {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #f5f5f5;
+        background-color: var(--bg);
     }
 
     .about-image-container {
@@ -4583,7 +4607,7 @@ select:focus {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #f5f5f5;
+        background-color: var(--bg);
 
     }
 
@@ -4638,7 +4662,7 @@ select:focus {
         font-weight: 400;
         font-size: 13px;
         line-height: 1.3rem;
-        color: #717171;
+        color: var(--text-muted);
     }
 
     .why-choose-us-description br {
@@ -4864,14 +4888,12 @@ select:focus {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* Center the video horizontally */
         align-items: center;
-        /* Center the video vertically */
+        width: 100%;
+        height: 600px;
         max-width: 100%;
-        /* Ensure the container does not exceed the viewport width */
         overflow: hidden;
         box-sizing: border-box;
-        /* Hide any overflow content */
     }
 
     .showreel-video {
@@ -4886,7 +4908,7 @@ select:focus {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        background-color: #f5f5f5;
+        background-color: var(--bg);
     }
 
     .services-content {
@@ -5007,7 +5029,7 @@ select:focus {
         display: flex;
         width: 300px;
         height: 250px;
-        background-color: #1e1e1e;
+        background-color: var(--secondary-card);
         border-radius: 15px;
     }
 
@@ -5015,7 +5037,7 @@ select:focus {
         display: flex;
         width: 300px;
         height: 250px;
-        background-color: #1e1e1e;
+        background-color: var(--secondary-card);
         border-radius: 15px;
         margin-top: 1rem;
     }
@@ -5024,7 +5046,7 @@ select:focus {
         display: flex;
         width: 300px;
         height: 250px;
-        background-color: #1e1e1e;
+        background-color: var(--secondary-card);
         border-radius: 15px;
         margin-top: 1rem;
     }
@@ -5033,7 +5055,7 @@ select:focus {
         display: flex;
         width: 300px;
         height: 250px;
-        background-color: #1e1e1e;
+        background-color: var(--secondary-card);
         border-radius: 15px;
         margin-top: 1rem;
 
@@ -5184,7 +5206,7 @@ select:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #1e1e1e;
+        background-color: var(--surface);
     }
 
     .footer-main {
@@ -5467,7 +5489,7 @@ select:focus {
     .footer-navlinks {
         text-decoration: none;
         cursor: pointer;
-        color: var(--text-muted);
+        color: var(--footer-nav-link);
         transition: transform 0.2s ease;
     }
 
@@ -7470,7 +7492,7 @@ select:focus {
     header.sticky .home-page-bar {
         width: 28px;
         height: 4px;
-        background-color: #1e1e1e;
+        background-color: var(--home-page-bar);
         margin: 2px 0;
         border-radius: 3px;
     }
@@ -8710,7 +8732,7 @@ select:focus {
     .footer-navlinks {
         text-decoration: none;
         cursor: pointer;
-        color: var(--text-muted);
+        color: var(--footer-nav-link);
         transition: transform 0.2s ease;
     }
 
@@ -11788,7 +11810,7 @@ select:focus {
     .footer-navlinks {
         text-decoration: none;
         cursor: pointer;
-        color: var(--text-muted);
+        color: var(--footer-nav-link);
         transition: transform 0.2s ease;
     }
 
@@ -11861,7 +11883,7 @@ select:focus {
     .footer-navlinks {
         text-decoration: none;
         cursor: pointer;
-        color: var(--text-muted);
+        color: var(--footer-nav-link);
         transition: transform 0.2s ease;
     }
 
@@ -15245,7 +15267,7 @@ select:focus {
     .footer-navlinks {
         text-decoration: none;
         cursor: pointer;
-        color: var(--text-muted);
+        color: var(--footer-nav-link);
         transition: transform 0.2s ease;
     }
 
@@ -18595,7 +18617,7 @@ select:focus {
     .footer-navlinks {
         text-decoration: none;
         cursor: pointer;
-        color: var(--text-muted);
+        color: var(--footer-nav-link);
         transition: transform 0.2s ease;
     }
 
@@ -20501,7 +20523,7 @@ select:focus {
     }
 
     .home-header.sticky {
-        background-color: #fff;
+        background-color: var(--nav);
         box-shadow: 4px 0 5px rgba(0, 0, 0, 0.3);
     }
 
@@ -20599,7 +20621,7 @@ select:focus {
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         font-weight: 500;
-        color: #1e1e1e;
+        color: var(--nav-link);
         text-decoration: none;
         transition: background-color 0.3s;
     }
@@ -21156,7 +21178,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #f5f5f5;
+        background-color: var(--reason-circle);
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.6) inset;
         margin: 0 1rem 0 1rem;
     }
@@ -21168,7 +21190,7 @@ select:focus {
         z-index: 2;
         top: 1rem;
         border-radius: 50%;
-        background-color: #f5f5f5;
+        background-color: var(--reason-circle);
         margin: 0 1rem 0 1rem;
     }
 
@@ -21180,9 +21202,9 @@ select:focus {
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background-color: #FB8500;
-        border: 2px solid white;
-        box-shadow: 0 0 10px 0 rgba(30, 30, 30, 0.6);
+        background-color: var(--reason-no);
+        border: var(--reason-border);
+        box-shadow: var(--reason-box-shadow);
 
     }
 
@@ -21191,7 +21213,7 @@ select:focus {
         font-family: "Montserrat";
         font-weight: 500;
         font-size: 14px;
-        color: #F5F7F5;
+        color: var(--reason-text);
         margin-top: 4px;
         justify-content: center;
         text-align: center;
@@ -21203,7 +21225,7 @@ select:focus {
         width: 51px;
         height: 52px;
         margin: 0.5rem 0 0 2.3rem;
-        fill: #fb8500;
+        fill: var(--reason-no);
     }
 
     .reason-icon:hover {
@@ -21241,7 +21263,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        color: #f5f5f5;
+        color: var(--reason-text);
 
     }
 
@@ -21252,7 +21274,7 @@ select:focus {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        color: #f5f5f5;
+        color: var(--reason-text);
 
     }
 
@@ -21805,7 +21827,7 @@ select:focus {
     .footer-navlinks {
         text-decoration: none;
         cursor: pointer;
-        color: var(--text-muted);
+        color: var(--footer-nav-link);
         transition: transform 0.2s ease;
     }
 
@@ -25277,7 +25299,7 @@ select:focus {
     .footer-navlinks {
         text-decoration: none;
         cursor: pointer;
-        color: var(--text-muted);
+        color: var(--footer-nav-link);
         transition: transform 0.2s ease;
     }
 
