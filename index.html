@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <html data-theme="light dark">
+    <html data-theme="light">
     <meta charset="UTF-8" />
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
@@ -28,6 +28,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="aos-master/dist/aos.css">
     <link rel="stylesheet" href="style.css">
+    <script>
+        const prefersDark=window.matchMedia('(prefers-color-scheme:dark)').matches;
+        document.documentElement.setAttribute('data-theme', prefersDark?'dark':'light');
+    </script>
 </head>
 
 <body>
