@@ -12,9 +12,18 @@ function detectSystemTheme() {
 applyTheme(detectSystemTheme());
 
 // Listen for changes
-mediaQuery.addEventListener('change', (e) => {
-  applyTheme(e.matches ? 'dark' : 'light');
+
+if(mediaQuery.addEventListener) {
+  mediaQuery.addEventListener('change', (e)=> {
+  applyTheme(e.matches?'dark':'light');
 });
+} else {
+
+  //Fallback for Samsung Internet
+  mediaQuery.addListener((e)=>{
+    applyTheme(e.matches?'dark':'light');
+  });
+}
 
 
 document.getElementById('menuToggle').addEventListener('click', function () {
