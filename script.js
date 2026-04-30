@@ -8,23 +8,21 @@ function detectSystemTheme() {
   return mediaQuery.matches ? 'dark' : 'light';
 }
 
-// Initial load
-applyTheme(detectSystemTheme());
-
-// Listen for changes
-
-if(mediaQuery.addEventListener) {
-  mediaQuery.addEventListener('change', (e)=> {
-  applyTheme(e.matches?'dark':'light');
+// Initial load (safe)
+window.addEventListener('DOMContentLoaded', () => {
+  applyTheme(detectSystemTheme());
 });
-} else {
 
-  //Fallback for Samsung Internet
-  mediaQuery.addListener((e)=>{
-    applyTheme(e.matches?'dark':'light');
+// Listener (cross-browser)
+if (mediaQuery.addEventListener) {
+  mediaQuery.addEventListener('change', (e) => {
+    applyTheme(e.matches ? 'dark' : 'light');
+  });
+} else {
+  mediaQuery.addListener((e) => {
+    applyTheme(e.matches ? 'dark' : 'light');
   });
 }
-
 
 document.getElementById('menuToggle').addEventListener('click', function () {
   const navbarContent = document.getElementById('navbarContent');
