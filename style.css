@@ -86,9 +86,7 @@
     }
 
 }
-html {
-  color-scheme: light dark;
-}
+
 html[data-theme="dark"] {
     /* DARK THEME */
     --bg: #121212;
@@ -5200,6 +5198,17 @@ select:focus {
         line-height: 1.2rem;
     }
 
+    .service-section-title h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: var(--reason-text);
+    }
+
+    .service-section-title p {
+        color: var(--service-section-title-p);
+        font-size: 13px;
+    }
+    
     .counters {
         width: 50%;
         gap: 30px;
@@ -7807,6 +7816,17 @@ select:focus {
 
     .service-card p {
         text-align: center;
+    }
+    
+    .service-section-title h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: var(--reason-text);
+    }
+
+    .service-section-title p {
+        color: var(--service-section-title-p);
+        font-size: 13px;
     }
 
     .counters {
