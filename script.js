@@ -12,18 +12,9 @@ function detectSystemTheme() {
 applyTheme(detectSystemTheme());
 
 // Listen for changes
-
-if(mediaQuery.addEventListener) {
-  mediaQuery.addEventListener('change', (e)=> {
-  applyTheme(e.matches?'dark':'light');
+mediaQuery.addEventListener('change', (e) => {
+  applyTheme(e.matches ? 'dark' : 'light');
 });
-} else {
-
-  //Fallback for Samsung Internet
-  mediaQuery.addListener((e)=>{
-    applyTheme(e.matches?'dark':'light');
-  });
-}
 
 
 document.getElementById('menuToggle').addEventListener('click', function () {
@@ -108,7 +99,9 @@ function openWork() {
 function openQuoteForm() {
   window.open("Quote.html", "_blank");
 }
-
+function openWorkpage() {
+  window.open("Work.html", "#web");
+}
 
 // JavaScript to type the text
 const text = "Your Brand, Our Canvas";
@@ -387,49 +380,6 @@ workItems.forEach(item => {
     item.style.transform = "rotateX(0) rotateY(0) scale(1)";
   });
 });
-
-
-/*Work Section on Homepage */
-
-document.querySelectorAll('.work-card').forEach(card => {
-    const shine = card.querySelector('.shine');
-
-    card.addEventListener('mousemove', e => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-
-        // Soft tilt
-        const rotateX = -(y - centerY) / 50; 
-        const rotateY = (x - centerX) / 50;  
-
-        card.style.transform = `
-            rotateX(${rotateX}deg)
-            rotateY(${rotateY}deg)
-            scale(1.02)
-        `;
-
-        // Cursor-following shine
-        if (shine) {
-            shine.style.background = `radial-gradient(
-                circle at ${x}px ${y}px,
-                rgba(255,255,255,0.15),
-                transparent 40%
-            )`;
-        }
-    });
-
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = `rotateX(0deg) rotateY(0deg) scale(1.02)`;
-        if (shine) shine.style.background = 'transparent';
-    });
-});
-
-
-
 
 
 window.addEventListener('DOMContentLoaded', () => {
