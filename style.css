@@ -86,7 +86,9 @@
     }
 
 }
-
+html {
+  color-scheme: light dark;
+}
 html[data-theme="dark"] {
     /* DARK THEME */
     --bg: #121212;
