@@ -52,7 +52,8 @@
     --contact-page-overlay: rgba(30, 30, 30, 0.8);
     --contact-page-icon-border: rgba(30, 30, 30, 0.1);
     --contact-page-icon-hover: #f5f5f5;
-    --contact-form-input-focus: #007bff;
+    --contact-form-input: #2c2c2c30;
+    --contact-form-input-focus: #ffb703;
     --contact-form-submit-btn: rgba(0, 0, 0, 0.2);
     --quote-form-bg: #fff;
     --quote-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -141,6 +142,7 @@ html[data-theme="dark"] {
     --contact-page-overlay: rgba(30, 30, 30, 0.8);
     --contact-page-icon-border: rgba(245, 245, 245, 0.4);
     --contact-page-icon-hover: #1e1e1e;
+    --contact-form-input: #f5f7f580;
     --contact-form-input-focus: #ffb703;
     --contact-form-submit-btn: rgba(0, 0, 0, 0.2);
     --quote-form-bg: #1e1e1e;
@@ -233,16 +235,32 @@ html {
 .loader {
     width: 40px;
     height: 40px;
-    --c:no-repeat linear-gradient(#ffb703 0 0);
-    background: var(--c),var(--c),var(--c),var(--c);
+    --c: no-repeat linear-gradient(#ffb703 0 0);
+    background: var(--c), var(--c), var(--c), var(--c);
     background-size: 21px 21px;
-    animation: l5 1.5s infinite cubic-bezier(0.3,1,0,1);
+    animation: l5 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
 }
+
 @keyframes l5 {
-   0%   {background-position: 0    0,100% 0   ,100% 100%,0 100%}
-   33%  {background-position: 0    0,100% 0   ,100% 100%,0 100%;width:60px;height: 60px}
-   66%  {background-position: 100% 0,100% 100%,0    100%,0 0   ;width:60px;height: 60px}
-   100% {background-position: 100% 0,100% 100%,0    100%,0 0   }
+    0% {
+        background-position: 0 0, 100% 0, 100% 100%, 0 100%
+    }
+
+    33% {
+        background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+        width: 60px;
+        height: 60px
+    }
+
+    66% {
+        background-position: 100% 0, 100% 100%, 0 100%, 0 0;
+        width: 60px;
+        height: 60px
+    }
+
+    100% {
+        background-position: 100% 0, 100% 100%, 0 100%, 0 0
+    }
 }
 
 .home-header {
@@ -2911,6 +2929,7 @@ input[type="radio"] {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    transition: all 0.3s ease;
 }
 
 .contact-us-socials-icons a {
@@ -2919,22 +2938,21 @@ input[type="radio"] {
     justify-content: center;
 }
 
-.contact-us-socials-icons:hover {
-    background-color: var(--primary-hover);
-    cursor: pointer;
-    border: none;
-    width: 43px;
-    height: 43px;
-}
-
 .contact-us-socials-icons svg {
     width: 19px;
     height: 19px;
     fill: var(--about-page-text);
-    transition: fill 0.3s ease transform 0.3s ease;
+    transition: fill 0.3s ease;
 }
 
-.contact-us-socials-icons svg:hover {
+.contact-us-socials-icons:hover {
+    background-color: var(--primary-hover);
+    cursor: pointer;
+    border-color: transparent;
+    transform: scale(1.08);
+}
+
+.contact-us-socials-icons:hover svg {
     fill: var(--contact-page-icon-hover);
     transform: scale(1.2);
 }
@@ -3036,7 +3054,7 @@ input {
     font-weight: 500;
     color: var(--about-page-text);
     border: none;
-    border-bottom: 1.8px solid var(--footer-text);
+    border-bottom: 1.8px solid var(--contact-form-input);
     outline: none;
     background-color: transparent;
     transition: border-color 0.3s ease;
@@ -4042,10 +4060,13 @@ select:focus {
         transition: 0.4s ease;
     }
 
-    .services-bg1:hover, .services-bg2:hover, .services-bg3:hover, .services-bg4:hover {
+    .services-bg1:hover,
+    .services-bg2:hover,
+    .services-bg3:hover,
+    .services-bg4:hover {
         border-color: var(--primary-hover);
         box-shadow: 0 0 20px rgba(251, 133, 0, 0.35),
-                    0 0 50px rgba(255, 183, 3, 0.15);
+            0 0 50px rgba(255, 183, 3, 0.15);
     }
 
     .services-bg-1 {
@@ -4137,7 +4158,7 @@ select:focus {
     }
 
     .services-icon svg:hover {
-        fill:var(--primarybtn);
+        fill: var(--primarybtn);
         transform: scale(1.1);
     }
 
@@ -5237,14 +5258,7 @@ select:focus {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-    }
-
-    .contact-us-socials-icons:hover {
-        background-color: var(--primary-hover);
-        cursor: pointer;
-        border: none;
-        width: 43px;
-        height: 43px;
+        transition: all 0.3s ease;
     }
 
     .contact-us-socials-icons svg {
@@ -5254,8 +5268,16 @@ select:focus {
         transition: fill 0.3s ease;
     }
 
-    .contact-us-socials-icons svg:hover {
-        fill: var(--reason-text);
+    .contact-us-socials-icons:hover {
+        background-color: var(--primary-hover);
+        cursor: pointer;
+        border-color: transparent;
+        transform: scale(1.08);
+    }
+
+    .contact-us-socials-icons:hover svg {
+        fill: var(--contact-page-icon-hover);
+        transform: scale(1.2);
     }
 
     .contact-form-main {
@@ -5364,7 +5386,7 @@ select:focus {
         font-weight: 500;
         color: var(--about-page-text);
         border: none;
-        border-bottom: 1.8px solid var(--footer-text);
+        border-bottom: 1.8px solid var(--contact-form-input);
         outline: none;
         background-color: transparent;
         transition: border-color 0.3s ease;
@@ -6549,10 +6571,13 @@ select:focus {
         transition: 0.4s ease;
     }
 
-    .services-bg1:hover, .services-bg2:hover, .services-bg3:hover, .services-bg4:hover {
+    .services-bg1:hover,
+    .services-bg2:hover,
+    .services-bg3:hover,
+    .services-bg4:hover {
         border-color: var(--primary-hover);
         box-shadow: 0 0 20px rgba(251, 133, 0, 0.35),
-                    0 0 50px rgba(255, 183, 3, 0.15);
+            0 0 50px rgba(255, 183, 3, 0.15);
     }
 
     .services-bg-1 {
@@ -6644,7 +6669,7 @@ select:focus {
     }
 
     .services-icon svg:hover {
-        fill:var(--primarybtn);
+        fill: var(--primarybtn);
         transform: scale(1.1);
     }
 
@@ -7703,14 +7728,7 @@ select:focus {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-    }
-
-    .contact-us-socials-icons:hover {
-        background-color: var(--primary-hover);
-        cursor: pointer;
-        border: none;
-        width: 43px;
-        height: 43px;
+        transition: all 0.3s ease;
     }
 
     .contact-us-socials-icons svg {
@@ -7720,8 +7738,16 @@ select:focus {
         transition: fill 0.3s ease;
     }
 
-    .contact-us-socials-icons svg:hover {
+    .contact-us-socials-icons:hover {
+        background-color: var(--primary-hover);
+        cursor: pointer;
+        border-color: transparent;
+        transform: scale(1.08);
+    }
+
+    .contact-us-socials-icons:hover svg {
         fill: var(--contact-page-icon-hover);
+        transform: scale(1.2);
     }
 
     .contact-form-main {
@@ -7830,7 +7856,7 @@ select:focus {
         font-weight: 500;
         color: var(--about-page-text);
         border: none;
-        border-bottom: 1.8px solid var(--footer-text);
+        border-bottom: 1.8px solid var(--contact-form-input);
         outline: none;
         background-color: transparent;
         transition: border-color 0.3s ease;
@@ -8902,13 +8928,14 @@ select:focus {
         height: 35px;
         margin: 0;
     }
+
     .services-icon svg {
         fill: var(--reason-text);
         transition: transform 0.3s ease, fill 0.3s ease;
     }
 
     .services-icon svg:hover {
-        fill:var(--primarybtn);
+        fill: var(--primarybtn);
         transform: scale(1.1);
     }
 
@@ -10159,14 +10186,7 @@ select:focus {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-    }
-
-    .contact-us-socials-icons:hover {
-        background-color: var(--primary-hover);
-        cursor: pointer;
-        border: none;
-        width: 43px;
-        height: 43px;
+        transition: all 0.3s ease;
     }
 
     .contact-us-socials-icons svg {
@@ -10176,8 +10196,16 @@ select:focus {
         transition: fill 0.3s ease;
     }
 
-    .contact-us-socials-icons svg:hover {
+    .contact-us-socials-icons:hover {
+        background-color: var(--primary-hover);
+        cursor: pointer;
+        border-color: transparent;
+        transform: scale(1.08);
+    }
+
+    .contact-us-socials-icons:hover svg {
         fill: var(--contact-page-icon-hover);
+        transform: scale(1.2);
     }
 
     .contact-form-main {
@@ -10276,7 +10304,7 @@ select:focus {
         font-size: 14px;
         font-weight: 500;
         border: none;
-        border-bottom: 1.8px solid var(--footer-text);
+        border-bottom: 1.8px solid var(--contact-form-input);
         outline: none;
         background-color: transparent;
         transition: border-color 0.3s ease;
@@ -11221,13 +11249,14 @@ select:focus {
         height: 40px;
         margin: 0;
     }
+
     .services-icon svg {
         fill: var(--reason-text);
         transition: transform 0.3s ease, fill 0.3s ease;
     }
 
     .services-icon svg:hover {
-        fill:var(--primarybtn);
+        fill: var(--primarybtn);
         transform: scale(1.1);
     }
 
@@ -12372,14 +12401,7 @@ select:focus {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-    }
-
-    .contact-us-socials-icons:hover {
-        background-color: var(--primary-hover);
-        cursor: pointer;
-        border: none;
-        width: 43px;
-        height: 43px;
+        transition: all 0.3s ease;
     }
 
     .contact-us-socials-icons svg {
@@ -12389,8 +12411,16 @@ select:focus {
         transition: fill 0.3s ease;
     }
 
-    .contact-us-socials-icons svg:hover {
+    .contact-us-socials-icons:hover {
+        background-color: var(--primary-hover);
+        cursor: pointer;
+        border-color: transparent;
+        transform: scale(1.08);
+    }
+
+    .contact-us-socials-icons:hover svg {
         fill: var(--contact-page-icon-hover);
+        transform: scale(1.2);
     }
 
     .contact-form-main {
@@ -12489,7 +12519,7 @@ select:focus {
         font-size: 14px;
         font-weight: 500;
         border: none;
-        border-bottom: 1.8px solid var(--footer-text);
+        border-bottom: 1.8px solid var(--contact-form-input);
         outline: none;
         background-color: transparent;
         transition: border-color 0.3s ease;
@@ -13484,13 +13514,14 @@ select:focus {
         height: 40px;
         margin: 0;
     }
+
     .services-icon svg {
         fill: var(--reason-text);
         transition: transform 0.3s ease, fill 0.3s ease;
     }
 
     .services-icon svg:hover {
-        fill:var(--primarybtn);
+        fill: var(--primarybtn);
         transform: scale(1.1);
     }
 
@@ -14705,14 +14736,7 @@ select:focus {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-    }
-
-    .contact-us-socials-icons:hover {
-        background-color: var(--primary-hover);
-        cursor: pointer;
-        border: none;
-        width: 43px;
-        height: 43px;
+        transition: all 0.3s ease;
     }
 
     .contact-us-socials-icons svg {
@@ -14722,8 +14746,16 @@ select:focus {
         transition: fill 0.3s ease;
     }
 
-    .contact-us-socials-icons svg:hover {
+    .contact-us-socials-icons:hover {
+        background-color: var(--primary-hover);
+        cursor: pointer;
+        border-color: transparent;
+        transform: scale(1.08);
+    }
+
+    .contact-us-socials-icons:hover svg {
         fill: var(--contact-page-icon-hover);
+        transform: scale(1.2);
     }
 
     .contact-form-main {
@@ -14822,7 +14854,7 @@ select:focus {
         font-size: 14px;
         font-weight: 500;
         border: none;
-        border-bottom: 1.8px solid var(--footer-text);
+        border-bottom: 1.8px solid var(--contact-form-input);
         outline: none;
         background-color: transparent;
         transition: border-color 0.3s ease;
@@ -15855,13 +15887,14 @@ select:focus {
         height: 40px;
         margin: 0;
     }
+
     .services-icon svg {
         fill: var(--reason-text);
         transition: transform 0.3s ease, fill 0.3s ease;
     }
 
     .services-icon svg:hover {
-        fill:var(--primarybtn);
+        fill: var(--primarybtn);
         transform: scale(1.1);
     }
 
@@ -16980,14 +17013,7 @@ select:focus {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-    }
-
-    .contact-us-socials-icons:hover {
-        background-color: var(--primary-hover);
-        cursor: pointer;
-        border: none;
-        width: 43px;
-        height: 43px;
+        transition: all 0.3s ease;
     }
 
     .contact-us-socials-icons svg {
@@ -16997,8 +17023,16 @@ select:focus {
         transition: fill 0.3s ease;
     }
 
-    .contact-us-socials-icons svg:hover {
+    .contact-us-socials-icons:hover {
+        background-color: var(--primary-hover);
+        cursor: pointer;
+        border-color: transparent;
+        transform: scale(1.08);
+    }
+
+    .contact-us-socials-icons:hover svg {
         fill: var(--contact-page-icon-hover);
+        transform: scale(1.2);
     }
 
     .contact-form-main {
@@ -17097,7 +17131,7 @@ select:focus {
         font-size: 14px;
         font-weight: 500;
         border: none;
-        border-bottom: 1.8px solid var(--footer-text);
+        border-bottom: 1.8px solid var(--contact-form-input);
         outline: none;
         background-color: transparent;
         transition: border-color 0.3s ease;
@@ -18107,13 +18141,14 @@ select:focus {
         height: 40px;
         margin: 0;
     }
+
     .services-icon svg {
         fill: var(--reason-text);
         transition: transform 0.3s ease, fill 0.3s ease;
     }
 
     .services-icon svg:hover {
-        fill:var(--primarybtn);
+        fill: var(--primarybtn);
         transform: scale(1.1);
     }
 
@@ -19158,14 +19193,7 @@ select:focus {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-    }
-
-    .contact-us-socials-icons:hover {
-        background-color: var(--primary-hover);
-        cursor: pointer;
-        border: none;
-        width: 43px;
-        height: 43px;
+        transition: all 0.3s ease;
     }
 
     .contact-us-socials-icons svg {
@@ -19175,8 +19203,16 @@ select:focus {
         transition: fill 0.3s ease;
     }
 
-    .contact-us-socials-icons svg:hover {
+    .contact-us-socials-icons:hover {
+        background-color: var(--primary-hover);
+        cursor: pointer;
+        border-color: transparent;
+        transform: scale(1.08);
+    }
+
+    .contact-us-socials-icons:hover svg {
         fill: var(--contact-page-icon-hover);
+        transform: scale(1.2);
     }
 
     .contact-form-main {
@@ -19275,7 +19311,7 @@ select:focus {
         font-size: 14px;
         font-weight: 500;
         border: none;
-        border-bottom: 1.8px solid var(--footer-text);
+        border-bottom: 1.8px solid var(--contact-form-input);
         outline: none;
         background-color: transparent;
         transition: border-color 0.3s ease;
