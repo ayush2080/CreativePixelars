@@ -220,7 +220,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #101010;
+    background: #1e1e1e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,36 +231,18 @@ html {
 }
 
 .loader {
-    display: flex;
-    gap: 10px;
+    width: 40px;
+    height: 40px;
+    --c:no-repeat linear-gradient(#ffb703 0 0);
+    background: var(--c),var(--c),var(--c),var(--c);
+    background-size: 21px 21px;
+    animation: l5 1.5s infinite cubic-bezier(0.3,1,0,1);
 }
-
-.loader:before,
-.loader:after {
-    content: "";
-    height: 20px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background:
-        linear-gradient(#222 0 0) top/100% 40% no-repeat,
-        radial-gradient(farthest-side, #000 95%, #0000) 50%/8px 8px no-repeat #fff;
-    animation: l7 1.5s infinite alternate ease-in;
-}
-
-@keyframes l7 {
-
-    0%,
-    70% {
-        background-size: 100% 40%, 8px 8px;
-    }
-
-    85% {
-        background-size: 100% 120%, 8px 8px;
-    }
-
-    100% {
-        background-size: 100% 40%, 8px 8px;
-    }
+@keyframes l5 {
+   0%   {background-position: 0    0,100% 0   ,100% 100%,0 100%}
+   33%  {background-position: 0    0,100% 0   ,100% 100%,0 100%;width:60px;height: 60px}
+   66%  {background-position: 100% 0,100% 100%,0    100%,0 0   ;width:60px;height: 60px}
+   100% {background-position: 100% 0,100% 100%,0    100%,0 0   }
 }
 
 .home-header {
@@ -460,7 +442,6 @@ nav {
     top: 0;
     right: -20px;
     transition: 0.5s;
-
 }
 
 .lets-talk-button:hover span {
@@ -476,7 +457,6 @@ nav {
     background-position: right center;
     text-decoration: none;
 }
-
 
 .hero-section {
     position: relative;
@@ -530,7 +510,6 @@ nav {
     height: 100vh;
     background-color: var(--primary-overlay);
     z-index: 2;
-
 }
 
 .hero-content {
@@ -638,7 +617,6 @@ nav {
     transform: translateX(5px);
 }
 
-
 .hero-button-animated {
     animation: moveInBottom 5s ease-out;
     animation-fill-mode: backwards;
@@ -663,7 +641,6 @@ nav {
     align-items: center;
     width: 500px;
     height: 500px;
-
 }
 
 .about {
@@ -998,7 +975,6 @@ nav {
     font-weight: 300;
     font-size: 16px;
     color: var(--about-page-p);
-
 }
 
 .services-button {
@@ -1162,7 +1138,6 @@ nav {
     background-color: var(--secondary-card);
     border-radius: 30px;
     margin-bottom: 50px;
-
 }
 
 .services-bg4 {
@@ -1171,7 +1146,6 @@ nav {
     height: 250px;
     background-color: var(--secondary-card);
     border-radius: 30px;
-
 }
 
 .services-container-content {
@@ -1515,7 +1489,6 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .footer-left-content {
@@ -1524,7 +1497,6 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     margin-left: 60px;
-
 }
 
 .footer-logo {
@@ -1557,7 +1529,6 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     margin-right: 30px;
-
 }
 
 .contact-info {
@@ -1566,7 +1537,6 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .contact-info-heading {
@@ -1590,7 +1560,6 @@ nav {
     font-weight: 300;
     font-size: 14px;
     color: var(--footer-text);
-
 }
 
 .visit-us-main {
@@ -1599,7 +1568,6 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     margin-right: 30px;
-
 }
 
 .visit-us {
@@ -1608,7 +1576,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100px;
-
 }
 
 .visit-us-heading {
@@ -1640,8 +1607,6 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
-
-
 }
 
 .on-socials {
@@ -1657,7 +1622,6 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 .on-socials-heading {
@@ -1741,7 +1705,6 @@ hr {
     transform: translateY(-2px);
 }
 
-
 /*About Us Page*/
 
 .about-header {
@@ -1766,7 +1729,6 @@ hr {
     height: 650px;
     display: flex;
     flex-direction: column;
-
 }
 
 .about-us-page-heading-bg {
@@ -1777,7 +1739,6 @@ hr {
     align-items: center;
     justify-content: center;
     background-color: var(--about-us-page-heading-bg);
-
 }
 
 .about-us-page-heading-bg h1 {
@@ -1785,7 +1746,6 @@ hr {
     font-size: 30px;
     font-weight: 700;
     color: var(--about-page-text);
-
 }
 
 .about-us-page-heading-bg svg {
@@ -1800,7 +1760,6 @@ hr {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .about-us-page-left-content {
@@ -1833,7 +1792,6 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-
 }
 
 .about-us-page-right-content p {
@@ -1877,7 +1835,6 @@ hr {
     font-size: 20px;
     font-weight: 600;
     color: var(--about-page-text);
-
 }
 
 .approach-content-main-container {
@@ -1895,7 +1852,6 @@ hr {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-
 }
 
 .approach-content-icon-container {
@@ -1903,7 +1859,6 @@ hr {
     height: 43px;
     display: flex;
     align-items: flex-start;
-
 }
 
 .approach-content-icon-container img {
@@ -1994,7 +1949,6 @@ hr {
     font-weight: 400;
     color: var(--about-page-text);
     line-height: 1.1rem;
-
 }
 
 .what-we-do-img-container {
@@ -2019,7 +1973,6 @@ hr {
     width: 100%;
     display: flex;
     flex-direction: column;
-
 }
 
 .what-we-do-services-container {
@@ -2080,7 +2033,6 @@ hr {
 
 .what-we-do-service-description p {
     width: 60%;
-
 }
 
 .what-we-do-service-icon {
@@ -2103,8 +2055,6 @@ hr {
     transform: translateX(6px);
 }
 
-
-
 /*Our Services*/
 
 .Our-services-hero-section {
@@ -2112,7 +2062,6 @@ hr {
     height: 325px;
     display: flex;
     flex-direction: column;
-
 }
 
 .Our-services-page-heading-bg {
@@ -2123,7 +2072,6 @@ hr {
     align-items: center;
     justify-content: center;
     background-color: var(--about-us-page-heading-bg);
-
 }
 
 .Our-services-page-heading-bg h1 {
@@ -2131,7 +2079,6 @@ hr {
     font-size: 30px;
     font-weight: 700;
     color: var(--about-page-text);
-
 }
 
 .Our-services-page-heading-bg svg {
@@ -2161,7 +2108,7 @@ hr {
     color: var(--service-section-title-p);
 }
 
-/* ================= TABS ================= */
+/* TABS */
 .tabs {
     display: flex;
     justify-content: center;
@@ -2180,12 +2127,10 @@ hr {
     border-radius: 30px;
     transition: 0.3s;
     font-size: 14px;
-
 }
 
 .tab-btn:hover {
     background: var(--primarybtn);
-
 }
 
 .tab-btn.active {
@@ -2326,7 +2271,6 @@ input[type="radio"] {
     height: 0;
 }
 
-
 /* FILTER TABS */
 
 .tab-labels {
@@ -2359,7 +2303,6 @@ input[type="radio"] {
 #graphic:checked~.tab-labels label[for="graphic"],
 #motion:checked~.tab-labels label[for="motion"],
 #video:checked~.tab-labels label[for="video"],
-
 #web:checked~.tab-labels label[for="web"],
 #uiux:checked~.tab-labels label[for="uiux"] {
     background: var(--tab-labels-hover);
@@ -2458,7 +2401,6 @@ input[type="radio"] {
     padding: 20px;
 }
 
-
 .card-content h3 {
     font-size: 18px;
     color: var(--reason-text);
@@ -2486,9 +2428,7 @@ input[type="radio"] {
     display: none;
 }
 
-
 /* SERVICE-SPECIFIC RATIOS */
-
 
 /* Graphic */
 #graphic:checked~.card-grid .graphic .image-box {
@@ -2522,7 +2462,6 @@ input[type="radio"] {
     margin-bottom: 60px;
     color: var(--reason-text);
 }
-
 
 /* TESTIMONIALS */
 
@@ -2650,6 +2589,7 @@ input[type="radio"] {
 }
 
 /* CTA */
+
 .cta-section {
     width: 100%;
     max-width: 90%;
@@ -2751,7 +2691,6 @@ input[type="radio"] {
     height: 325px;
     display: flex;
     flex-direction: column;
-
 }
 
 .contact-us-page-heading-bg {
@@ -2762,7 +2701,6 @@ input[type="radio"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .contact-us-page-heading-bg h1 {
@@ -2806,7 +2744,6 @@ input[type="radio"] {
     height: 325px;
     background-color: var(--contact-page-overlay);
     z-index: 2;
-
 }
 
 .contact-us-main {
@@ -2880,7 +2817,6 @@ input[type="radio"] {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
 }
 
 .contact-us-right-content-text h1 {
@@ -2930,7 +2866,6 @@ input[type="radio"] {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    ;
     justify-content: center;
 }
 
@@ -3118,7 +3053,6 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
 }
 
 .form-button-container {
@@ -3188,7 +3122,6 @@ input:focus {
     width: 5%;
     height: 15px;
 }
-
 
 /* Quote Form Css*/
 

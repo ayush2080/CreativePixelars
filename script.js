@@ -8,21 +8,14 @@ function detectSystemTheme() {
   return mediaQuery.matches ? 'dark' : 'light';
 }
 
-// Initial load (safe)
-window.addEventListener('DOMContentLoaded', () => {
-  applyTheme(detectSystemTheme());
+// Initial load
+applyTheme(detectSystemTheme());
+
+// Listen for changes
+mediaQuery.addEventListener('change', (e) => {
+  applyTheme(e.matches ? 'dark' : 'light');
 });
 
-// Listener (cross-browser)
-if (mediaQuery.addEventListener) {
-  mediaQuery.addEventListener('change', (e) => {
-    applyTheme(e.matches ? 'dark' : 'light');
-  });
-} else {
-  mediaQuery.addListener((e) => {
-    applyTheme(e.matches ? 'dark' : 'light');
-  });
-}
 
 document.getElementById('menuToggle').addEventListener('click', function () {
   const navbarContent = document.getElementById('navbarContent');
